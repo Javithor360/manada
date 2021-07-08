@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    position: fixed;
+    background-color: #22242a;
+    padding: 20px;
+    width: 100%;
+    height: 30px;
+    z-index: 1;
+}
+
+.izquierda h3{
+    color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.izquierda span {
+    color: #316eed;   
+}
+
+.leave {
+    padding: 10px;
+    background-color: #1dc4e7;
+    text-decoration: none;
+    float: right;
+    margin-top: -35px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.leave:hover {
+    background-color: #dc143c;
+    transition: background-color 0.5s;
+}
+
+.sidebar {
+    background-color: #2f323a;
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+}
+
+.pf_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .pf_info .pfp {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+
+.sidebar .pf_info h4 {
+    color: #2f77fd;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.sidebar a {
+    color: #ffffff;
+    display: block;
+    width: 100%;
+    line-height: 70px;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background-color: #316eed;
+    padding-left: 15px;
+    transition: all 0.5s;
+}
+
+.content {
+    background: #CFD7F6;
+    padding: 100px;
+    margin-left: 250px;
+}
+
+.content .card p {
+    background-color: #ffffffad;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    opacity: 0.8;
+}
