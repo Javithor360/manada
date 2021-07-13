@@ -1,0 +1,167 @@
+body{
+	background-color: whitesmoke;
+	font-family:sans-serif;
+	margin: 0;
+	margin-bottom: 20px;
+}
+/*-----------------------------------------*/
+/*Header*/
+header img{
+	margin: auto;
+	display:block;
+	margin:auto;
+}
+header{
+	background-color:#f3e86c;
+	white-space: 100%;
+}
+/*Fin header*/
+/*-----------------------------------------*/
+/*Nav*/
+#barra_nav_fondo{
+	background:#51668c;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+li{
+	float: left;
+}
+li a{
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 16px 16px;
+	text-decoration: none;
+	vertical-align: center;
+}
+li a:hover{
+	background: #808B96;
+	transition: background .5s;
+}
+.login:hover{
+	background: #808B96;
+	cursor: pointer;
+}
+.login{
+	margin-top: 5.5px;
+	float: right;
+    padding: 10px;
+    font-size: 12pt;
+    color: white;
+    text-decoration: none;
+    background-color: #326bf8;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-right: 5px;
+    -webkit-transition: background 0.3s;
+}
+.login a{
+	color: white;
+	text-decoration: none;
+}
+.separate{
+	padding-top: 15px;
+	color: white;
+}
+.text_div a{
+	color: whitesmoke;
+}
+/*Fin nav*/
+/*-----------------------------------------*/
+/*Carrusel de imagenes*/
+.carrusel{
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.carrusel ul{
+	padding: 0;
+	display: flex;
+	width: 600%;
+	animation: slide 40s infinite alternate linear;
+}
+.carrusel li{
+	width: 100%;
+	list-style: none;
+}
+.carrusel img{
+	width: 100%;
+	height: 100%;
+}
+@keyframes slide{
+	0% {margin-left: 0%;}
+	9% {margin-left: 0%;}
+
+	18%{margin-left: -100%;}
+	27%{margin-left: -100%;}
+
+	36%{margin-left: -200%;}
+	45%{margin-left: -200%;}
+
+	54%{margin-left: -300%;}
+	63%{margin-left: -300%;}
+
+	72%{margin-left: -400%;}
+	81%{margin-left: -400%;}
+
+	90%{margin-left: -500%;}
+	100%{margin-left: -500%;}
+}
+.text_carrusel{
+	width: 100%;
+	height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, .6);
+}
+#text1{
+	margin-top: 20%;
+	margin-bottom: 10px;
+	color: white;
+	font-family: 'Dosis', sans-serif;
+	font-size: 40pt;
+}
+.text_carrusel hr{
+	width: 40%;
+}
+#text2{
+	margin-top: 10px;
+	color: white;
+	font-family: 'Dosis', sans-serif;
+	font-size: 22pt;
+}
+/*Fin carrusel de imagenes*/
+/*-----------------------------------------*/
+#Adoptar img{
+	vertical-align: center;
+	float: left;
+	margin: auto;
+	display: block;
+}
+#Adoptar p{
+	text-align: center;
+}
+#Adoptar{
+	padding: 5px;
+	width: 180px;
+	margin: auto;
+	margin-top: 10px;
+	border-radius: 20px;
+	border: 1px solid black;
+
+}
+#Adoptar:hover{
+	background-color: #808B96;
+	cursor: pointer;
+}
