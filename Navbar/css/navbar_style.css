@@ -1,0 +1,70 @@
+@font-face{
+	font-family: Dosis;
+	src: url(../fonts/Dosis.ttf);
+	font-weight: normal;
+	font-size: normal;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+/*====Navbar====*/
+.navbar{
+	background-color: #11698E;
+	padding: 0;
+	top: 0;
+	position: sticky;
+	z-index: 100;
+}
+.navbar_contenedor{
+   position: relative;
+}
+.navbar_contenedor>ul{
+	list-style-type: none;
+	overflow: hidden;
+}
+.navbar_contenedor>ul>li>a{
+	color: white;
+	float: left;
+	display: block;
+	text-decoration: none;
+	padding: 16px 16px;
+	transition: background 0.5s;
+	font-family: Dosis;
+	font-size: 1.1em;
+}
+#hover1:hover {
+	background: rgba(0, 0, 0, .3);
+	color: #fff;
+	text-decoration: none;
+}
+.login_contenedor{
+	float: right;
+	display: block;
+	padding: 5px;
+	margin-top: 10px;
+    font-size: 12pt;
+    color: white;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.login_contenedor a{
+	color: #1A5276;
+	text-decoration: none;
+	transition: color .3s;
+	font-family: Dosis;
+	font-size: 1.1em;
+}
+.login_contenedor a:hover{
+	color: #5499C7;
+	text-decoration: none;
+}
+#divisor{
+	float: left;
+	color: #fff;
+	padding-top: 1.3%;
+	padding-right:2px;
+	padding-left: 2px;
+}

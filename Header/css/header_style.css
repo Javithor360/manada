@@ -1,0 +1,16 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*====Header====*/
+header{
+	background-color: #272727;
+	margin-bottom: 0;
+	padding: 5px;
+}
+header>img{
+	margin: auto;
+	display: block;
+	width: 325px;
+	height: 105px;
+}

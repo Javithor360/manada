@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registro | Manada</title>
+	<link rel="stylesheet" type="text/css" href="css/form_signup.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+	<header id="logo">
+		<img src="src/logo.jpg" width="366px" height="120px">
+	</header>
+	<div class="navbar">
+		<nav>
+			<div class="navbar_contenedor">
+				<ul>
+					<li><a id="hover1" href="#">Mascotas</a></li>
+					<li><a id="hover1" href="#">¿Cómo Adoptar?</a></li>
+					<li><a id="hover1" href="#">Contacto</a></li>
+					<div class="login_contenedor">
+						<li><a href="#">Acceder</a></li>
+					</div>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container">	
+
+	<div class="body">
+        
+        <div class="forms">
+			<h2 class="info">Ingrese sus datos personales</h2>
+        <form action="" class='form'>
+            
+            <div class="inputs">
+            <input type="text" id="names" name='name' required autocomplete="off" size='10px'>
+            <label for="names">Nombres *</label>
+            </div>
+            
+            <div class="inputs">
+            <input type="text" name="lastNames" id="lastName" required autocomplete="off">
+            <label for="lastName">Apellidos *</label>
+            </div>
+
+            <div class="inputs">
+                <select name="gender" id="gender" class='gender'>
+                    <option value="no"></option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Femeino</option>
+                </select>
+                <label for="gender">Género *</label>
+            </div>
+
+            <div class="inputs">
+                <input type="email" name="email" id="Email" required autocomplete="off" placeholder="loveanimals@example.com">
+                <label for="email">Correo electrónico *</label>
+            </div>
+
+             <div class="inputs">
+                <input type="password" name="pw" id="pw" required autocomplete="off">
+                <label for="pw">Contraseña *</label>
+            </div>
+
+            <div class="inputs">
+                <input type="password" name="pwc" id="pwc">
+                <label for="pwc">Confirmar contraseña *</label>
+            </div>
+
+            <div class="inputs">
+                <input type="tel" name="tel" id="tel" required autocomplete="off" pattern="[0-9]{4}-[0-9]{4}" placeholder="XXXX-XXXX">
+                <label for="tel">Número de teléfono *</label>
+            </div>
+
+            <div class="inputs">
+            <input type="date" name="bD" id="bDay" required>
+            <label for="date">Día de nacimiento *</label>
+
+            <div class="button"> <button type="submit">Crear cuenta</button> </div>
+            </div>
+
+			<p>¿Ya tienes una cuenta? <a href="form_login.html">Inicie sesión.</a></p>
+
+        </form>
+        </div>
+    </div>
+</div>
+	<footer>
+		<div class="container_footer">
+			<h1>¡Cuidemos los Animales!</h1>
+			<hr>
+			<h2>Fundacion la manada © 2020</h2>
+			<center>
+				<a href="#"><img src="src/Instagram.svg" width="40px" height="40px"></a>
+				<a href="#"><img src="src/Facebook.svg" width="40px" height="40px"></a>
+			</center>
+		</div>
+	</footer>
+</body>
+</html>
