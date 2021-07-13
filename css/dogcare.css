@@ -1,0 +1,35 @@
+.perro{
+    margin: 0 auto;
+    width: 80%;
+}
+body{
+    background-color:  #C8C2BC;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+header{
+    background-color: #98DED9; 
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+    width: 55%;
+    
+}
+
+h2{
+    text-align: center;
+}
+
+img{
+    width: 400px;
+    display:block;
+    margin:auto;
+}
+
+section{
+    background-color: #98DED9;
+    margin: 0 auto;
+    width: 70%;
+}
+
