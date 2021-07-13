@@ -72,6 +72,7 @@ header>img{
 header{
 	background-color: #272727;
 	margin-bottom: 0;
+	padding: 3px;
 }
 /*====Navbar====*/
 .navbar{
