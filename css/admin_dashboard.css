@@ -13,6 +13,10 @@ header {
     z-index: 1;
 }
 
+body {
+    background-color: #CFD7F6;
+}
+
 .izquierda h3{
     color: #ffffff;
     margin: 0;
@@ -92,15 +96,113 @@ header {
 }
 
 .content {
-    background: #CFD7F6;
     padding: 100px;
     margin-left: 250px;
+    box-sizing: border-box;
 }
 
-.content .card p {
+.content .card  {
     background-color: #ffffffad;
     padding: 15px;
     margin-bottom: 10px;
     font-size: 14px;
     opacity: 0.8;
 }
+
+.content .card h1 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: #11698E;
+}
+
+.content .card .table {
+    padding: 15px;
+    overflow: auto;
+    margin: auto;
+}
+
+.content .card .table table {
+    margin: 25px 0;
+    width: 100%;
+    font-size: 13px;
+    color: #2f323a;
+    border-spacing: unset;
+}
+
+.content .card .table table > thead{
+    background-color: #293B5F;
+    color: #ffffff;
+}
+
+.content .card .table table > thead th{
+    padding: 15px;
+}
+
+.content .card .table table th,
+.content .card .table table td {
+    border: 1px solid #00000017;
+    padding: 10px 15px;
+    max-width: 100px;
+    overflow-wrap: break-word;
+}
+
+.content .card .table table > tbody > tr > td > img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #000000b2;
+}
+
+.content .card .table .action {
+    display: block;
+    justify-content: center;
+    gap: 10px;
+}
+
+.content .card .table .action > a {
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    color: #2f323a;
+    background: #ffffff;
+    border: 1px solid;
+    border-radius: 10px;
+    display: block;
+    padding: 7px 10px;
+    margin: 4px;
+    transition: 0.3s ease-in-out;
+}
+
+.content .card .table .action > a:nth-child(1) {
+    border-color: #50D890;
+}
+
+.content .card .table .action > a:nth-child(2) {
+    border-color: #F55C47;
+}
+
+.content .card .table .action > a:nth-child(2):hover {
+    background-color: #F55C47;
+    color: #ffffff;
+    transition: all 0.5s ease-out;
+    box-shadow: 0 3px 8px #0003;
+}
+
+.content .card .table .action > a:nth-child(1):hover {
+    background-color: #50D890;
+    color: #ffffff;
+    transition: all 0.5s ease-out;
+    box-shadow: 0 3px 8px #0003;
+}
+
+.content .card .table table > tbody > tr {
+    background-color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.content .card .table table > tbody > tr:nth-child(2n+2) {
+    background-color: rgba(255, 255, 255, 0.253);
+    transition: 0.3s ease-in-out;
+} 
