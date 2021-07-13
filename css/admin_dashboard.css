@@ -1,7 +1,21 @@
+@font-face {
+    font-family: Signika;
+    src: url(../src/fonts/Signika-Regular.ttf);
+}
+
+@font-face {
+    font-family: Comfortaa;
+    src: url(../src/fonts/Comfortaa.ttf);
+}
+
+@font-face {
+    font-family: Dosis;
+    src: url(../src/fonts/Dosis.ttf);
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -19,22 +33,33 @@ body {
 
 .izquierda h3{
     color: #ffffff;
+    font-family: Signika;
+    font-size: 30px;
     margin: 0;
     text-transform: uppercase;
-    font-size: 22px;
     font-weight: 900;
 }
 
 .izquierda span {
-    color: #316eed;   
+    color: #2f77fd;   
+}
+
+.izquierda img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -52px;
+    width: 200px;
 }
 
 .leave {
+    display: block;
+    font-family: Comfortaa;
     padding: 10px;
     background-color: #1dc4e7;
     text-decoration: none;
     float: right;
-    margin-top: -35px;
+    margin-top: -50px;
     margin-right: 40px;
     border-radius: 2px;
     font-size: 15px;
@@ -72,6 +97,8 @@ body {
 }
 
 .sidebar .pf_info h4 {
+    font-family: Signika;
+    font-size: 20px;
     color: #2f77fd;
     margin-top: 0;
     margin-bottom: 20px;
@@ -79,6 +106,8 @@ body {
 }
 
 .sidebar a {
+    font-family: Dosis;
+    font-size: 19px;
     color: #ffffff;
     display: block;
     width: 100%;
@@ -111,7 +140,9 @@ body {
 
 .content .card h1 {
     text-align: center;
-    font-family: "Roboto", sans-serif;
+    font-family: Signika;
+    font-weight: bolder;
+    font-size: 50px;
     color: #11698E;
 }
 
@@ -132,10 +163,18 @@ body {
 .content .card .table table > thead{
     background-color: #293B5F;
     color: #ffffff;
+    font-size: 18px;
+    font-family: Comfortaa;
 }
 
 .content .card .table table > thead th{
     padding: 15px;
+}
+
+.content .card .table table td {
+    font-family: Dosis;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .content .card .table table th,
