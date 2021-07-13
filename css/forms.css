@@ -6,7 +6,7 @@ body{
     background-attachment: fixed;
   background-position: center center;
   background-size: cover;
-  background-image: url(div/michi.jpg);
+  background-image: url(../src/bg/michi.jpg);
 }
 h1{
     color: white;

@@ -4,7 +4,7 @@
 }
 body{
   background-size: cover;
-    background-image: url(div/selec.jpg);
+    background-image: url(../src/bg/selec.jpg);
 }
 
 .par{

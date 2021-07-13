@@ -6,7 +6,7 @@ body{
     background-attachment: fixed;
   background-position: center center;
   background-size: cover;
-  background-image: url(div/Sin\ título-1.jpg);
+  background-image: url(../src/bg/kingdog.jpg);
 }
 h1{
     text-align: center;
