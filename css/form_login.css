@@ -20,64 +20,6 @@ body{
 	background-size: cover;
 }
 
-/*====Header====*/
-header>img{
-	margin: auto;
-	display: block;
-	width: 325px;
-	height: 105px;
-}
-header{
-	background-color: #f5e56b;
-	margin-bottom: 0;
-}
-
-/*====Navbar====*/
-.navbar{
-	background-color: #254074;
-	padding: 0;
-	top: 0;
-	position: sticky;
-	z-index: 100;
-}
-.navbar_contenedor>ul{
-	list-style-type: none;
-	overflow: hidden;
-}
-.navbar_contenedor>ul>li>a{
-	color: white;
-	float: left;
-	display: block;
-	text-decoration: none;
-	padding: 16px 16px;
-	transition: background 0.3s;
-}
-#hover1:hover {
-	background: #1D2F3D;
-	color: #fff;
-	text-decoration: none;
-}
-.login_contenedor{
-	float: right;
-	display: block;
-	padding: 5px;
-	margin-top: 10px;
-    font-size: 12pt;
-    color: white;
-    text-decoration: none;
-    background-color: white;
-    border-radius: 5px;
-    margin-right: 5px;
-}
-.login_contenedor a{
-	color: #1A5276;
-	text-decoration: none;
-}
-.login_contenedor a:hover{
-	color: #5499C7 ;
-	text-decoration: none;
-}
-
 /*====Form====*/
 .container{
 	padding-bottom: 125px; 
@@ -145,7 +87,7 @@ input:focus{
     outline: none;
 }
 
-button{
+button#submit{
     width: 50%;
     height: auto;
     border-radius: 10px;
@@ -179,24 +121,4 @@ button:hover{
     width: 98%;
 }
 
-
-/*====Footer====*/
-
-.container_footer{
-	background-color:#172039;
-	padding: 5px;
-}
-.container_footer h1{
-	color: white;
-	font-family: 'Dosis', sans-serif;    
-    font-weight: normal;
-    text-align: center;
-}
-.container_footer h2{
-	color: white;
-	font-family: 'Dosis', sans-serif;    
-    font-weight: normal;
-    padding-bottom: 20px;
-	
-}
 
