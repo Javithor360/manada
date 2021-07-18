@@ -2,12 +2,14 @@
 	margin: 0;
 	padding: 0;
 }
+
 @font-face{
 	font-family: Dosis-ExtraLight;
-	src: url(../fonts/Dosis-ExtraLight.ttf);
+	src: url(../src/fonts/Dosis-ExtraLight.ttf);
 	font-weight: normal;
 	font-size: normal;
 }
+
 #main_container{
 	min-height: calc(100vh);
 }
