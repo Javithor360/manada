@@ -1,55 +1,55 @@
 /*====Importación de fuentes====*/
 @font-face{
 	font-family: Dosis;
-	src: url(../fonts/Dosis.ttf);
+	src: url(../src/fonts/Dosis.ttf);
 	font-weight: normal;
 	font-size: normal;
 }
 @font-face{
 	font-family: Dosis-ExtraLight;
-	src: url(../fonts/Dosis-ExtraLight.ttf);
+	src: url(../src/fonts/Dosis-ExtraLight.ttf);
 	font-weight: normal;
 	font-size: normal;
 }
 @font-face{
 	font-family: Comfortaa;
-	src: url(../fonts/Comfortaa.ttf);
+	src: url(../src/fonts/Comfortaa.ttf);
 	font-weight: normal;
 	font-size: normal;
 }
 @font-face{
 	font-family: Comfortaa-Light;
-	src: url(../fonts/Comfortaa-ExtraLight.ttf);
+	src: url(../src/fonts/Comfortaa-ExtraLight.ttf);
 	font-weight: normal;
 	font-size: normal;
 }
 @font-face{
 	font-family: Comfortaa-Medium;
-	src: url(../fonts/Comfortaa-Medium.ttf);
+	src: url(../src/fonts/Comfortaa-Medium.ttf);
 	font-weight: normal;
 	font-size: normal;
 }
 @font-face{
 	font-family: Signika;
-	src: url(../fonts/Signika.ttf);
+	src: url(../src/fonts/Signika.ttf);
 	font-weight: normal;
 	font-size: normal;
 }
 @font-face{
 	font-family: Signika-Light;
-	src: url(../fonts/Signika-Light.ttf);
+	src: url(../src/fonts/Signika-Light.ttf);
 	font-weight: normal;
 	font-size: normal;
 }
 @font-face{
 	font-family: Signika-Medium;
-	src: url(../fonts/Signika-Medium.ttf);
+	src: url(../src/fonts/Signika-Medium.ttf);
 	font-weight: normal;
 	font-size: normal;
 }
 @font-face{
 	font-family: Signika-Regular;
-	src: url(../fonts/Signika-Regular.ttf);
+	src: url(../src/fonts/Signika-Regular.ttf);
 	font-weight: normal;
 	font-size: normal;
 }
@@ -236,11 +236,10 @@ header{
 }
 #slider_text_container a{
 	cursor: pointer;
-	-webkit-transition: transform .4s;
 }
 #hover_slide_button:hover{
-	transform: scale(1.1);
 	background-color: rgba(0, 0, 0, .9);
+	 -webkit-transition: background 0.3s;
 }
 #flecha{
 	width: 35px;
