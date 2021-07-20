@@ -13,13 +13,17 @@ body{
   font-family:Georgia, 'Times New Roman', Times, serif;
   color: white;
 }
-header {
-  position: fixed;
-  background-color: #22242a;
-  padding: 20px;
-  width: 100%;
-  height: 30px;
-  z-index: 1;
+header{
+	background-color: #272727;
+	margin-bottom: 0;
+	padding: 5px;
+}
+
+header>img{
+	margin: auto;
+	display: block;
+	width: 325px;
+	height: 105px;
 }
 
 .izquierda h3{

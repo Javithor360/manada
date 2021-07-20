@@ -16,9 +16,19 @@ h1{
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 header{
-    position: fixed;
-    background-color: black;
-    width: 100%;
+    display: flex;
+	background-color: #272727;
+	margin-bottom: 0;
+	padding: 5px;
+}
+header>img{
+	margin: auto;
+	display: block;
+	width: 325px;
+	height: 105px;
+}
+img a{
+    text-decoration: none;
 }
 
 p{
@@ -56,12 +66,7 @@ form button:hover{
     background: rgba(6, 161, 161, 0.699);
 }
 
-img{
-    margin: auto;
-display: block;
-    width: 100px;
-    height: 100px;
-}
+
 
 .izquierda h3 {
     color: #ffffff;
