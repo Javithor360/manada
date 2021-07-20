@@ -1,0 +1,224 @@
+main{
+	min-height: 100vh;
+}
+body{
+	position: flex;
+	font-size: 16px;
+	background:
+       linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        url(../src/contact_img.png);
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+}
+
+@font-face{
+	font-family: Dosis-ExtraLight;
+	src: url(../src/fonts/Dosis-ExtraLight.ttf);
+	font-weight: normal;
+	font-size: normal;
+}
+@font-face{
+	font-family: Dosis;
+	src: url(../src/fonts/Dosis.ttf);
+	font-weight: normal;
+	font-size: normal;
+}
+html{
+	background-color: #fff;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Dosis';
+}
+/*====Navbar====*/
+header{
+	background: #11698E;
+	font-size: 14pt;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+header nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+header nav .menu{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+header nav .menu .logo a img{
+	width: 70px;
+}
+header .menu .menucontent{
+	display: flex;
+}
+header .menu .menucontent a{
+	float: right;
+	padding: 25px 15px;
+	color: #fff;
+	text-decoration: none;
+	background: transparent;
+	transition: background .3s ease-in-out;
+}
+header .menu .menucontent a:hover{
+	background: rgba(0, 0, 0, .3);
+	transition: background .3s ease-in-out;
+}
+header nav .user a .login{
+	background-color: #fff;
+	color: #1A5276;
+	border: none;
+	margin-right: 5px;
+	padding: 5px;
+	font-size: 14pt;
+	transition: color .3s ease;
+}
+header nav .user a .login:hover{
+	color: #5499C7;
+	cursor: pointer;
+	transition: color .3s ease;
+}
+/*====Form====*/
+.form{
+	background: rgba(0, 0, 0,.3);
+	margin-top: 2em;
+	margin-left: 2em;
+	border-radius: .5rem;
+	border: 2px solid #fff;
+	transition: box-shadow .3s;
+	box-shadow: 2px 2px  8px #fff;
+}
+.form:hover{
+	box-shadow: 2px 2px  8px #11698E;
+	transition: box-shadow .3s;
+}
+#title1{
+	color: #fff;
+	font-size: 2.5em;
+	font-weight: bold;
+	width: 40rem;
+	max-width: 40rem;
+	text-align: left;
+	margin-top: .75rem;
+	margin-left: .75rem;
+	margin-bottom: .75rem;
+	font-family: 'Dosis', sans-serif;
+}
+#title2{
+	color: #fff;
+	font-size: 1em;
+	width: 40rem;
+	max-width: 40rem;
+	text-align: left;
+	margin-top: .75rem;
+	margin-left: .75rem;
+	margin-bottom: .75rem;
+	font-family: 'Dosis', sans-serif;
+}
+.container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.container .form{
+	display: flex;
+}
+.container .img{
+	float: right;
+	overflow: hidden;
+	height: 100%;
+}
+.container .form form label{
+	margin-left: .75rem;
+	text-align: left;
+	display: block;
+
+}
+.container .form form input{
+	margin: .75rem;
+	margin-top: 1rem;
+	text-align: left;
+	display: block;
+	width: 30rem;
+	padding: 1em;
+	border: none;
+	border-radius: .5rem;
+	box-shadow: 2px 2px  3px #fff;
+}
+input:focus{
+    outline: none;
+}
+textarea:focus{
+    outline: none;
+}
+.container .form form div{
+	margin: 0.75rem;
+	width: 30rem;
+	display: flex;
+	flex-direction: column;
+}
+.container .form form div textarea{
+	border-radius: .5rem;
+	padding: 1em;
+	min-width: 30rem;
+	max-width: 100%;
+	height: 15rem;
+	max-height: 25rem;
+	min-height: 15rem;
+	box-shadow: 2px 2px  3px #fff;
+}
+/*====Footer====*/
+.container_footer{
+	background-color:#11698E;
+	padding: 5px;
+}
+.container_footer h1{
+	color: white;
+	font-family: 'Dosis-ExtraLight', sans-serif;    
+    font-weight: normal;
+    text-align: center;
+}
+.container_footer h2{
+	color: white;
+	font-family: 'Dosis-ExtraLight', sans-serif;    
+    font-weight: normal;
+    padding-bottom: 20px;
+    padding-top:10px;
+    margin-left: 5px;
+}
+.container_footer h2>a{
+    float: right;
+    padding-top:3px;
+    display: block;
+    margin-right: 5px; 
+}
+#img_footer{
+	transition: transform .2s;
+	margin-right: 5px;
+}
+#img_footer:hover{
+	transform: scale(1.2);
+}
+.container_footer h5{
+	padding-top: 5px;
+	color: white;
+	font-family: 'Dosis-ExtraLight', sans-serif;
+	font-weight: normal;
+}
+#enviar{
+	height: 3em;
+	width: 6em;
+	margin-left: .75rem;
+	margin-top: .40rem;
+	margin-bottom: .30rem;
+}

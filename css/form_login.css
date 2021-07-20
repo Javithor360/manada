@@ -19,7 +19,9 @@ body{
 	background-position: center center;
 	background-size: cover;
 }
-
+main{
+    min-height: 100vh;
+}
 /*====Form====*/
 .container{
 	padding-bottom: 125px; 

@@ -19,7 +19,10 @@ body{
 	background-position: center center;
 	background-size: cover;
 }
-
+main{
+    min-height: 100vh;
+    margin-bottom: 8rem;
+}
 /*====Form====*/
 .container{
 	padding-bottom: 25px; 
