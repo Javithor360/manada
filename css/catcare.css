@@ -1,30 +1,98 @@
+@font-face{
+	font-family: Signika;
+	src: url(../src/fonts/Signika.ttf);
+	font-weight: normal;
+	font-size: normal;
+}
+
+@font-face{
+	font-family: Dosis;
+	src: url(../src/fonts/Dosis.ttf);
+	font-weight: normal;
+	font-size: normal;
+}
+
+@font-face{
+	font-family: Signika-Medium;
+	src: url(../src/fonts/Signika-Medium.ttf);
+	font-weight: normal;
+	font-size: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+h1{
+    font-family: Signika;
+}
+
 body{
-    background-color:  #FAEBE0;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: justify;
+    background-color:  #FFF;
+    font-size: 18px;
 }
 
-header{
-    background-color: #BEAEE2; 
-    text-align: center;
-    margin: 0 auto;
-    padding: 5px;
-    width: 55%;
-    
+.img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-h2{
-    text-align: center;
+.img figure{
+    position: relative;
+    width: 550px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 0px 25px lightslategray;
 }
 
-img{
-    width: 400px;
-    display:block;
-    margin:auto;
+.img figure img{
+    width: 550px;
+    height: 300px;
+    transition: all 500ms ease-out;
+    filter: brightness(60%);
+}
+
+.img figure p{
+    position: absolute;
+    top: 40%;
+    margin-right: 225px;
+    left: 20px;
+    font-size: larger;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+.container{
+    padding: 20px;
+}
+
+p{
+    font-family: Dosis;
+    line-height: 24px;
 }
 
 section{
-    background-color: #BEAEE2;
-    margin: 0 auto;
-    width: 70%;
+    padding: 15px;
+}
+
+article{
+    padding: 20px;
+    margin-top: 20px;
+}
+
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.sect img{
+    float: right;
+    height: 275px;
+    width: auto;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
 }
