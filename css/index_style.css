@@ -1,4 +1,11 @@
 /*====Importación de fuentes====*/
+@font-face
+{
+	font-family: Poppins;
+	src: url(../src/fonts/Poppins-Regular.ttf); 
+	font-weight: normal;
+	font-size: normal;
+}
 @font-face{
 	font-family: Dosis;
 	src: url(../src/fonts/Dosis.ttf);
@@ -96,7 +103,7 @@ header{
 	text-decoration: none;
 	padding: 16px 16px;
 	transition: background 0.5s;
-	font-family: Dosis;
+	font-family: Poppins;
 	font-size: 1.1em;
 }
 #hover1:hover {
@@ -448,6 +455,10 @@ header{
 }
 #contenedor-principal{
 	min-height: calc(100vh);
+}
+#frase {
+	color: black;
+	text-align: center;
 }
 /*====Footer====*/
 .container_footer{
