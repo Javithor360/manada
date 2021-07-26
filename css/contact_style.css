@@ -82,6 +82,12 @@ header nav .user a .login{
 	padding: 5px;
 	font-size: 14pt;
 	transition: color .3s ease;
+
+	background-image: url(../src/icons/userIcon.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 30px;
+	padding-right: 35px;
 }
 header nav .user a .login:hover{
 	color: #5499C7;
