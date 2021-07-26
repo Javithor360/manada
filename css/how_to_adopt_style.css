@@ -1,0 +1,180 @@
+@font-face{
+	font-family: Dosis;
+	src: url(../src/fonts/Dosis.ttf);
+	font-weight: normal;
+	font-size: normal;
+}
+html{
+	background-color: #fff;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Dosis';
+}
+main{
+    min-height: 100vh;
+}
+/*====Navbar====*/
+header{
+	background: #11698E;
+	font-size: 14pt;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+header nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+header nav .menu{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+p{
+	display: block;
+	color: #fff;
+}
+header nav .menu .logo a img{
+	width: 70px;
+}
+header .menu .menucontent{
+	display: flex;
+}
+header .menu .menucontent a{
+	float: right;
+	padding: 25px 15px;
+	color: #fff;
+	text-decoration: none;
+	background: transparent;
+	transition: background .3s ease-in-out;
+}
+header .menu .menucontent a:hover{
+	background: rgba(0, 0, 0, .3);
+	transition: background .3s ease-in-out;
+}
+header nav .user a .login{
+	background-color: #fff;
+	color: #1A5276;
+	border: none;
+	margin-right: 5px;
+	padding: 5px;
+	font-size: 14pt;
+	transition: color .3s ease;
+}
+header nav .user a .login:hover{
+	color: #5499C7;
+	cursor: pointer;
+	transition: color .3s ease;
+}
+/*====Main====*/
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.text_container{
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+.img_container{
+    overflow: hidden;
+    width: 60rem;
+}
+.steps{
+    display: flex;
+    margin-top: 1rem;
+}
+.steps2{
+    display: flex;
+    margin-top: 1rem;
+
+}
+figure{
+    padding: .5rem;
+}
+figure figcaption{
+	margin-top: 1rem;
+    text-align: center;
+}
+figure img{
+    margin: 0 auto;
+    display: block;
+}
+.text_container .steps figure{
+	padding: .5rem;
+	width: 14rem;
+}
+.text_container .steps2 figure{
+	padding: .5rem;
+}
+/*#step1{
+}
+#step1 > div {
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:-1;
+  padding:10px;
+  margin:0;
+  text-align:justify;
+}
+#hidden:hover{
+	opacity: 0.07;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms;
+  background-color: transparent;
+}*/
+
+
+
+@font-face{
+	font-family: Dosis-ExtraLight;
+	src: url(../src/fonts/Dosis-ExtraLight.ttf);
+	font-weight: normal;
+	font-size: normal;
+}
+.container_footer{
+	background-color:#11698E;
+	padding: 5px;
+}
+.container_footer h1{
+	color: white;
+	font-family: 'Dosis-ExtraLight', sans-serif;    
+    font-weight: normal;
+    text-align: center;
+}
+.container_footer h2{
+	color: white;
+	font-family: 'Dosis-ExtraLight', sans-serif;    
+    font-weight: normal;
+    padding-bottom: 20px;
+    padding-top:10px;
+    margin-left: 5px;
+}
+.container_footer h2>a{
+    float: right;
+    padding-top:3px;
+    display: block;
+    margin-right: 5px; 
+}
+#img_footer{
+	transition: transform .2s;
+	margin-right: 5px;
+}
+#img_footer:hover{
+	transform: scale(1.2);
+}
+.container_footer h5{
+	padding-top: 5px;
+	color: white;
+	font-family: 'Dosis-ExtraLight', sans-serif;
+	font-weight: normal;
+}
