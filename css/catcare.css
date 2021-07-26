@@ -23,6 +23,7 @@
 
 .container h1{
     font-family: Signika;
+    text-align: center;
 }
 
 .container h3{
@@ -34,13 +35,6 @@ body{
     font-size: 18px;
 }
 
-/* .container:nth-child(3){
-    position: relative;
-}
-
-.container:nth-child(3) ~ p{
-    margin-right: 200px;
-} */
 
 .img{
     width: 100%;
@@ -48,7 +42,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100%;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-bottom: 20px;
     position:inherit;
     float: right;
@@ -84,16 +78,20 @@ body{
     padding: 50px 200px
 }
 
-.sect p, .container p{
+.sect p{
     font-family: Dosis;
     line-height: 24px;
     padding-top: 10px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .container section{
     padding: 15px;
-    padding-top: 30px
+    padding-top: 10px
+}
+
+.container section:nth-child(3){
+    text-align: center;
 }
 
 .container article{
@@ -111,7 +109,7 @@ body{
     float: left;
     height: 275px;
     width: auto;
-    margin:  0 30px;
+    margin:  15px 30px;
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
 }
@@ -141,33 +139,62 @@ body{
     padding-top: 40px;
 }
 
-#back{
+
+
+#back::after,
+#back::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 2px solid;
+    transition: all 0.6s ease;
+    border-radius: 4px;
+}
+
+#back::after{
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #11698E;
+    border-right-color: #11698E;
+}
+
+#back::before{
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #11698E;
+    border-left-color: #11698E;
+}
+
+
+#back:hover:after,
+#back:hover:before{
+  border-bottom-color: #4F98CA;
+  border-right-color: #4F98CA;
+  border-top-color: #4F98CA;
+  border-left-color: #4F98CA;
+  width: 100%;
+  height: 100%;
+  color:#EFFFFB;
+}
+
+.container button{
+  position: relative;
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+}
+
+.backB{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
-}
-
-#back a {
-    display: inline-block;
-    position: relative;
-    color: #333;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
-
-}
-
-#back a:after {
-    content: "";
-    display: block;
-    margin: auto;
-    height: 2px;
-    width: 0px;
-    transition: all .8s;
-}
-
-#back a:hover:after {
-    width: 100%;
-    background: blue;
 }
