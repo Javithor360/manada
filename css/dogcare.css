@@ -1,35 +1,173 @@
-.perro{
-    margin: 0 auto;
-    width: 80%;
+@font-face{
+	font-family: Signika;
+	src: url(../src/fonts/Signika.ttf);
+	font-weight: normal;
+	font-size: normal;
 }
+
+@font-face{
+	font-family: Dosis;
+	src: url(../src/fonts/Dosis.ttf);
+	font-weight: normal;
+	font-size: normal;
+}
+
+@font-face{
+	font-family: Signika-Medium;
+	src: url(../src/fonts/Signika-Medium.ttf);
+	font-weight: normal;
+	font-size: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+.container h1{
+    font-family: Signika;
+}
+
+.container h3{
+    margin-top: 10px;
+}
+
 body{
-    background-color:  #C8C2BC;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: justify;
+    background-color:  #FFF;
+    font-size: 18px;
 }
 
-header{
-    background-color: #98DED9; 
-    text-align: center;
-    margin: 0 auto;
-    padding: 5px;
-    width: 55%;
-    
+/* .container:nth-child(3){
+    position: relative;
 }
 
-h2{
-    text-align: center;
+.container:nth-child(3) ~ p{
+    margin-right: 200px;
+} */
+
+.img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    position:inherit;
+    float: right;
 }
 
-img{
-    width: 400px;
-    display:block;
-    margin:auto;
+.img figure{
+    position: relative;
+    width: 450px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 0px 25px lightslategray;
 }
 
-section{
-    background-color: #98DED9;
-    margin: 0 auto;
-    width: 70%;
+.img figure img{
+    width: 450px;
+    height: 250px;
+    transition: all 500ms ease-out;
+    filter: brightness(60%);
 }
 
+.img figure p{
+    position: absolute;
+    top: 30%;
+    left: 20px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    margin-right: 200px;
+}
+
+.container{
+    padding: 50px 200px
+}
+
+.sect p, .container p{
+    font-family: Dosis;
+    line-height: 24px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.container section{
+    padding: 15px;
+    padding-top: 30px
+}
+
+.container article{
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.container hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.sect img#food{
+    float: left;
+    height: 275px;
+    width: auto;
+    margin:  0 30px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+}
+
+.sect img#care{
+    float: right;
+    height: 275px;
+    width: auto;
+    margin: 0 30px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+}
+
+.sect img#play{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+    height: 300px;
+    width: auto;
+    margin: 20px auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sect h2{
+    padding-top: 40px;
+}
+
+#back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+#back a {
+    display: inline-block;
+    position: relative;
+    color: #333;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#back a:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    transition: all .8s;
+}
+
+#back a:hover:after {
+    width: 100%;
+    background: blue;
+}
