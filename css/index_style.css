@@ -122,11 +122,7 @@ header{
     background-color: white;
     border-radius: 5px;
     margin-right: 5px;
-	background-image: url(../src/icons/userIcon.svg);
-	background-repeat: no-repeat;
-	background-position: right;
-	background-size: 30px;
-	padding-right: 35px;
+	
 }
 .login_contenedor a{
 	color: #1A5276;
@@ -134,6 +130,13 @@ header{
 	transition: color .3s;
 	font-family: Dosis;
 	font-size: 1.1em;
+	background-image: url(../src/icons/userIcon.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 30px;
+	padding-right: 35px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 .login_contenedor a:hover{
 	color: #5499C7;
