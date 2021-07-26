@@ -69,25 +69,33 @@
     max-width: 340px;
 }
 
-.container #articles {
+#articles {
+    position: absolute;
+    margin-top: -100px;
+    color: red;
+}
+
+.container h2 {
     margin-left: 200px;
 }
 
-.container #articles::before {
+.container h2::before {
 	content: '';
 	position: absolute;
 	background-color: #316eed;
 	height: 2px;
 	box-sizing: border-box;
-	width: 450px;
+	width: 550px;
 }
 
 .grid {
+    align-items: center;
+    place-self: center center;
     margin: 20px 200px 20px 200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
-    align-items: center;
+    position: relative;
 }
 
 .grid > article {
@@ -106,7 +114,8 @@
 }
 
 .grid > article img {
-    width: 100%;
+    width: 350px;
+    height: 230px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
