@@ -3,51 +3,74 @@
     <head>
         <link rel="shortcut icon" href="./src/logos/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/forms2.css">
+        <link rel="stylesheet" href="css/navbarforms.css">
+        <link rel="stylesheet" href="css/footer_style.css">
         <meta charset="UTF-8"> 
         <title>Formulario</title>
     </head>
     <body>
-        <header id="logo">
-            <a href="index.html"> <img src="src/logos/logo_full.svg" width="366px" height="120px"></a>
+        <header>
+            <nav>
+                <div class="menu">
+                    <div class="logo">
+                        <a href="index.html"><img src="src/logos/logo_circle_full.svg" alt=""></a>
+                    </div>
+                    <div class="menucontent">
+                        <a href="index.html">Inicio</a>
+                        <a href="./Catalogo de mascotas.html">Mascotas</a>
+                        <a href="./guides.html">¿Cómo Adoptar?</a>
+                        <a href="./contacto.html">Contacto</a>
+                    </div>
+                </div>
+                <div class="user">
+                    <a href="form_login.html">
+                        <button class="login">
+                            Iniciar Sesión
+                        </button>
+                    </a>
+                </div>
+            </nav>
         </header>
-            <div class="formu">
-        <form action="" method="">
-            <br><br><br><br><br><br>
-
-        <label for="firstName" class="first-name">Nombres la mascota:</label>
-        <input id="firstName" type="text" name="nombre" placeholder="Ingrese sus nombres" required>
-
-        <label for="age">Edad:</label>
-        <input for="age" type="number" name="edad" placeholder="Ingrese su edad" min="0" max="35" required>
-
-        <label for="sex">Sexo:</label>
-        <select id="age">
-            <option>&nbsp;</option>
-            <option>Macho</option>
-            <option>Hembra</option>
-        </select>
-        <!--
-        <br><br><br><br><br><br>
-        <p>Gracias a ti podre tener la posibilidad <br> de un hogar, prometo ser un perro bueno <br> y acompañar a mi nueva familia, ser fiel <br> y no probocar
-        y leal y sere su fiel amigo</p>-->
-        <label for="vacunas">vacunas con las que cuenta su mascota:</label>
-        <input name="cbipeliculas" type="checkbox">Contra Distemper
-        <br>
-        <input name="cbilibros" type="checkbox">Contra Hepatitis
-       <br>
-       <input name="cbiinternet" type="checkbox">Contra Parpovirus
-       <br>
-       <input name="cbiinternet" type="checkbox">Contra Boedetollis
-       <br>
-       <input name="cbiinternet" type="checkbox">Contra Parainfluenza
-       <br>
-       <input name="cbiinternet" type="checkbox">Contra Leptoporosis
-       <br>
-       <input name="cbiinternet" type="checkbox">Contra Rabia
-       
-        <button>Enviar</button>
-    </div>
-</div>
-    </form>
+        <div class="formu">
+            <form action="" method="">
+                <label for="firstName" class="first-name">Nombres la mascota:</label>
+                <input id="firstName" type="text" name="nombre" placeholder="Ingrese sus nombres" required>
+    
+            <label for="age">Edad:</label>
+            <input for="age" type="number" name="edad" placeholder="Ingrese su edad" min="0" max="35" required>
+    
+            <label for="sex">Sexo:</label>
+            <select id="age">
+                <option>&nbsp;</option>
+                <option>Macho</option>
+                <option>Hembra</option>
+            </select>
+            <label for="vacunas">vacunas con las que cuenta su mascota:</label>
+            <input name="cbipeliculas" type="checkbox">Contra Distemper
+            <br>
+            <input name="cbilibros" type="checkbox">Contra Hepatitis
+           <br>
+           <input name="cbiinternet" type="checkbox">Contra Parpovirus
+           <br>
+           <input name="cbiinternet" type="checkbox">Contra Boedetollis
+           <br>
+           <input name="cbiinternet" type="checkbox">Contra Parainfluenza
+           <br>
+           <input name="cbiinternet" type="checkbox">Contra Leptoporosis
+           <br>
+           <input name="cbiinternet" type="checkbox">Contra Rabia
+           <br><br><br>
+            <button>Enviar</button>
+          </form>
+        </div>
+        <div class="container_footer">
+            <h1>¡Cuidemos los Animales!</h1>
+            <h2>Fundación La manada © 2021
+                <a href="https://www.instagram.com/la.manadasv/"target="blank"><img id="img_footer" src="./src/icons/instagram.svg" width="40px" height="40px"></a>
+                <a href="https://www.facebook.com/profile.php?id=100070244422672" target="blank"><img id="img_footer" src="./src/icons/facebook.svg" width="40px" height="40px"></a>
+            </h2>
+            <hr>
+            <h5>Diseñado por Grupo 8</h5>
+        </div>
     </body>
 </html>

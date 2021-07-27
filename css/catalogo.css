@@ -1,63 +1,159 @@
-*{
-	margin: 0;
-	padding: 0;
-}
-header{
-	background-color: #272727;
-	margin-bottom: 0;
-	padding: 5px;
-}
-header>img{
-	margin: auto;
-	display: block;
-	width: 325px;
-	height: 105px;
-}
-body{
-  background-color: antiquewhite;
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.cat{
-  margin: 5%;
-  text-decoration: none;
-  border-radius: 10px;
-  box-shadow: gray;
-  transition: transform.2s;
-  background-color:rgba(2, 2, 63, 0.623);
-  margin-left: 20%;
-  margin-right: 66%;
-  padding: 2em;
+.main-container {
+    position: relative;
+    min-height: 100vh;
+    margin-left: 100px;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
 }
 
-.cat a{
-  text-decoration: none;
+.postnav {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.cat:hover{
-  transform: scale(1.5);
+.postnav .text {
+    position: relative;
+    max-width: 600px;
+
 }
 
-img{
-  border-radius: 20px;
-  height: 200px;
-  width: 200px;
+.postnav .text h2 {
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+
 }
 
-h3{
-  text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: white;
-  font-size: 30px;
+.postnav .text a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #316eed;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
 }
 
-p{
-  text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: antiquewhite;
-  font-size: 20px;
+.postnav .text a:hover {
+    background: #6998ff;
 }
 
-.huella{
-  width: 30px;
-  height: 30px;
+.postnav .rightImg {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.postnav .rightImg {
+    max-width: 340px;
+}
+
+.container #articles {
+    margin-left: 200px;
+}
+
+.container #articles::before {
+	content: '';
+	position: absolute;
+	background-color: #316eed;
+	height: 2px;
+	box-sizing: border-box;
+	width: 450px;
+}
+
+.grid {
+    margin: 35px 350px 35px 350px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.grid > article {
+    background: #fff;
+    border: none;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    text-align: center;
+    width: 350px;
+    transition: transform .3s;
+}
+
+.grid > article:hover {
+    transform: translateY(5px);
+    box-shadow: 2px 2px 26px 0px rgba(0,0,0,0.3);
+}
+
+.grid > article img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.blogText {
+    padding: 0 20px 20px;
+}
+
+.blogText h3 {
+    text-transform: uppercase;
+}
+
+.blogText button {
+    background: #316eed;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.blogText button:hover {
+    background: #6998ff;
+}
+
+.blogText button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.blogText button a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+.flecha{
+    transition: transform .2s;
+    display: block;
+    float: right;
+    text-decoration: none;
+}
+
+.flecha:hover{
+    transform: scale(1.3);
+}
+aside{
+    background-color: aqua;
 }

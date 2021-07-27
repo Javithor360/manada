@@ -1,48 +1,73 @@
+@font-face{
+	font-family: Poppins;
+	src: url(../src/fonts/Poppins-Regular.ttf);
+	font-weight: normal;
+	font-size: normal;
+}
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Dosis';
 }
 body{
-  background-size: cover;
-    background-image: url(../src/bg/selec.jpg);
+  background-color: white;
 }
-
-.par{
+.h1{
+  font-family: Poppins;
   text-align: center;
-  font-size: 50px;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  color: white;
+  font-size: 60px;
+  color: black;
 }
-header{
-	background-color: #272727;
-	margin-bottom: 0;
-	padding: 5px;
+.info{
+  margin: 5%;
+  margin-left: -2%;
 }
-
-header>img{
-	margin: auto;
-	display: block;
-	width: 325px;
-	height: 105px;
+.info2{
+  margin: 5%;
+  margin-left: -2%;
+  margin-bottom: 20%;
 }
-
-.izquierda h3{
-  color: #ffffff;
-  margin: 0;
-  text-transform: uppercase;
-  font-size: 22px;
-  font-weight: 900;
+.img{
+  margin-left: 5%;
+  border-radius: 10px;
+  margin-top: 3%;
+  height: 400px;
+  float:right;
 }
-
-.izquierda span {
-  color: #316eed;   
+.img2{
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 10px;
+  margin-top: 3%;
+  height: 400px;
+  float:left;
 }
-
+.select{
+  margin: 5%;
+  padding: 10%;
+  margin-top: -5%;
+  margin-bottom: -5%;
+}
+p{
+  font-family: Poppins;
+  margin-left: 5%;
+  margin-bottom: 10%;
+  text-align: left;
+  font-size: 23px;
+  text-align: justify;
+}
+.p{
+  margin-left: 5%;
+  text-align: left;
+  font-size: 23px;
+  text-align: justify;
+}
 .zoom{
     padding: 50px;
     transition: transform .2s; 
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     margin: 15%;
   }
   
@@ -53,8 +78,8 @@ header>img{
   .zooms{
     padding: 50px;
     transition: transform .2s;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     margin: 15%;
   }
   
