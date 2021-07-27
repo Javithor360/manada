@@ -1,4 +1,10 @@
 @font-face{
+	font-family: Dosis;
+	src: url(../src/fonts/Dosis.ttf);
+	font-weight: normal;
+	font-size: normal;
+}
+@font-face{
 	font-family: Poppins;
 	src: url(../src/fonts/Poppins-Regular.ttf);
 	font-weight: normal;
@@ -11,7 +17,6 @@ html{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Dosis';
 }
 /*====Navbar====*/
 header{
@@ -34,14 +39,25 @@ header nav .menu{
 	align-items: center;
 }
 header nav .menu .logo a img{
-	width: 70px;
+	width: 55px;
 }
 header .menu .menucontent{
 	display: flex;
 }
 header .menu .menucontent a{
-		float: right;
-	padding: 25px 15px;
+	font-size: 12pt;
+	float: right;
+	padding: 16px 8px;
+	color: #fff;
+	text-decoration: none;
+	background: transparent;
+	border-bottom: 2px solid transparent;
+	transition: background .3s ease-in-out;
+	font-family: Poppins;
+}
+header .menu .menucontent p{
+	float: right;
+	padding: 14px 8px;
 	color: #fff;
 	text-decoration: none;
 	background: transparent;
@@ -60,7 +76,8 @@ header nav .user a .login{
 	padding: 5px;
 	font-size: 14pt;
 	transition: color .3s ease;
-
+	border-radius: 8px;
+	font-family: 'Dosis';
 	/*  */
 	background-image: url(../src/icons/userIcon.svg);
 	background-repeat: no-repeat;
@@ -73,6 +90,13 @@ header nav .user a .login:hover{
 	color: #5499C7;
 	cursor: pointer;
 	transition: color .3s ease;
+}
+button:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+    transition: all 400ms ease;
+    color: white;
+    border: 2px #30336b solid;
 }
 
 /* header nav .user .login img{

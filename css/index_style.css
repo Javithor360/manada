@@ -83,71 +83,83 @@ header{
 }
 /*====Navbar====*/
 .navbar{
-	background-color: #11698E;
-	padding: 0;
-	top: 0;
+	background: #11698E;
+	font-size: 14pt;
 	position: sticky;
+	top: 0;
 	z-index: 100;
 }
-.navbar_contenedor{
-   position: relative;
+.navbar nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
-.navbar_contenedor>ul{
-	list-style-type: none;
-	overflow: hidden;
+.navbar nav .menu{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
-.navbar_contenedor>ul>li>a{
-	color: white;
-	float: left;
-	display: block;
-	text-decoration: none;
-	padding: 16px 16px;
-	transition: background 0.5s;
-	font-family: Poppins;
-	font-size: 1.1em;
+.navbar nav .menu .logo a img{
+	width: 55px;
 }
-#hover1:hover {
-	background: rgba(0, 0, 0, .3);
+.navbar .menu .menucontent{
+	display: flex;
+}
+.navbar .menu .menucontent a{
+	font-size: 12pt;
+	float: right;
+	padding: 19px 8px;
 	color: #fff;
 	text-decoration: none;
+	background: transparent;
+	border-bottom: 2px solid transparent;
+	transition: background .3s ease-in-out;
+	font-family: Poppins;
 }
-.login_contenedor{
+.navbar .menu .menucontent p{
 	float: right;
-	display: block;
-	padding: 5px;
-	margin-top: 10px;
-    font-size: 12pt;
-    color: white;
-    text-decoration: none;
-    background-color: white;
-    border-radius: 5px;
-    margin-right: 5px;
-	
-}
-.login_contenedor a{
-	color: #1A5276;
+	padding: 16px 8px;
+	color: #fff;
 	text-decoration: none;
-	transition: color .3s;
-	font-family: Dosis;
-	font-size: 1.1em;
+	background: transparent;
+	transition: background .3s ease-in-out;
+	font-family: Poppins;
+}
+.navbar .menu .menucontent a:hover{
+	background: rgba(0, 0, 0, .3);
+	transition: background .3s ease-in-out;
+}
+.navbar nav .user a .login{
+	background-color: #fff;
+	color: #1A5276;
+	border: none;
+	margin-right: 5px;
+	padding: 5px;
+	font-size: 14pt;
+	transition: color .3s ease;
+	border-radius: 8px;
+	font-family: 'Dosis';
+	/*  */
 	background-image: url(../src/icons/userIcon.svg);
 	background-repeat: no-repeat;
 	background-position: right;
 	background-size: 30px;
-	padding-right: 35px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-right: 35px;	
+
 }
-.login_contenedor a:hover{
+.navbar nav .user a .login:hover{
 	color: #5499C7;
-	text-decoration: none;
+	cursor: pointer;
+	transition: color .3s ease;
 }
-#divisor{
-	float: left;
-	color: #fff;
-	padding-top: 1.3%;
-	padding-right:2px;
-	padding-left: 2px;
+button:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+    transition: all 400ms ease;
+    color: white;
+    border: 2px #30336b solid;
 }
 /*====Slider de imagenes====*/
 .slider_img_container{
