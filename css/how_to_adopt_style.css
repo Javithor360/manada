@@ -82,11 +82,17 @@ header nav .user a .login:hover{
 }
 .text_container{
     margin-left: 2rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-right: 2rem;
-    border-radius: 8px;
+    border-radius: 0px 40px 0px 0px;
+    border-top: 4px solid #1C6EA4;
+    border-radius: 0px 40px 0px 40px;
+    border-bottom: 4px solid #1C6EA4;
     box-shadow: 2px 4px 18px -4px rgba(0,0,0,0.82);
     padding: 1rem;
+}
+.text_container h1{
+	margin-bottom: 8px;
 }
 .img_container{
     overflow: hidden;
@@ -187,4 +193,20 @@ figure img{
 	color: white;
 	font-family: 'Dosis-ExtraLight', sans-serif;
 	font-weight: normal;
+}
+#back{
+	color: #1C6EA4;
+	font-size: 1.2em;
+	font-weight: bold;
+	letter-spacing: .5px;
+	float: right;
+	text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+#back:hover{
+	background-size: 100% 2px;
 }
