@@ -35,7 +35,6 @@ header nav{
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	font-family: Poppins;
 }
 header nav .menu{
 	display: flex;
@@ -44,18 +43,30 @@ header nav .menu{
 	align-items: center;
 }
 header nav .menu .logo a img{
-	width: 70px;
+	width: 55px;
 }
 header .menu .menucontent{
 	display: flex;
 }
 header .menu .menucontent a{
+	font-size: 12pt;
 	float: right;
-	padding: 25px 15px;
+	padding: 16px 8px;
+	color: #fff;
+	text-decoration: none;
+	background: transparent;
+	border-bottom: 2px solid transparent;
+	transition: background .3s ease-in-out;
+	font-family: Poppins;
+}
+header .menu .menucontent p{
+	float: right;
+	padding: 14px 8px;
 	color: #fff;
 	text-decoration: none;
 	background: transparent;
 	transition: background .3s ease-in-out;
+	font-family: Poppins;
 }
 header .menu .menucontent a:hover{
 	background: rgba(0, 0, 0, .3);
@@ -69,12 +80,35 @@ header nav .user a .login{
 	padding: 5px;
 	font-size: 14pt;
 	transition: color .3s ease;
+	border-radius: 8px;
+	font-family: 'Dosis';
+	/*  */
+	background-image: url(../src/icons/userIcon.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 30px;
+	padding-right: 35px;	
+
 }
 header nav .user a .login:hover{
 	color: #5499C7;
 	cursor: pointer;
 	transition: color .3s ease;
 }
+button:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+    transition: all 400ms ease;
+    color: white;
+    border: 2px #30336b solid;
+}
+
+/* header nav .user .login img{
+	display: block;
+width: 200px;
+height: 200px;
+padding: 50px;
+} */
 /*====Main====*/
 .container{
     display: flex;
@@ -82,11 +116,17 @@ header nav .user a .login:hover{
 }
 .text_container{
     margin-left: 2rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-right: 2rem;
-    border-radius: 8px;
+    border-radius: 0px 40px 0px 0px;
+    border-top: 4px solid #1C6EA4;
+    border-radius: 0px 40px 0px 40px;
+    border-bottom: 4px solid #1C6EA4;
     box-shadow: 2px 4px 18px -4px rgba(0,0,0,0.82);
     padding: 1rem;
+}
+.text_container h1{
+	margin-bottom: 8px;
 }
 .img_container{
     overflow: hidden;
@@ -185,4 +225,20 @@ figure img{
 	color: white;
 	font-family: 'Dosis-ExtraLight', sans-serif;
 	font-weight: normal;
+}
+#back{
+	color: #1C6EA4;
+	font-size: 1.2em;
+	font-weight: bold;
+	letter-spacing: .5px;
+	float: right;
+	text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+#back:hover{
+	background-size: 100% 2px;
 }
