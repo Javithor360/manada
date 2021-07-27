@@ -18,7 +18,8 @@ body{
     font-size: 60px;
     color: whitesmoke;
     margin-top: 20px;
-    background-color:#272727 ;
+    background-color:#272727;
+    margin-bottom: 50px;
 }
 .cont{
     margin-top: -12%;
@@ -29,7 +30,6 @@ body{
 p{
     color: #272727;
     font-size: 25px;
-    font-weight: 900;
     text-align: left;
 }
 
@@ -38,7 +38,7 @@ h3{
     font-size: 35px;
     text-align: left;
 }
-img{
+#pet_pic{
     margin-left: 20px;
     width: 600px;
     float: right;

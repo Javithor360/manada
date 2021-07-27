@@ -38,11 +38,13 @@
     display: block;
     margin-right: 5px; 
 }
-#img_footer{
+.img_footer{
 	transition: transform .2s;
 	margin-right: 5px;
+	width: 40px;
+	height: 40px;
 }
-#img_footer:hover{
+.img_footer:hover{
 	transform: scale(1.2);
 }
 .container_footer h5{
