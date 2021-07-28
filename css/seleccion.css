@@ -70,6 +70,7 @@ body{
 
 .select span {
   display: flex;
+  justify-content: center;
 }
 
 .select span a:first-child {
