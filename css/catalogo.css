@@ -8,158 +8,108 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.main-container {
-    position: relative;
-    min-height: 100vh;
-    margin-left: 100px;
-    padding: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #fff;
-}
 
-.postnav {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.postnav .text {
-    position: relative;
-    max-width: 600px;
-
-}
-
-.postnav .text h2 {
-    color: #333;
-    font-size: 4em;
-    line-height: 1.4em;
-    font-weight: 500;
-
-}
-
-.postnav .text a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 8px 20px;
-    background: #316eed;
-    color: #fff;
-    border-radius: 40px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-decoration: none;
-}
-
-.postnav .text a:hover {
-    background: #6998ff;
-}
-
-.postnav .rightImg {
-    width: 600px;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 50px;
-    margin-top: 50px;
-}
-
-.postnav .rightImg {
-    max-width: 340px;
-}
-
-.container #articles {
-    margin-left: 200px;
-}
-
-.container #articles::before {
-	content: '';
-	position: absolute;
-	background-color: #316eed;
-	height: 2px;
-	box-sizing: border-box;
-	width: 450px;
+#articles {
+    margin: 100px 350px 0px 350px;
+    justify-content: center;
+    font-size: 50px;
 }
 
 .container .grid {
     margin: 35px 350px 35px 350px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     align-items: center;
 }
 
-.container .grid > article {
+.container .grid aside{
+    position: absolute;
+    left: 40px;
+    right: 1110px;
+    padding: 30px;
+    margin-right: 80px;
+    display: block;
+    flex-wrap: wrap;
+    background-color: rgba(194, 194, 194, 0.329);
+    border-radius: 10px;
+}
+
+.container .grid aside > span {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .grid aside h5 {
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.container .grid aside h3 > img {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+}
+
+.container .grid aside h5 > img {
+    width: 10px;
+    height: 16px;
+    position: absolute;
+    right: 20px;
+}
+
+.container .grid aside a {
+    text-decoration: none;
+    color: black;
+}
+
+/* .container .grid aside a:visited {
+    text-decoration: none;
+} */
+
+.container .grid > a > article {
     background: #fff;
     border: none;
     box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
     border-radius: 20px;
     text-align: center;
-    width: 350px;
     transition: transform .3s;
-    min-height: 524.4px;
-    min-width: 350px;
-    max-height: 524.4px;
-    max-width: 350px;
+    min-height: 240px;
+    min-width: 250px;
+    max-height: 240px;
+    max-width: 250px;
+    text-decoration: none;
 }
 
-.container .grid > article:hover {
+.container .grid > a > article:hover {
     transform: translateY(5px);
     box-shadow: 2px 2px 26px 0px rgba(0,0,0,0.3);
 }
 
-.container .grid > article img {
-    height: 300px;
-    width: 350px;
+.container .grid > a > article > img {
+    height: 200px;
+    width: 250px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
 .container .blogText {
     padding: 0 20px 20px;
+    display: flex;
 }
 
 .container .blogText h3 {
     text-transform: uppercase;
-}
-
-.container .blogText button {
-    background: #316eed;
-    border-radius: 20px;
-    border: none;
-    color: #fff;
-    padding: 10px;
-    width: 100%;
-    font-weight: 600;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.container .blogText button:hover {
-    background: #6998ff;
-}
-
-.container .blogText button a {
     text-decoration: none;
-    color: #fff;
+    color: black;
 }
 
-.container .blogText button a:visited {
+.container .blogText > h3 > img {
+    height: 16px;
+    width: 16px;
+}
+
+.container .grid > a:link,
+.container .grid > a:visited {
     text-decoration: none;
-    color: #fff;
-}
-.container .flecha{
-    transition: transform .2s;
-    display: block;
-    float: right;
-    text-decoration: none;
-}
-
-.container .flecha:hover{
-    transform: scale(1.3);
-}
-
-.container aside{
-    background-color: aqua;
 }
