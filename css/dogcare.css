@@ -40,6 +40,12 @@
 	font-size: normal;
 }
 
+@font-face{
+	font-family: Poppins;
+	src: url(../src/fonts/Poppins-Regular.ttf); 
+	font-weight: normal;
+	font-size: normal;
+}
 
 .container h1{
     font-family: Signika;
@@ -47,13 +53,14 @@
 }
 
 .container h2{
-    font-family: Oswald-Medium;
+    font-family: Poppins;
     padding-top: 40px;
+    font-weight: bold;
 }
 
 .container h3{
     margin-top: 10px;
-    font-family: Oswald-Regular;
+    font-family: Poppins;
 }
 
 body{
