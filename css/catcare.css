@@ -19,22 +19,46 @@
 	font-size: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@font-face{
+	font-family: Roboto-light;
+	src: url(../src/fonts/Roboto-Light.ttf);
+	font-weight: normal;
+	font-size: normal;
+}
+
+@font-face{
+	font-family: Oswald-Medium;
+	src: url(../src/fonts/Oswald-Medium.ttf);
+	font-weight: normal;
+	font-size: normal;
+}
+
+@font-face{
+	font-family: Oswald-Regular;
+	src: url(../src/fonts/Oswald-Regular.ttf);
+	font-weight: normal;
+	font-size: normal;
+}
 
 .container h1{
     font-family: Signika;
     text-align: center;
 }
 
+.container h2{
+    font-family: Oswald-Medium;
+    padding-top: 40px;
+}
+
 .container h3{
     margin-top: 10px;
+    font-family: Oswald-Regular;
 }
 
 body{
     background-color:  #FFF;
     font-size: 18px;
 }
-
 
 .img{
     width: 100%;
@@ -77,7 +101,7 @@ body{
 }
 
 .sect p{
-    font-family: Dosis;
+    font-family: Roboto-light;
     line-height: 24px;
     padding-top: 10px;
     font-size: 18px;
@@ -107,7 +131,7 @@ body{
     float: left;
     height: 275px;
     width: auto;
-    margin:  15px 30px;
+    margin:  30px 30px;
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
 }
@@ -116,7 +140,7 @@ body{
     float: right;
     height: 275px;
     width: auto;
-    margin: 0 30px;
+    margin: 20px 30px;
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
 }
@@ -131,10 +155,6 @@ body{
     justify-content: center;
     align-items: center;
 
-}
-
-.sect h2{
-    padding-top: 40px;
 }
 
 
