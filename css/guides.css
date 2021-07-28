@@ -7,6 +7,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -32,8 +33,7 @@ html{
 
 .postnav .text {
     position: relative;
-    max-width: 600px;
-
+    max-width: 700px;
 }
 
 .postnav .text h2 {
@@ -141,6 +141,7 @@ html{
     font-weight: 600;
     cursor: pointer;
     margin-top: 10px;
+    margin-bottom: -10px;
 }
 
 .blogText button:hover {
@@ -155,4 +156,25 @@ html{
 .blogText button a:visited {
     text-decoration: none;
     color: #fff;
+}
+
+@media (max-width: 1366px) {
+    .postnav .text {
+        max-width: 500px;
+    }
+
+    .postnav .rightImg {
+        margin-left: 100px;
+        height: 100%;
+    }
+
+    .grid > article {
+        width: 300px;
+        height: 520px;
+    }
+
+    .grid > article img {
+        width: 300px;
+        height: 180px;
+    }
 }
