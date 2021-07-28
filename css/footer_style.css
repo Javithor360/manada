@@ -14,17 +14,17 @@
 	min-height: calc(100vh);
 }
 /*====Footer====*/
-.container_footer{
+footer .container_footer{
 	background-color:#11698E;
 	padding: 5px;
 }
-.container_footer h1{
+footer .container_footer h1{
 	color: white;
 	font-family: 'Dosis-ExtraLight', sans-serif;    
     font-weight: normal;
     text-align: center;
 }
-.container_footer h2{
+footer .container_footer h2{
 	color: white;
 	font-family: 'Dosis-ExtraLight', sans-serif;    
     font-weight: normal;
@@ -32,20 +32,24 @@
     padding-top:10px;
     margin-left: 5px;
 }
-.container_footer h2>a{
+footer .container_footer h2>a{
     float: right;
     padding-top:3px;
     display: block;
     margin-right: 5px; 
 }
-.img_footer{
+footer .img_footer{
 	transition: transform .2s;
 	margin-right: 5px;
+	width: 40px;
+	height: 40px;
+	display: block;
 }
-.img_footer:hover{
+
+footer .img_footer:hover{
 	transform: scale(1.2);
 }
-.container_footer h5{
+footer .container_footer h5{
 	padding-top: 5px;
 	color: white;
 	font-family: 'Dosis-ExtraLight', sans-serif;

@@ -57,6 +57,7 @@ header .menu .menucontent a{
 }
 header .menu .menucontent p{
 	float: right;
+	font-size: 14pt;
 	padding: 14px 8px;
 	color: #fff;
 	text-decoration: none;
@@ -91,7 +92,7 @@ header nav .user a .login:hover{
 	cursor: pointer;
 	transition: color .3s ease;
 }
-button:hover{
+header button:hover{
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     transform: translateY(-3%);
     transition: all 400ms ease;
