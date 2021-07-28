@@ -61,7 +61,7 @@ input, select{
     width: 92%;
     padding: 0.625rem 0.625rem 0.625rem 0.3125rem;
     background: none;
-    border: 2px #686de0 solid;
+    border: 2px #11698E solid;
     border-radius: 10px;
     color: #2d3436;
     font-size: 20px;
@@ -85,7 +85,7 @@ label{
 }
 
 input:focus{
-    border-color: #4834d4;
+    border-color: #11698E;
     outline: none;
 }
 
@@ -94,7 +94,7 @@ button#submit{
     height: auto;
     border-radius: 10px;
     border:none;
-    background-color: #686de0;
+    background-color: #11698E;
     display: block;
     font-family: 'Signika', sans-serif;
     font-size: 1.25rem;
