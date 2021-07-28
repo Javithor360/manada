@@ -10,6 +10,14 @@
 	font-weight: normal;
 	font-size: normal;
 }
+
+@font-face{
+	font-family: Roboto-light;
+	src: url(../src/fonts/Roboto-Light.ttf);
+	font-weight: normal;
+	font-size: normal;
+}
+
 html{
 	background-color: #fff;
 }
@@ -20,7 +28,7 @@ html{
 }
 main{
     min-height: 100vh;
-    font-family: Dosis;
+    font-family: Roboto-light;
 }
 /*====Navbar====*/
 header{
@@ -93,6 +101,7 @@ header nav .user a .login:hover{
 }
 .text_container h1{
 	margin-bottom: 8px;
+	font-family: Roboto-light;
 }
 .img_container{
     overflow: hidden;
@@ -115,6 +124,7 @@ figure{
 figure figcaption{
 	margin-top: 1rem;
     text-align: center;
+	font-family: Roboto-light;
 }
 figure img{
     margin: 0 auto;
