@@ -5,85 +5,93 @@
 	font-size: normal;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Dosis';
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Dosis';
 }
+
 body{
   background-color: white;
 }
-.h1{
+
+.img{
+  display: block;
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.intro h1 {
+  margin: 0px 250px 10px 250px;
   font-family: Poppins;
   text-align: center;
   font-size: 60px;
   color: black;
 }
-.info{
-  margin: 5%;
-  margin-left: -2%;
-}
-.info2{
-  margin: 5%;
-  margin-left: -2%;
-  margin-bottom: 20%;
-}
-.img{
-  margin-left: 5%;
-  border-radius: 10px;
-  margin-top: 3%;
-  height: 400px;
-  float:right;
-}
-.img2{
-  margin-left: 5%;
-  margin-right: 5%;
-  border-radius: 10px;
-  margin-top: 3%;
-  height: 400px;
-  float:left;
-}
-.select{
-  margin: 5%;
-  padding: 10%;
-  margin-top: -5%;
-  margin-bottom: -5%;
-}
-p{
-  font-family: Poppins;
-  margin-left: 5%;
-  margin-bottom: 10%;
-  text-align: left;
-  font-size: 23px;
-  text-align: justify;
-}
-.p{
-  margin-left: 5%;
-  text-align: left;
-  font-size: 23px;
-  text-align: justify;
-}
-.zoom{
-    padding: 50px;
-    transition: transform .2s; 
-    width: 250px;
-    height: 250px;
-    margin: 15%;
-  }
-  
-  .zoom:hover {
-    transform: scale(1.5); 
-  }
 
-  .zooms{
-    padding: 50px;
-    transition: transform .2s;
-    width: 250px;
-    height: 250px;
-    margin: 15%;
-  }
+.intro p {
+  font-family: Poppins;
+  margin: 30px 400px 30px 400px;
+  font-size: 23px;
+  text-align: justify;
+}
+
+.art1 {
+  margin: 100px 200px 400px 200px;
+}
+
+.art1 h1 {
+  font-size: 60px;
+}
+
+.art1 p {
+  font-size: 23px;
+}
+
+.art1 .leftImg {
+  float: left;
+  width: 400px;
+  height: 450px;
+  margin-right: 60px;
+}
+
+.select {
+  margin: 0px 350px 40px 350px;
+  text-align: center;
+}
+.select h1 {
+  font-size: 80px;
+}
+
+.select p {
+  font-size: 40px;
+}
+
+.select span {
+  display: flex;
+}
+
+.select span a:first-child {
+  margin-right: 120px;
+}
+
+.select span a:nth-child(2) {
+    margin-left: 120px;
+}
+
+.zoom{
+  padding: 30px;
+  margin: 15%;
+  transition: 0.8s; 
+  width: 250px;
+  height: 250px;
+}
   
-  .zooms:hover{
-    transform: scale(1.5);
-  }
-  
+.zoom:hover {
+  transform: scale(1.5);
+}
+
+footer {
+  clear: both;
+}
