@@ -1,8 +1,8 @@
-<center>
+<span align="center">
 
 ![Contributors][contributors-shield] ![License][license-shield]
 
-</center>
+</span>
 <!-- FUNDACIÓN: LA MANADA
 =============== -->
 
