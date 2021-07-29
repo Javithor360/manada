@@ -96,3 +96,9 @@ input:focus{
 select:focus{
      outline: none;
  }
+
+ @media (max-width: 1366px) {
+    .formu{
+        height: 300px;
+    }
+}
