@@ -113,3 +113,26 @@
 .container .grid > a:visited {
     text-decoration: none;
 }
+
+@media (max-width: 1366px) {
+    .container .grid > a > article {
+        min-height: 240px;
+        min-width: 220px;
+        max-height: 240px;
+        max-width: 220px;
+    }
+
+    .container .grid > a > article > img {
+        height: 200px;
+        width: 220px;
+    }
+
+    #articles {
+        margin: 100px 310px 0px 310px;
+    }
+
+    .container .grid aside {
+        margin-right: -80px;
+    }
+    
+}
