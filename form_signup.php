@@ -1,3 +1,7 @@
+<?php 
+	$login = isset($_SESSION['email'])
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,31 +10,15 @@
 	<link rel="stylesheet" href="../css/form_signup.css">
     <link rel="stylesheet" href="../css/navbar2_style.css">
     <link rel="stylesheet" href="../css/footer_style.css">
+    <script type="text/javascript">window.session = "<?php echo $login ?>";</script>
+    <script type="text/javascript" src="../js/navfootMaker.js"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../src/logos/favicon.ico" type="image/x-icon">
 </head>
 <body>
-
-	<header>
-		<nav>
-			<div class="menu">
-				<div class="logo">
-					<a href="../index.html"><img src="../src/logos/logo_circle_full.svg" alt=""></a>
-				</div>
-				<div class="menucontent">
-					<a href="../index.html">Inicio</a>
-					<p>|</p>
-					<a href="../pets.html">Mascotas</a>
-					<p>|</p>
-					<a href="../guides.html">¿Cómo Adoptar?</a>
-					<p>|</p>
-					<a href="../contact.html">Contacto</a>
-				</div>
-			</div>
-		</nav>
-	</header>
+    <div id="navy"></div>
 
 	<main>
 		<div class="container">	
@@ -103,15 +91,7 @@
     </div>
 </div>
 	</main>
-	<footer>
-		<div class="container_footer">
-			<h2>Fundación La manada © 2021
-                <a href="https://www.instagram.com/la.manadasv/"target="blank"><img id="img_footer" src="../src/icons/instagram.svg" width="40px" height="40px"></a>
-				<a href="https://www.facebook.com/profile.php?id=100070244422672" target="blank"><img id="img_footer" src="../src/icons/facebook.svg" width="40px" height="40px"></a>
-            </h2>
-            <hr>
-            <h5>Diseñado por Grupo 8</h5>
-		</div>
-	</footer>
+
+    <div id="foot"></div>
 </body>
 </html>

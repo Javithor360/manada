@@ -10,7 +10,7 @@ function navfootMaker() {
 
     if(window.session == true){
         login =    '<div class="user">'+
-                        '<a href="logout.php">'+
+                        '<a href="'+ longpath +'php/logout.php">'+
                             '<button class="login">'+
                                 'Cerrar Sesión'+
                             '</button>'+
@@ -18,7 +18,7 @@ function navfootMaker() {
                     '</div>';
     }else{
         login =    '<div class="user">'+
-                        '<a href="login.php">'+
+                        '<a href="'+ longpath +'php/login.php">'+
                             '<button class="login">'+
                                 'Iniciar sesión'+
                             '</button>'+
@@ -56,7 +56,7 @@ function navfootMaker() {
                                             '<a href="'+ longpath +'index.html"><img src="'+ longpath +'src/logos/logo_circle_full.svg" alt=""></a>'+
                                         '</div>'+
                                         '<div class="menucontent">'+
-                                            '<a href="'+ longpath +'index.html">Inicio</a>'+
+                                            '<a href="'+ longpath +'php/index.php">Inicio</a>'+
                                             '<p>|</p>'+
                                             '<a href="'+ longpath +'pets.html">Mascotas</a>'+
                                             '<p>|</p>'+
@@ -65,13 +65,7 @@ function navfootMaker() {
                                             '<a href="'+ longpath +'contact.html">Contacto</a>'+
                                         '</div>'+
                                     '</div>'+
-                                    '<div class="user">'+
-                                        '<a href="'+ longpath +'form_login.html">'+
-                                            '<button class="login">'+
-                                                'Iniciar Sesión'+
-                                            '</button>'+
-                                        '</a>'+
-                                    '</div>'+
+                                    login+
                                 '</nav>'+
                             '</header>'
     }
