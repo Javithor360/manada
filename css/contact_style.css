@@ -111,10 +111,21 @@ input:focus{
 textarea:focus{
     outline: none;
 }
+textarea{
+	margin: .75rem;
+	margin-top: 1rem;
+	text-align: left;
+	display: block;
+	width: 30rem;
+	height: 10rem;
+	padding: 1em;
+	border: none;
+	border-radius: .5rem;
+	box-shadow: 2px 2px  3px #fff;
+}
 .container .form form div{
 	margin: 0.75rem;
 	width: 30rem;
-	height: 10rem;
 	display: flex;
 	flex-direction: column;
 }
