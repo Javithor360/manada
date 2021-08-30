@@ -545,6 +545,17 @@ footer {
     opacity: .8;
     font-weight: 200;
 }
+body::-webkit-scrollbar{
+	width: 5px;
+	background: #dfe4ea;
+	height: 5px;
+}
+
+body::-webkit-scrollbar-thumb{
+	background-color: #11668eec;
+}
+
+
 
 @media screen and (max-width: 800px) {
 	.fBody{display: flexbox;}
