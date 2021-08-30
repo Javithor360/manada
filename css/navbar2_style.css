@@ -100,9 +100,35 @@ header button:hover{
     border: 2px #30336b solid;
 }
 
-/* header nav .user .login img{
-	display: block;
-width: 200px;
-height: 200px;
-padding: 50px;
-} */
+body::-webkit-scrollbar{
+	width: 5px;
+	background: #dfe4ea;
+	height: 5px;
+}
+
+body::-webkit-scrollbar-thumb{
+	background-color: #11668eec;
+}
+
+@media screen and (max-width: 800px) {
+	header a{font-size: 14px !important;}
+	header p{font-size: 12pt !important;}
+	.logo{height: 50px;}
+	header img{height: 50px !important;}
+	button.login{font-size: 14px !important;}
+	header nav .user a .login{background-position: right; background-size: 27px; padding-right: 35px;}
+}
+
+@media screen and (max-width: 600px) {
+	header a{font-size: 12px !important;}
+	header p{font-size: 10pt !important;}
+	.logo{height: 40px;}
+	header img{height: 40px !important;}
+	button.login{font-size: 12px !important;}
+	header nav .user a .login{background-position: right; background-size: 25px; padding-right: 35px;}
+}
+
+@media screen and (max-width: 540px){
+	a[href="./contact.html"]{display: none;} a[href="../../contact.html"]{display: none;} a[href="../contact.html"]{display: none;}
+	.menucontent p:nth-child(4) ~ p{display: none;}
+}

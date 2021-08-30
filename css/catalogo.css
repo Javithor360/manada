@@ -10,13 +10,13 @@
 
 
 #articles {
-    margin: 100px 350px 0px 350px;
+    margin: 100px 250px 0px 250px;
     justify-content: center;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .container .grid {
-    margin: 35px 350px 35px 350px;
+    margin: 35px 200px 35px 200px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
@@ -114,7 +114,7 @@
     text-decoration: none;
 }
 
-@media (max-width: 1366px) {
+@media screen and (max-width: 1366px) {
     .container .grid > a > article {
         min-height: 240px;
         min-width: 220px;
@@ -128,11 +128,139 @@
     }
 
     #articles {
-        margin: 100px 310px 0px 310px;
+        margin: 100px 360px 0px 360px;
     }
 
     .container .grid aside {
         margin-right: -80px;
     }
     
+}
+
+@media screen and (max-width: 1300px){
+    .fBody{display: flexbox;}
+    #articles{font-size: 30px; text-align: center;}
+    .container .grid{margin: 35px 15% 35px 15%;}
+}
+
+
+@media screen and (max-width: 1200px){
+    .container .grid{grid-template-columns: repeat(4, 1fr); margin: 35px 10% 35px 10%;}
+    #articles {margin: 100px 290px 0px 290px !important; font-size: 30px !important;}
+
+    .container .grid > a > article {
+        min-height: 220px;
+        min-width: 180px;
+        max-height: 220px;
+        max-width: 200px;
+    }
+
+    .container .grid > a > article > img {
+        height: 180px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .fBody{
+        display: flexbox;
+    }
+    .container .grid{grid-template-columns: repeat(3, 1fr); margin: 10px 15% 35px 15%;}
+    #articles {margin: 100px 290px 0px 290px !important; font-size: 38px !important;}
+
+
+    .container .grid > a > article {
+        min-height: 240px;
+        min-width: 200px;
+        max-height: 240px;
+        max-width: 220px;
+    }
+
+    .container .grid > a > article > img {
+        height: 200px;
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .fBody{
+        display: flexbox;
+    }
+    #articles {margin: 100px 200px 0px 200px !important; font-size: 25px !important;}
+    .container .grid{margin: 35px 10% 35px 10%;}
+
+    .container .grid > a > article {
+        min-height: 220px;
+        min-width: 180px;
+        max-height: 220px;
+        max-width: 200px;
+    }
+
+    .container .grid > a > article > img {
+        height: 180px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .fBody{
+        display: flexbox;
+    }
+    #articles {margin: 100px 200px 0px 200px !important; font-size: 25px !important;}
+    .container .grid{margin: 35px 10% 35px 10%;}
+    .container .grid{grid-template-columns: repeat(2, 1fr); margin: 10px 15% 35px 15%;}
+
+    .container .grid > a > article {
+        min-height: 240px;
+        min-width: 200px;
+        max-height: 240px;
+        max-width: 220px;
+    }
+
+    .container .grid > a > article > img {
+        height: 200px;
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .fBody{
+        display: flexbox;
+    }
+    #articles {margin: 100px 50px 0px 50px !important; font-size: 25px !important;}
+    .container .grid{margin: 35px 0% 35px 0%;}
+    .container .grid{grid-template-columns: repeat(2, 1fr); margin: 10px 10% 35px 10%;}
+
+    .container .grid > a > article {
+        min-height: 220px;
+        min-width: 180px;
+        max-height: 220px;
+        max-width: 200px;
+    }
+
+    .container .grid > a > article > img {
+        height: 180px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .fBody{
+        display: flexbox;
+    }
+    #articles {margin: 100px 50px 0px 50px !important; font-size: 25px !important;}
+    .container .grid{margin: 35px 1% 35px 1%;}
+    .container .grid{grid-template-columns: repeat(2, 1fr); margin: 10px 10% 35px 10%;}
+
+    .container .grid > a > article {
+        min-height: 200px;
+        min-width: 160px;
+        max-height: 200px;
+        max-width: 180px;
+    }
+
+    .container .grid > a > article > img {
+        height: 160px;
+        width: 180px;
+    }
 }
