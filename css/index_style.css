@@ -518,3 +518,81 @@ button:hover{
 	font-family: 'Dosis-ExtraLight', sans-serif;
 	font-weight: normal;
 }
+
+footer{
+	display: block;
+}
+
+@media screen and (max-width: 800px) {
+	.fBody{display: flexbox;}
+	
+	/* Navbar */
+	header img{height: 75px; width: auto;}
+	nav .menu a{font-size: 14px !important;}
+	nav button{font-size: 16px !important;}
+	nav .menu p{font-size: 20px !important;}
+
+	/* Slider */
+	.boton{width: 20%; height: 10%; padding: 5px; top: 40%;}
+	#flecha{margin-top:33%;}
+
+	#slider_text_container{height: 99%;}
+		#adopta{top: -10%; font-size: 30px;}
+		#slider_text_container h2{top: 5%; width: 90%; height: 20%; font-size: 120%;}
+
+	/* Misión - visión */
+	#mision_div p, #vision_div p{font-size: 100%;}
+	#mision_div h1, #vision_div h1{font-size: 150%;}
+
+	/* Logo de servicios */
+	#container-div2 h1{font-size: 160%;} 
+	#frase{padding-top: 20px;}
+
+	.logos_servicios{text-align: center;}
+
+	.contenedor{float: none; display: inline-block; margin: 7px; height: 120px; width: 120px; font-size: 13px !important;}
+	.contenedor2{float:none; display: inline-block; margin: 7px; height: 120px; width: 120px; font-size: 13px !important;}
+	.contenedor3{float:none; display: inline-block; margin: 7px; height: 120px; width: 120px; font-size: 13px !important;}
+
+	#circulo1{height: 120px; width: 120px;}
+	#circulo2{height: 120px; width: 120px;}
+	#circulo3{height: 120px; width: 120px;}
+	
+	#circulo1 img{height: 100px; width: 100px;}
+	#circulo2 img{height: 120px; width: 120px;}
+	#circulo3 img{height: 110px; width: 110px;}
+}
+
+
+@media screen and (max-width: 1100px){
+	/* Slider */
+	.fBody{display: flexbox;}
+	#slider_text_container h2{width: 90%;}
+	.boton{width: 100px; height: 20px; padding: 2px;}
+}
+
+
+@media screen and (max-width: 600px){
+	.fBody{display: flexbox;}
+
+	/* Navbar */
+	header img{height: 60px; width: auto;}
+	nav .menu a{font-size: 13px !important;}
+	nav button.login{font-size: 14px !important;}
+	nav .menu p{font-size: 16px !important;}
+
+	/* Slider */
+	#slider_text_container h2{width: 90%;}
+	.boton{width: 17%; height: 20px; padding: 2px; font-size: 90%;}
+
+	#slider_text_container{height: 98%;}
+		#adopta{top: -20%; font-size: 30px;}
+		#slider_text_container h2{top: 5%; width: 90%; height: 20%; font-size: 120%;}
+
+	#container-div2 h1{font-size: 120%;} 
+	#frase{padding-top: 20px;}
+
+	/* Misión - Visión */
+	#mision_div p, #vision_div p{font-size: 70%;}
+	#mision_div h1, #vision_div h1{font-size: 100%;}
+}
