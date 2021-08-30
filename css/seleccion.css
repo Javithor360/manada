@@ -37,6 +37,7 @@ body{
 }
 
 .art1 {
+  font-family: Poppins;
   margin: 100px 200px 400px 200px;
 }
 
@@ -56,6 +57,7 @@ body{
 }
 
 .select {
+  font-family: Poppins;
   margin: 0px 350px 40px 350px;
   text-align: center;
 }
