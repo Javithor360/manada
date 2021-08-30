@@ -1,3 +1,9 @@
+@font-face{
+	font-family: Poppins;
+	src: url(../src/fonts/Poppins-Regular.ttf);
+	font-weight: normal;
+	font-size: normal;
+}
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +12,10 @@ body{
     background-attachment: fixed;
   background-position: center center;
   background-size: cover;
-  background-image: url(../src/bg/michi.webp);
+  background-image:linear-gradient(
+    rgba(0, 0, 0, 0.35), 
+    rgba(0, 0, 0, 0.35)
+  ), url(../src/bg/michi.webp);
 }
 h1{
     color: white;
@@ -33,6 +42,11 @@ form{
 .formu{
     margin: 1%;
     margin-bottom: 60%;
+    margin-top: -3%;
+}
+.enfer{
+    color: white;
+    font-size: 20px;
 }
 
 form input{
@@ -62,12 +76,15 @@ form button{
     float: right;
 }
 form button:hover{
-    background: rgba(6, 161, 161, 0.699);
+    background: #1A5276;
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.445);
 }
 
 label{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(85, 0, 0);
+    font-family: poppins;
+    color: white;
     font-size: 30px;
     text-align: left;
     display: block;
@@ -76,9 +93,7 @@ label{
 
 input{
     width: 150%;
-    padding: 00.7em;
-    margin-bottom: 00.5em;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 input:focus{
@@ -96,3 +111,19 @@ input:focus{
 select:focus{
      outline: none;
  }
+ input{
+         font-family: poppins;
+     color: white;
+ }
+ .input{
+    width: 80%;
+    padding: 00.7em;
+    margin-bottom: 00.5em;
+    border-radius: 20px;
+ }
+
+ @media (max-width: 1366px) {
+    .formu{
+        height: 300px;
+    }
+}
