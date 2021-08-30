@@ -27,8 +27,8 @@ body {
 
 .formu form {
     box-sizing: border-box;
-    margin: 20px 650px 20px 20px;
-    padding: 40px;
+    margin: 20px 20px 20px 20px;
+    padding: 5px;
 }
 
 /* .formu p {
@@ -49,7 +49,7 @@ form input {
 }
 
 form button {
-    margin-left: 40%;
+    margin-left: 20%;
     display: inline-block;
 	position: relative;
 	padding: 1.5em 3em;
@@ -187,7 +187,17 @@ input{
 }
 
 @media (max-width: 1366px) {
-    .formu{
-        height: 300px;
-    }
+    .formu{height: 100%;}
+    .input{width:364.458px}
+    .formu label{font-size: 125%;}
+}
+
+@media screen and (max-width: 800px){
+    .formu label{font-size: 120%;}
+    .formu .input{font-size: 90%;}
+}
+
+@media screen and (max-width: 600px){
+    .formu label{font-size: 100%;}
+    .formu .input{font-size: 80%;}
 }
