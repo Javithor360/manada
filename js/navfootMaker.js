@@ -1,39 +1,17 @@
+window.onload = navfootMaker;
+
 function navfootMaker() {
 
-/*
-    ---------------------------
-        ACLARACIONES DE USO
-    ----------------------------
-
-    1. SE TIENE QUE QUITAR LA ESTRUCTURA HTML DEL NAVBAR Y FOOTER
-    2. PARA EL NAVBAR SE DEBE CREAR UN DIV VACÍO DEBADO DEL <BODY> CON LA #ID "NAVY"
-    3. PARA EL FOOTER SE DEBE CREAR UN DIV DEJABO DE TODO EL CONTENIDO CON LA #ID "FOOT"
-    4. SE DEBE LLAMAR ESTE ARCHIVO.JS DONDE TAMBIÉN SE LLAMA AL CSS Y FAVICON CON <SCRIPT SRC="..."></SCRIPT>
-
-*/
-
-
-
-    // - - - - - - - - - - - - - - - - - - - - - - - - //
-    //                                                 //
-    //                  Creación navbar                //
-    //                                                 //
-    // - - - - - - - - - - - - - - - - - - - - - - - - //
-
     let longpath = '';
-    if(location.pathname.startsWith('/pets')){ longpath = '../../'; }
-    else if(location.pathname.startsWith('/guides')){ longpath = '../' }
-    else{ longpath = './'}
+    if(location.pathname.includes('/pets/')){ longpath = '../../'; }
+    else if(location.pathname.includes('/guides/')){ longpath = '../' }
+    else{ longpath = './'};
     let navbar;
-/*
-    if(login == false){
-*/
 
-    // Verificamos si estamos en el index ya que acá el navbar es diferente.
-    if(location.pathname == '/index.html'){
-        // Identificamos el div que almacenará el navbar entero e introducimos su contenido.
+    if(location.pathname.includes('/index.html')){
+        
         navbar = document.getElementById('navyIndex');
-        navbar.innerHTML = 	'<header id="logo">'+
+        navbar.innerHTML = '<header id="logo">'+
                                 '<img src="'+ longpath +'src/logos/logo_full.svg" width="366px" height="120px">'+
                             '</header>'+
                             '<div class="navbar">'+
@@ -56,8 +34,8 @@ function navfootMaker() {
                                     '</div>'+
                                 '</nav>'+
                             '</div>'
-    }else{
-        // Sino estamos en el index, procedemos a crear el navbar estándar
+    } else{
+        
         navbar = document.getElementById('navy');
         navbar.innerHTML =  '<header>'+
                                 '<nav>'+
@@ -85,21 +63,8 @@ function navfootMaker() {
                                 '</nav>'+
                             '</header>'
     }
-/*
-    }else{
-        // FOOTER CUANDO INICIA SESIÓN (aunque el q cambia es el navbar pero es lo mismo xd)
-    }
-*/
 
-
-
-    // - - - - - - - - - - - - - - - - - - - - - - - - //
-    //                                                 //
-    //                  Creación footer                //
-    //                                                 //
-    // - - - - - - - - - - - - - - - - - - - - - - - - //
-
-    let footer =  document.getElementById('foot'); // Se obtiene el div que contiene todo el footer y luego se introduce todo el contenido.
+    let footer =  document.getElementById('foot');
     footer.innerHTML =  '<footer>'+
                             '<div class="container_footer">'+
                                 '<h2>Fundación La Manada © 2021'+
@@ -111,5 +76,3 @@ function navfootMaker() {
                             '</div>'+
                         '</footer>';
 }
-
-window.onload = navfootMaker;
