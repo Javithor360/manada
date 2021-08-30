@@ -114,6 +114,7 @@ textarea:focus{
 .container .form form div{
 	margin: 0.75rem;
 	width: 30rem;
+	height: 10rem;
 	display: flex;
 	flex-direction: column;
 }
