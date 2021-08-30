@@ -34,13 +34,13 @@ body{
     padding: 15%;
 }
 
-p {
+.cont p {
     color: #272727;
     font-size: 25px;
     text-align: left;
 }
 
-h3{
+.cont h3{
     color: #272727;
     font-size: 40px;
     text-align: left;

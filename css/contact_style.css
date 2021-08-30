@@ -36,7 +36,6 @@ html{
 	box-sizing: border-box;
 	font-family: 'Dosis';
 }
-/*====Navbar====*/
 
 /*====Form====*/
 .form{
@@ -127,44 +126,7 @@ textarea:focus{
 	min-height: 15rem;
 	box-shadow: 2px 2px  3px #fff;
 }
-/*====Footer====*/
-.container_footer{
-	background-color:#11698E;
-	padding: 5px;
-}
-.container_footer h1{
-	color: white;
-	font-family: 'Dosis-ExtraLight', sans-serif;    
-    font-weight: normal;
-    text-align: center;
-}
-.container_footer h2{
-	color: white;
-	font-family: 'Dosis-ExtraLight', sans-serif;    
-    font-weight: normal;
-    padding-bottom: 20px;
-    padding-top:10px;
-    margin-left: 5px;
-}
-.container_footer h2>a{
-    float: right;
-    padding-top:3px;
-    display: block;
-    margin-right: 5px; 
-}
-#img_footer{
-	transition: transform .2s;
-	margin-right: 5px;
-}
-#img_footer:hover{
-	transform: scale(1.2);
-}
-.container_footer h5{
-	padding-top: 5px;
-	color: white;
-	font-family: 'Dosis-ExtraLight', sans-serif;
-	font-weight: normal;
-}
+
 #enviar{
 	height: 3em;
 	width: 6em;

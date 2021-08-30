@@ -1,11 +1,3 @@
-@font-face{
-	font-family: Poppins;
-	src: url(../src/fonts/Poppins-Regular.ttf); 
-	font-weight: normal;
-	font-size: normal;
-}
-
-
 * {
     margin: 0;
     padding: 0;
@@ -13,10 +5,10 @@
 }
 
 footer {
-	font-family: 'Poppins', sans-serif;
     background-color: #111;
     height: auto;
-    width: 100%;
+    width: 1536px;
+    font-family: "Open Sans";
     padding-top: 40px;
     color: #fff;
 }
@@ -61,6 +53,7 @@ footer {
 
 .footer_bottom {
     background: #000;
+    width: 1536px;
     padding: 20px 0;
     text-align: center;
 }

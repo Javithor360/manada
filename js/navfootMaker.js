@@ -67,12 +67,15 @@ function navfootMaker() {
     let footer =  document.getElementById('foot');
     footer.innerHTML =  '<footer>'+
                             '<div class="container_footer">'+
-                                '<h2>Fundación La Manada © 2021'+
-                                    '<a href="https://www.instagram.com/la.manadasv/"target="blank"><img id="img_footer" src="'+ longpath +'src/icons/instagram.svg" width="40px" height="40px"></a>'+
-                                    '<a href="https://www.facebook.com/profile.php?id=100070244422672" target="blank"><img id="img_footer" src="'+ longpath +'src/icons/facebook.svg" width="40px" height="40px"></a>'+
-                                '</h2>'+
-                                '<hr>'+
-                                '<h5>Diseñado por Grupo 8</h5>'+
+                                '<h3>Fundación: La Manada</h3>'+
+                                '<p>"Respetar a los animales es una obligación, amarlos es un privilegio"</p>'+
+                                '<ul class="redes">'+
+                                    '<li><a href="https://www.instagram.com/la.manadasv/"target="blank"><img id="img_footer" src="'+ longpath +'src/icons/instagram.svg" width="40px" height="40px"></a></li>'+
+                                    '<li><a href="https://www.facebook.com/profile.php?id=100070244422672"target="blank"><img id="img_footer" src="'+ longpath +'src/icons/facebook.svg" width="40px" height="40px"></a></li>'+
+                                '</ul>'+
+                            '</div>'+
+                            '<div class="footer_bottom">'+
+                                '<p>Copyright &copy;2021 Fundación: La Manada. <span>by Grupo 8</span></p>'+
                             '</div>'+
                         '</footer>';
 }

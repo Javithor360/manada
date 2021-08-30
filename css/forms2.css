@@ -1,62 +1,54 @@
-*{
+@font-face {
+	font-family: Poppins;
+	src: url(../src/fonts/Poppins-Regular.ttf);
+	font-weight: normal;
+	font-size: normal;
+}
+
+* {
     margin: 0;
     padding: 0;
 }
-body{
-background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
-  background-image:linear-gradient(
-          rgba(0, 0, 0, 0.35), 
-          rgba(0, 0, 0, 0.35)
-        ), url(../src/bg/lengueton.webp);
-}
-.formu h1{
-    text-align: center;
-    color: white;
-    font-size: 30px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+
+body {
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-image:linear-gradient(
+        rgba(0, 0, 0, 0.35), 
+        rgba(0, 0, 0, 0.35)
+    ), url(../src/bg/lengueton.webp);
 }
 
-h1{
-    color: white;
-    text-align: center;
-    border-radius: 20px;
-    font-size: 30px;
-}
-img a{
-    text-decoration: none;
+.formu {
+    margin: 1%;
+    margin-top: -3%;
 }
 
-p{
+.formu form {
+    box-sizing: border-box;
+    margin: 20px 650px 20px 20px;
+    padding: 40px;
+}
+
+/* .formu p {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(0, 6, 85);
     font-size: 30px;
-}
-form{
-    float: left;
-    box-sizing: border-box;
-    padding: 1em;
-    margin: 20px;
-    padding: 40px;
-}
-.formu{
-    margin-top: -3%;
-    margin: 1%;
-    margin-bottom: 60%;
-}
-.enfer{
+} */
+
+.enfer {
     color: white;
     font-size: 20px;
 }
 
-form input{
+form input {
     margin-bottom: 1rem;
     background: rgba(255, 255, 255, 0.233);
     border: 1px solid #9c9c9c38;
 }
 
-form button{
+form button {
     display: inline-block;
 	position: relative;
 	padding: 1.5em 3em;
@@ -74,19 +66,22 @@ form button{
 	transition: .8s ease;
     background: rgb(37, 37, 37);
     border-radius: 10px;
-    float: right;
+
 }
+
 form button:hover{
     background: #1A5276;
 }
+
 input::placeholder{
     color: rgba(255, 255, 255, 0.445);
 }
 
 label{
     font-family: poppins;
-    color: white;
+    color: rgba(190, 32, 32, 0.712);
     font-size: 30px;
+    font-weight: bold;
     text-align: left;
     display: block;
     padding: 0.5em 1.5em 0.5em 0;
@@ -94,40 +89,41 @@ label{
 
 input{
     width: 150%;
-    padding: 00.7em;
-    margin-bottom: 00.5em;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 input:focus{
     outline: none;
 }
- select{
-     border: rgba(0, 0, 0, 0.178);
-     background-color: rgba(255, 255, 255, 0.212);
+
+select{
+    border: rgba(0, 0, 0, 0.178);
+    background-color: rgba(255, 255, 255, 0.212);
     width: 70%;
     padding: 00.7em;
     margin-bottom: 00.5em;
     border-radius: 20px;
- }
+    color: #fff;
+}
 
-<<<<<<< HEAD
 select:focus{
-     outline: none;
- }
- input{
-         font-family: poppins;
-     color: white;
- }
- .input{
+    outline: none;
+}
+
+select option {
+    color: black;
+}
+
+input{
+    font-family: poppins;
+    color: white;
+}
+
+.input{
     width: 80%;
     padding: 00.7em;
     margin-bottom: 00.5em;
     border-radius: 20px;
- }
-=======
-.formu select:focus{
-    outline: none;
 }
 
 @media (max-width: 1366px) {
@@ -135,11 +131,3 @@ select:focus{
         height: 300px;
     }
 }
->>>>>>> cfcce378df69d4a105ac712f0fd1c28ce118bf14
-
- @media (max-width: 1366px) {
-    .formu{
-        height: 300px;
-    }
-}
- 
