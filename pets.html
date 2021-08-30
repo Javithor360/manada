@@ -7,38 +7,16 @@
         <link rel="stylesheet" href="./css/navbar2_style.css">
         <link rel="stylesheet" href="./css/catalogo.css">
         <link rel="stylesheet" href="./css/footer_style.css">
+        <script src="./js/navfootMaker.js"></script>
     </head>
     <body>
-        <header>
-            <nav>
-                <div class="menu">
-                    <div class="logo">
-                        <a href="./index.html"><img src="./src/logos/logo_circle_full.svg" alt=""></a>
-                    </div>
-                    <div class="menucontent">
-                        <a href="./index.html">Inicio</a>
-                        <p>|</p>
-                        <a href="./pets.html">Mascotas</a>
-                        <p>|</p>
-                        <a href="./guides.html">¿Cómo Adoptar?</a>
-                        <p>|</p>
-                        <a href="./contact.html">Contacto</a>
-                    </div>
-                </div>
-                <div class="user">
-                    <a href="./form_login.html">
-                        <button class="login">
-                            Iniciar Sesión
-                        </button>
-                    </a>
-                </div>
-            </nav>
-        </header>
+        <div id="navy"></div>
 
         <section class="panel">
             <h2 id="articles">¡Conoce a tu nuevo amigo!</h2>
             <div class="container">
                 <main class="grid">
+
                     <aside>
                         <span><h3>Filtros de búsqueda<img src="./src/icons/filter.svg"></h3></span>
                         <span><a href="#"><h5>Género<img src="./src/icons/arrow_down.svg"></h5></a></span>
@@ -46,6 +24,7 @@
                         <span><a href="#"><h5>Edad<img src="./src/icons/arrow_down.svg"></h5></a></span>
                         <span><a href="#"><h5>Color<img src="./src/icons/arrow_down.svg"></h5></a></span>
                     </aside>
+                    
                     <a href="./pets/dog/Kiara.html"><article>
                         <img src="./src/pets/dog/_Kiara.jpg">
                         <div class="blogText">
@@ -175,15 +154,6 @@
             </div>
         </section>
 
-        <footer>
-            <div class="container_footer">
-                <h2>Fundación La manada © 2021
-                    <a href="https://www.instagram.com/la.manadasv/"target="blank"><img class="img_footer" src="./src/icons/instagram.svg" width="40px" height="40px"></a>
-                    <a href="https://www.facebook.com/profile.php?id=100070244422672" target="blank"><img class="img_footer" src="./src/icons/facebook.svg" width="40px" height="40px"></a>
-                </h2>
-                <hr>
-                <h5>Diseñado por Grupo 8</h5>
-            </div>
-        </footer>
+        <div id="foot"></div>
     </body>
 </html>

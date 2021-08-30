@@ -111,6 +111,7 @@ input:focus{
     border-radius: 20px;
  }
 
+<<<<<<< HEAD
 select:focus{
      outline: none;
  }
@@ -124,6 +125,17 @@ select:focus{
     margin-bottom: 00.5em;
     border-radius: 20px;
  }
+=======
+.formu select:focus{
+    outline: none;
+}
+
+@media (max-width: 1366px) {
+    .formu{
+        height: 300px;
+    }
+}
+>>>>>>> cfcce378df69d4a105ac712f0fd1c28ce118bf14
 
  @media (max-width: 1366px) {
     .formu{

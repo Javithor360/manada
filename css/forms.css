@@ -111,6 +111,7 @@ input:focus{
 select:focus{
      outline: none;
  }
+<<<<<<< HEAD
  input{
          font-family: poppins;
      color: white;
@@ -121,6 +122,8 @@ select:focus{
     margin-bottom: 00.5em;
     border-radius: 20px;
  }
+=======
+>>>>>>> cfcce378df69d4a105ac712f0fd1c28ce118bf14
 
  @media (max-width: 1366px) {
     .formu{

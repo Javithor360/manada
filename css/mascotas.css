@@ -1,4 +1,11 @@
-*{
+@font-face{
+	font-family: MonteCarlo;
+	src: url(../src/fonts/MonteCarlo-Regular.ttf);
+	font-weight: bolder;
+	font-size: normal;
+}
+
+* {
     margin: 0;
     padding: 0;
 }
@@ -27,7 +34,7 @@ body{
     padding: 15%;
 }
 
-p{
+p {
     color: #272727;
     font-size: 25px;
     text-align: left;
@@ -35,8 +42,9 @@ p{
 
 h3{
     color: #272727;
-    font-size: 35px;
+    font-size: 40px;
     text-align: left;
+    font-family: 'MonteCarlo';
 }
 #pet_pic{
     margin-left: 20px;
@@ -70,4 +78,14 @@ h3{
 a .boton{
     color: antiquewhite;
     text-decoration: none;
+}
+
+@media (max-width: 1366px) {
+    .boton {
+        padding: 1.5em 2.9em;
+    }
+
+    #pet_pic {
+        margin-left: -20px;
+    }
 }
