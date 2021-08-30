@@ -1,1 +1,4 @@
-ErrorDocument 404 http://localhost/manada/404.php
+ErrorDocument 404 /manada/404.php
+RewriteEngine on
+RewriteCond %{HTTPS} on
+RewriteRule (.*) http://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
