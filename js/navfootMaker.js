@@ -3,15 +3,33 @@ window.onload = navfootMaker;
 function navfootMaker() {
 
     let longpath = '';
-    if(location.pathname.includes('/pets/')){ longpath = '../../'; }
-    else if(location.pathname.includes('/guides/')){ longpath = '../' }
-    else{ longpath = './'};
-    let navbar;
+    if(location.pathname.includes('/pets/')){ longpath = '../../../'; }
+    else if(location.pathname.includes('/guides/')){ longpath = '../..' }
+    else{ longpath = '../'};
+    let navbar, login;
 
-    if(location.pathname.includes('/index.html')){
+    if(window.session == true){
+        login =    '<div class="user">'+
+                        '<a href="logout.php">'+
+                            '<button class="login">'+
+                                'Cerrar Sesión'+
+                            '</button>'+
+                        '</a>'+
+                    '</div>';
+    }else{
+        login =    '<div class="user">'+
+                        '<a href="login.php">'+
+                            '<button class="login">'+
+                                'Iniciar sesión'+
+                            '</button>'+
+                        '</a>'+
+                    '</div>';       
+    }
+    
+    if(location.pathname.includes('/index') || location.pathname.includes('/principal')){
         
         navbar = document.getElementById('navyIndex');
-        navbar.innerHTML = '<header id="logo">'+
+        navbar.innerHTML += '<header id="logo">'+
                                 '<img src="'+ longpath +'src/logos/logo_full.svg" width="366px" height="120px">'+
                             '</header>'+
                             '<div class="navbar">'+
@@ -25,13 +43,7 @@ function navfootMaker() {
                                             '<a href="'+ longpath +'contact.html">Contacto</a>'+
                                         '</div>'+
                                     '</div>'+
-                                    '<div class="user">'+
-                                        '<a href="'+ longpath +'form_login.html">'+
-                                            '<button class="login">'+
-                                                'Iniciar Sesión'+
-                                            '</button>'+
-                                        '</a>'+
-                                    '</div>'+
+                                    login+
                                 '</nav>'+
                             '</div>'
     } else{

@@ -1,46 +1,20 @@
+<?php 
+	$login = isset($_SESSION['email'])
+?>
 
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Fundación La manada</title>
+	<title>BETA Fundación La manada</title>
 	<link rel="stylesheet" type="text/css" href="../css/index_style.css">
 	<link rel="shortcut icon" href="../src/logos/favicon.ico" type="image/x-icon">
+	<script type="text/javascript">window.session = "<?php echo $login ?>";</script>
+    <script type="text/javascript" src="../js/navfootMaker.js"></script>
 </head>
 <body>
-	<header id="logo">
-		<img src="../src/logos/logo_full.svg" width="366px" height="120px">
-	</header>
-	<div class="navbar">
-		<nav>
-			<div class="menu">
-				<div class="menucontent">
-					<a href="../pets.html">Mascotas</a>
-					<p>|</p>
-					<a href="../guides.php">¿Cómo Adoptar?</a>
-					<p>|</p>
-					<a href="../contact.html">Contacto</a>
-				</div>
-			</div>
-			<div class="user">
-				<?php
-					if (isset($_SESSION['email'])){
-						echo 	'<a href="logout.php">
-									<button class="login">
-										Cerrar Sesión
-									</button>
-								</a>';
-					}else{
-						echo 	'<a href="login.php">
-									<button class="login">
-										Iniciar Sesión
-									</button>
-								</a>';
-					}
-				?>
-			</div>
-		</nav>
-	</div>	
+	<div id="navyIndex"></div>
+
 	<div class="slider_img_container">
 		<ul>
 			<li><img src="../src/perro1_slider.jpg"></li>
@@ -120,15 +94,7 @@
 			</div>
 		</div>
 	</main>
-	<footer>
-		<div class="container_footer">
-			<h2>Fundación La manada © 2021
-                <a href="https://www.instagram.com/la.manadasv/"target="blank"><img id="img_footer" src="../src/icons/instagram.svg" width="40px" height="40px"></a>
-				<a href="https://www.facebook.com/profile.php?id=100070244422672" target="blank"><img id="img_footer" src="../src/icons/facebook.svg" width="40px" height="40px"></a>
-            </h2>
-            <hr>
-            <h5>Diseñado por Grupo 8</h5>
-		</div>
-	</footer>
+
+	<div id="foot"></div>
 </body>
 </html>
