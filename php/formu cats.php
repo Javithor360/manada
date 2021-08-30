@@ -1,16 +1,12 @@
 <?php
 
-$destinatario = 'luisernestomr1503@gmail.com';
+$destinatario = 'fundacion.la.manada.sv@gmail.com';
 
-$nombre = $_POST['nombre'];
+$nombre = $_POST["nombre"];
 $email = $_POST['email'];
-$info = ['info'];
+$mensaje = $_POST ['mensaje'];
+$contenido = "Nombre: ". $nombre . "\nCorreo: " . $email . "\nMensaje: " . $mensaje;
 
-$header = "Consultas manada";
-$mesajecompleto =  $info . "\nAtentamente :".$nombre;
- 
-mail($destinatario, $mensajecompleto, $header );
-
-echo"<sript>alert(Su mensaje a sido enviado correctamente)</script>";
-echo"<sript>setTimeot(\"location.href='index.html'\",1000)</script>";
+mail($destinatario, "Consultas/contacto", $contenido );
+header("Location: ../gracias.html");
 ?>
