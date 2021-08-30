@@ -30,11 +30,9 @@ img {
     font-weight: 300;
     text-align: justify;
 }
-#right p{
-    margin-bottom: 7%;
-}
+
 button {
-    margin-left: 45%;
+    margin-right: 90%;
     background: #316eed;
     border-radius: 20px;
     border: none;
