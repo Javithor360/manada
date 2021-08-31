@@ -3,19 +3,18 @@
 $destinatario = 'fundacion.la.manada.sv@gmail.com';
 
 $nombre = $_POST["nombre"];
-$edad = $_POST ['edad'];
-$sexo = $_POST['sexo'];
-$vacunas =$_POST['op1'].' '.$_POST['op2'].' '.$_POST['op3'].' '.$_POST['op4'].' '.$_POST['op5'].' '.$_POST['op6'].' '.$_POST['op7'];
+$email = $_POST['email'];
+$mensaje = $_POST ['mensaje'];
+$contenido = "Nombre: ". $nombre . "\nCorreo: " . $email . "\nMensaje: " . $mensaje;
 
-$contenido = "La mascota con el nombre de: ". $nombre ."\nDe edad: ". $edad ."\nDe el sexo: ". $sexo ."\nCon las vacunas : \n".$vacunas ."\nEsta esperando que se le brinde un hogar";
-
-mail($destinatario, "Nueva solicitud", $contenido );
-header("Location: ../gracias.html");
+mail($destinatario, "Consultas/contacto", $contenido );
+header("Location: ../gracias-contacto.html");
 ?>
+
 <?php
 
 $destinatario = $_POST['email'];
-$name = $_POST["name"];
+$nombre = $_POST["nombre"];
 $contenido = "Muchas Gracias ". $name ."\n\nPor interesarte en salvar a una mascota, Tu solicitud fue enviada con exito, Muy pronto recibiras una respusta por parte nosotros,
  En lo que recibes una respuesta, porque no echas un vistazo por nuestras guias de cuidado para informarte un poco más";
 
