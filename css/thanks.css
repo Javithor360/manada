@@ -34,7 +34,7 @@ img {
     margin-bottom: 7%;
 }
 button {
-    margin-left: 45%;
+    margin-left: 38%;
     background: #316eed;
     border-radius: 20px;
     border: none;
@@ -44,7 +44,7 @@ button {
     cursor: pointer;
     font-size: 20px;
     letter-spacing: 2px;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 button:hover {

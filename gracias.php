@@ -11,8 +11,8 @@
             <h1>¡Gracias!</h1>
             <img src="./src/gracias.png" height="550px" width="680px">
             <div id="right">
-                <p>Tu solicitud de adopcion esta siendo procesada, recibiras una respuesta lo más pronto posible</p>
-                <a href="./index.html"><button>Regresar</button></a>
+                <p>Tu solicitud de adopcion está siendo procesada, recibirás una respuesta lo más pronto posible</p>
+                <a href="./index.php"><button>Regresar</button></a>
             </div>
         </div>
     </body>

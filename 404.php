@@ -5,19 +5,39 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
+        <script>
+            function pathMaker() {
+                var pathway = '',
+                    finalPath,
+                    container;
+
+                if(location.pathname.includes('/pets/')){ pathway = '../../'; }
+                else if(location.pathname.includes('/guides/')){ pathway = '../';}
+                else if(location.pathname.includes('/php/')){ pathway = '../';}  
+                else{ pathway = './'};
+
+                finalPath = document.getElementsByTagName('head')[0];
+                finalPath.innerHTML +=  `<link rel="shortcut icon" href="${pathway}src/logos/favicon.ico" type="image/x-icon">\n`+
+                                        `<link rel="stylesheet" href="${pathway}css/error404.css">`;
+
+                container = document.getElementById('todo');
+                container.innerHTML +=  `<div class="container">`+
+                                            `<h1>¡Algo salió mal!</h1>`+
+                                            `<img src="${pathway}src/error404.png" height="500px" width="750px">`+
+                                            `<div id="right">`+
+                                                `<p>La página solicitada no ha sido encontrada...</p>`+
+                                                `<a href="${pathway}index.php"><button>Regresar</button></a>`+
+                                            `</div>`+
+                                        `</div>`;
+            }
+            window.onload = pathMaker;
+        </script>
+
         <meta charset="UTF-8">
-        <link rel="shortcut icon" href="../src/logos/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="../css/error404.css">
         <title>Página no encontrada ∙ La Manada</title>
     </head>
     <body>
-        <div class="container">
-            <h1>¡Algo salió mal!</h1>
-            <img src="../src/error404.png" height="500px" width="750px">
-            <div id="right">
-                <p>La página solicitada no ha sido encontrada...</p>
-                <a href="./index.php"><button>Regresar</button></a>
-            </div>
-        </div>
+            <div id="todo"></div>
     </body>
 </html>
