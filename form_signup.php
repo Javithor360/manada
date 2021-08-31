@@ -1,5 +1,5 @@
-<?php 
-	$login = isset($_SESSION['email'])
+<?php session_start();
+        $login = isset($_SESSION['email']);   
 ?>
 
 <!DOCTYPE html>

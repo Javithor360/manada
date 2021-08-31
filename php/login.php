@@ -31,7 +31,7 @@
         
         if ($resultado !== false){
             $_SESSION['email'] = $email;
-            header('location: principal.php');
+            header('location: ../index.php');
         }else{
             $error .= '<i>Este usuario no existe</i>';
         }

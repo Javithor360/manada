@@ -16,7 +16,7 @@
             <img src="./src/error404.png" height="500px" width="750px">
             <div id="right">
                 <p>La página solicitada no ha sido encontrada...</p>
-                <a href="./index.html"><button>Regresar</button></a>
+                <a href="./index.php"><button>Regresar</button></a>
             </div>
         </div>
     </body>
