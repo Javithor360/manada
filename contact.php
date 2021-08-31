@@ -14,6 +14,7 @@
 	<title>Contacto ∙ La Manada</title>
 </head>
 <body>
+<div class="fBody">
 	<div id="navy"></div>
 
 	<main>
@@ -35,5 +36,6 @@
 	</div>
 	</main>
 	<div id="foot"></div>
+</div>
 </body>
 </html>
