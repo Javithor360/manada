@@ -30,9 +30,7 @@ function navfootMaker() {
     if(location.pathname.includes('/index') || location.pathname.includes('/principal')){
         
         navbar = document.getElementById('navyIndex');
-        navbar.innerHTML += '<header id="logo">'+
-                                '<img src="'+ longpath +'src/logos/logo_full.svg" width="366px" height="120px">'+
-                            '</header>'+
+        navbar.innerHTML += 
                             '<div class="navbar">'+
                                 '<nav>'+
                                     '<div class="menu">'+

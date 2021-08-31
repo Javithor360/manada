@@ -14,6 +14,9 @@
 <body>
 
 <div class="fBody">
+                <header id="logo">
+                        <img src="src/logos/logo_full.svg" width="366px" height="120px">
+                </header>
         <div id="navyIndex"></div>
 
         <div class="slider_img_container">
