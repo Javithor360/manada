@@ -5,7 +5,7 @@
 <html>
 <head>
         <meta charset="UTF-8">
-        <title>TEST Fundación: La manada</title>
+        <title>Fundación: La manada</title>
         <link rel="stylesheet" type="text/css" href="css/index_style.css">
         <link rel="shortcut icon" href="src/logos/favicon.ico" type="image/x-icon">
         <script type="text/javascript">window.session = "<?php echo $login ?>";</script>
