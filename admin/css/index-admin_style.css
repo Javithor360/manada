@@ -1,0 +1,128 @@
+@font-face
+{
+    font-family: Poppins;
+    src: url(../src/Poppins-Light.ttf); 
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face{
+    font-family: Dosis;
+    src: url(../src/Dosis.ttf);
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face{
+    font-family: Dosis-ExtraLight;
+    src: url(../src/Dosis-ExtraLight.ttf);
+    font-weight: normal;
+    font-size: normal;
+}
+*{
+    color: #ffff;
+    font-family: Poppins;
+}
+body{
+    position: flex;
+    font-size: 16px;
+    background:
+       linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        url(../src/adminbg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+.container{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 35rem;
+    margin: auto;
+    padding-top: 5rem;
+
+}
+.form{
+    margin: 0 auto;
+    width: 25rem;
+    background: rgba(0, 0, 0,.5);
+    padding: 0.625rem;
+    border-radius: 23px;
+    border: 2px solid #11698E;
+}
+input, select{
+    display: block;
+    width: 90%;
+    padding: 0.625rem 0.625rem 0.625rem 0.3125rem;
+    background: #fff;
+    border: 2px #11698E solid;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+
+}
+
+.inputs{
+    position: relative;
+    margin-bottom:2rem;
+}
+
+label{
+    position: absolute;
+    top: -0.8125rem;
+    left: 0.6rem;
+    padding: 0rem 0.3125rem;
+    font-size: 17px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+}
+
+input:focus{
+    border-color: #fff;
+    outline: none;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button_child{
+
+}
+input[type=button]{
+    width: 150%;
+    height: 2rem;
+    border-radius: 10px;
+    border:none;
+    background-color: #11698E;
+    font-family: 'Signika', sans-serif;
+    font-size: 1.10rem;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+    color: #f5f6fa;
+    border: 1px #130f40 solid;
+}
+input[type=button]{
+    
+}
+
+input[type=button]:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+    transition: all 400ms ease;
+    color: white;
+    border: 2px #30336b solid;
+}
+h2{
+    font-family: Poppins;
+    text-align: center;
+}
+h1{
+     text-align: center;
+     margin-top: 1rem;
+}
+span{
+    color: #2f77fd; 
+}
