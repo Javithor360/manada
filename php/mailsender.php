@@ -15,7 +15,7 @@ header("Location: ../gracias-contacto.php");
 
 $destinatario = $_POST['email'];
 $nombre = $_POST["nombre"];
-$contenido = "Muchas Gracias ". $nombre ."\n\nPor tu mensaje, espera a que alguien de nuestra funcdacion te responda  para ponerce en contacto y obtener mayor informacion";
+$contenido = "Muchas Gracias ". $nombre ."\n\nPor tu mensaje, espera a que alguien de nuestra fundacion te responda  para ponerce en contacto y obtener mayor informacion";
 
 mail($destinatario, "Consultas/contacto", $contenido );
 header("Location: ../gracias.php");
