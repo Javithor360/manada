@@ -14,13 +14,13 @@
 	<title>Contacto ∙ La Manada</title>
 </head>
 <body>
-<div class="fBody">
+<div class="fBody">	
 	<div id="navy"></div>
 
 	<main>
 		<div class="container">
 		<div class="form">
-			<form action="php/formu cats.php" method="POST">
+			<form action="./php/mailsender.php" method="POST">
 				<label id="title1">Comunicate con nosotros!</label>
 				<label id="title2">Dejános tu comentario, duda o sugerencia, será un gusto ayudarte</label>
 				<input type="text" name="nombre" placeholder="Nombre">

@@ -18,6 +18,7 @@ h1 {
     font-size: 90px;
     font-weight: 500;
     margin-bottom: 90px;
+    margin-top: 40px;
 }
 
 img {
@@ -34,7 +35,6 @@ img {
     margin-bottom: 7%;
 }
 button {
-    margin-left: 38%;
     background: #316eed;
     border-radius: 20px;
     border: none;
