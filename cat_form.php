@@ -18,7 +18,7 @@
 
         <br><br><br>
         <div class="formu">
-            <form action="" method="">
+            <form action="php/formu_dar.php" method="POST">
                 <label for="firstName" class="first-name">Nombres la mascota:</label>
                 <input class="input" id="firstName" type="text" name="nombre" placeholder="Ingrese sus nombres" required>
 
@@ -26,7 +26,7 @@
                 <input class="input" for="age" type="number" name="edad" placeholder="Ingrese su edad" min="0" max="35" required>
 
                 <label for="sex">Sexo:</label>
-                <select class="input">
+                <select class="input" name="sexo">
                     <option>&nbsp;</option>
                     <option>Macho</option>
                     <option>Hembra</option>
@@ -35,34 +35,34 @@
                 <br><br>
 
                 <label class="container">Contra Distemper
-                    <input type="checkbox">
+                    <input type="checkbox" value="Contra Distemper" name="op1">
                     <span class="checkmark"></span>
                   </label>
                   
                   <label class="container">Contra Herpesvirus
-                    <input type="checkbox">
+                    <input type="checkbox" value="Contra Herpesvirus" name="op2">
                     <span class="checkmark"></span>
                   </label>
                   
                   <label class="container">Contra Calicivirus
-                    <input type="checkbox">
+                    <input type="checkbox" value="Contra Calicivirus" name="op3">
                     <span class="checkmark"></span>
                   </label>
 
                   <label class="container">Contra Leucemia
-                    <input type="checkbox">
+                    <input type="checkbox" value=">Contra Leucemia" name="op4">
                     <span class="checkmark"></span>
                   </label>
                   <label class="container">Contra Peritonitis infecciosa
-                    <input type="checkbox">
+                    <input type="checkbox" value="Peritonitis infecciosa" name="op5">
                     <span class="checkmark"></span>
                   </label>
                   <label class="container">Contra Felis
-                    <input type="checkbox">
+                    <input type="checkbox" value="Contra Felis" name="op6">
                     <span class="checkmark"></span>
                   </label>
                   <label class="container">Contra Rabia
-                    <input type="checkbox">
+                    <input type="checkbox" value="Contra Rabia" name="op7">
                     <span class="checkmark"></span>
                   </label>  
                   </label>

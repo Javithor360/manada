@@ -8,5 +8,15 @@ $mensaje = $_POST ['mensaje'];
 $contenido = "Nombre: ". $nombre . "\nCorreo: " . $email . "\nMensaje: " . $mensaje;
 
 mail($destinatario, "Consultas/contacto", $contenido );
-header("Location: ../gracias-contacto.php");
+header("Location: ../gracias-contacto.html");
+?>
+
+<?php
+
+$destinatario = $_POST['email'];
+$nombre = $_POST["nombre"];
+$contenido = "Muchas Gracias ". $nombre ."\n\nPor tu mensaje, espera a que alguien de nuestra funcdacion te responda  para ponerce en contacto y obtener mayor informacion";
+
+mail($destinatario, "Consultas/contacto", $contenido );
+header("Location: ../gracias.html");
 ?>

@@ -17,7 +17,7 @@
         <div id="navy"></div>
 
         <div class="formu">
-            <form action="" method="">
+            <form action="php/formu_dar2.php" method="POST">
                 <label for="firstName" class="first-name">Nombres la mascota:</label>
                 <input class="input" id="firstName" type="text" name="nombre" placeholder="Ingrese sus nombres" required>
     
@@ -25,7 +25,7 @@
             <input class="input" for="age" type="number" name="edad" placeholder="Ingrese su edad" min="0" max="35" required>
     
             <label for="sex">Sexo:</label>
-            <select class="input">
+            <select class="input" name="sexo">
                 <option>&nbsp;</option>
                 <option>Macho</option>
                 <option>Hembra</option>
@@ -34,34 +34,34 @@
             <label for="vacunas">Vacunas con las que cuenta su mascota:</label>
 
                 <label class="container">Contra Distemper
-                    <input type="checkbox">
+                    <input type="checkbox"value="Contra Distemper" name="opc1">
                     <span class="checkmark"></span>
                   </label>
                   
                   <label class="container">Contra Herpesvirus
-                    <input type="checkbox">
+                    <input type="checkbox"value="Contra Herpesvirus" name="opc2">
                     <span class="checkmark"></span>
                   </label>
                   
                   <label class="container">Contra Parpovirus
-                    <input type="checkbox">
+                    <input type="checkbox"value="Contra Parpovirus" name="opc3">
                     <span class="checkmark"></span>
                   </label>
 
                   <label class="container">Contra Boedetollis
-                    <input type="checkbox">
+                    <input type="checkbox"value="Contra Boedetollis" name="opc4">
                     <span class="checkmark"></span>
                   </label>
                   <label class="container">Contra Parainfluenza
-                    <input type="checkbox">
+                    <input type="checkbox"value="Contra Parainfluenza" name="opc5">
                     <span class="checkmark"></span>
                   </label>
                   <label class="container">Contra Leptoporosis
-                    <input type="checkbox">
+                    <input type="checkbox"value="Contra Leptoporosis" name="opc6">
                     <span class="checkmark"></span>
                   </label>
                   <label class="container">Contra Rabia
-                    <input type="checkbox">
+                    <input type="checkbox"value="Contra Rabia" name="opc7">
                     <span class="checkmark"></span>
                   </label>  
                   </label>
