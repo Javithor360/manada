@@ -55,7 +55,7 @@ html{
 	color: #fff;
 	font-size: 2.5em;
 	font-weight: bold;
-	width: 40rem;
+	width: 100%;
 	max-width: 40rem;
 	text-align: left;
 	margin-top: .75rem;
@@ -145,4 +145,16 @@ textarea{
 	margin-left: .75rem;
 	margin-top: .40rem;
 	margin-bottom: .30rem;
+}
+
+@media screen and (max-width: 720px) {
+
+	.fBody{display: flexbox;}
+	#title1, #title2{width: 100%;}
+	.form{width: 90%;}
+	.form input, .form label, .form textarea{width: 90% !important;}
+	form{width: 100%;}
+
+	#title1{font-size: 160%;}
+	#title2{font-size: 100%;}
 }

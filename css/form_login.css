@@ -22,6 +22,7 @@ body{
 main{
     min-height: 100vh;
 }
+
 /*====Form====*/
 .container{
 	padding-bottom: 125px; 
@@ -39,7 +40,7 @@ main{
 }
 
 .body{
-    width: 25rem;
+    /* width: 250px; */ /* 840 */
     border-radius: 10px;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -51,6 +52,7 @@ main{
 .forms{
     background-color: #dff9fb;
     height: 100%;
+    width: 100%;
     padding: 0.625rem;
     align-items: center;
     justify-content: center;
@@ -58,7 +60,7 @@ main{
 
 input, select{
     display: block;
-    width: 92%;
+    width: 100%;
     padding: 0.625rem 0.625rem 0.625rem 0.3125rem;
     background: none;
     border: 2px #11698E solid;
@@ -81,7 +83,6 @@ label{
     padding: 0rem 0.3125rem;
     font-size: 17px;
 	font-family: 'Dosis', sans-serif;
-	font-weight: 500;
 }
 
 input:focus{
@@ -119,8 +120,6 @@ button:hover{
     border: 2px #30336b solid;
 }
 
-.gender{
-    width: 98%;
-}
 
-
+ @media screen and (max-width: 1200px) {.body{width: 408.297px}}
+ 

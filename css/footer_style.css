@@ -75,3 +75,7 @@ footer {
     opacity: .8;
     font-weight: 200;
 }
+
+footer{
+    clear: both;
+}
