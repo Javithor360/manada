@@ -9,7 +9,7 @@ $email =$_POST['email'];
 $contenido = "Hola Soy: ". $name . "\n\nY la razon por la que deseo adoptar es: \n" . $info;
 
 mail($destinatario, "Adopcion/Razones", $contenido );
-header("Location: ../gracias.html");
+header("Location: ../gracias.php");
 ?>
 
 <?php
@@ -20,5 +20,5 @@ $contenido = "Muchas Gracias ". $name ."\n\nPor interesarte en salvar a una masc
  En lo que recibes una respuesta, porque no echas un vistazo por nuestras guias de cuidado para informarte un poco más";
 
 mail($destinatario, "Adopcion/Razones", $contenido );
-header("Location: ../gracias.html");
+header("Location: ../gracias.php");
 ?>

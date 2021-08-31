@@ -1,134 +1,173 @@
-@font-face{
-	font-family: Dosis;
-	src: url(../src/fonts/Dosis.ttf);
-	font-weight: normal;
-	font-size: normal;
+@font-face {
+  font-family: Dosis;
+  src: url(../src/fonts/Dosis.ttf);
+  font-weight: normal;
+  font-size: normal;
 }
-@font-face{
-	font-family: Poppins;
-	src: url(../src/fonts/Poppins-Regular.ttf);
-	font-weight: normal;
-	font-size: normal;
+@font-face {
+  font-family: Poppins;
+  src: url(../src/fonts/Poppins-Regular.ttf);
+  font-weight: normal;
+  font-size: normal;
 }
-html{
-	background-color: #fff;
+html {
+  background-color: #fff;
 }
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /*====Navbar====*/
-header{
-	background: #11698E;
-	font-size: 14pt;
-	position: sticky;
-	top: 0;
-	z-index: 100;
+#navy {
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
-header nav{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+header {
+  background: #11698e;
+  font-size: 14pt;
 }
-header nav .menu{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-header nav .menu .logo a img{
-	width: 55px;
+header nav .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-header .menu .menucontent{
-	display: flex;
+header nav .menu .logo a img {
+  width: 55px;
 }
-header .menu .menucontent a{
-	font-size: 12pt;
-	float: right;
-	padding: 16px 8px;
-	color: #fff;
-	text-decoration: none;
-	background: transparent;
-	border-bottom: 2px solid transparent;
-	transition: background .3s ease-in-out;
-	font-family: Poppins;
+header .menu .menucontent {
+  display: flex;
 }
-header .menu .menucontent p{
-	float: right;
-	font-size: 14pt;
-	padding: 14px 8px;
-	color: #fff;
-	text-decoration: none;
-	background: transparent;
-	transition: background .3s ease-in-out;
-	font-family: Poppins;
+header .menu .menucontent a {
+  font-size: 12pt;
+  float: right;
+  padding: 16px 8px;
+  color: #fff;
+  text-decoration: none;
+  background: transparent;
+  border-bottom: 2px solid transparent;
+  transition: background 0.3s ease-in-out;
+  font-family: Poppins;
 }
-header .menu .menucontent a:hover{
-	background: rgba(0, 0, 0, .3);
-	transition: background .3s ease-in-out;
+header .menu .menucontent p {
+  float: right;
+  font-size: 14pt;
+  padding: 14px 8px;
+  color: #fff;
+  text-decoration: none;
+  background: transparent;
+  transition: background 0.3s ease-in-out;
+  font-family: Poppins;
 }
-header nav .user a .login{
-	background-color: #fff;
-	color: #1A5276;
-	border: none;
-	margin-right: 5px;
-	padding: 5px;
-	font-size: 14pt;
-	transition: color .3s ease;
-	border-radius: 8px;
-	font-family: 'Dosis';
-	/*  */
-	background-image: url(../src/icons/userIcon.svg);
-	background-repeat: no-repeat;
-	background-position: right;
-	background-size: 30px;
-	padding-right: 35px;	
-
+header .menu .menucontent a:hover {
+  background: rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease-in-out;
 }
-header nav .user a .login:hover{
-	color: #5499C7;
-	cursor: pointer;
-	transition: color .3s ease;
+header nav .user a .login {
+  background-color: #fff;
+  color: #1a5276;
+  border: none;
+  margin-right: 5px;
+  padding: 5px;
+  font-size: 14pt;
+  transition: color 0.3s ease;
+  border-radius: 8px;
+  font-family: "Dosis";
+  /*  */
+  background-image: url(../src/icons/userIcon.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 30px;
+  padding-right: 35px;
 }
-header button:hover{
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
-    transition: all 400ms ease;
-    color: white;
-    border: 2px #30336b solid;
+header nav .user a .login:hover {
+  color: #5499c7;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
-
-body::-webkit-scrollbar{
-	width: 5px;
-	background: #dfe4ea;
-	height: 5px;
+header button:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+  transition: all 400ms ease;
+  color: white;
+  border: 2px #30336b solid;
 }
 
-body::-webkit-scrollbar-thumb{
-	background-color: #11668eec;
+body::-webkit-scrollbar {
+  width: 5px;
+  background: #dfe4ea;
+  height: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #11668eec;
 }
 
 @media screen and (max-width: 800px) {
-	header a{font-size: 14px !important;}
-	header p{font-size: 12pt !important;}
-	.logo{height: 50px;}
-	header img{height: 50px !important;}
-	button.login{font-size: 14px !important;}
-	header nav .user a .login{background-position: right; background-size: 27px; padding-right: 35px;}
+  header a {
+    font-size: 14px !important;
+  }
+  header p {
+    font-size: 12pt !important;
+  }
+  .logo {
+    height: 50px;
+  }
+  header img {
+    height: 50px !important;
+  }
+  button.login {
+    font-size: 14px !important;
+  }
+  header nav .user a .login {
+    background-position: right;
+    background-size: 27px;
+    padding-right: 35px;
+  }
 }
 
 @media screen and (max-width: 600px) {
-	header a{font-size: 13px !important;}
-	header p{font-size: 13pt !important;}
-	.logo{height: 40px;}
-	header img{height: 40px !important;}
-	button.login{font-size: 13px !important;}
-	header nav .user a .login{background-position: right; background-size: 25px; padding-right: 35px;}
+  header a {
+    font-size: 13px !important;
+  }
+  header p {
+    font-size: 13pt !important;
+  }
+  .logo {
+    height: 40px;
+  }
+  header img {
+    height: 40px !important;
+  }
+  button.login {
+    font-size: 13px !important;
+  }
+  header nav .user a .login {
+    background-position: right;
+    background-size: 25px;
+    padding-right: 35px;
+  }
 }
 
-@media screen and (max-width: 565px){
-	a[href="./contact.html"]{display: none;} a[href="../../contact.html"]{display: none;} a[href="../contact.html"]{display: none;}
-	.menucontent p:nth-child(4) ~ p{display: none;}
+@media screen and (max-width: 565px) {
+  a[href="./contact.html"] {
+    display: none;
+  }
+  a[href="../../contact.html"] {
+    display: none;
+  }
+  a[href="../contact.html"] {
+    display: none;
+  }
+  .menucontent p:nth-child(4) ~ p {
+    display: none;
+  }
 }

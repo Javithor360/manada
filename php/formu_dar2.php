@@ -10,5 +10,5 @@ $vacunas =$_POST['opc1'].''.$_POST['opc2'].''.$_POST['opc3'].''.$_POST['opc4'].'
 $contenido = "La mascota con el nombre de: ". $nombre ."\nDe edad: ". $edad ."\nDe el sexo: ". $sexo ."\nCon las vacunas : \n".$vacunas ."\nEsta esperando que se le brinde un hogar";
 
 mail($destinatario, "Nueva solicitud", $contenido );
-header("Location: ../gracias.html");
+header("Location: ../gracias.php");
 ?>
