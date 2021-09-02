@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/footer_style.css">
     <script src="../js/navfootMaker.js"></script>
     <script type="text/javascript">window.session = "<?php echo $login ?>";</script>
-    <title>¿Cómo puedo dar en adopción? ∙ La Manada</title>
+    <title>How can I give up for adoption? ∙ La Manada</title>
 </head>
 <body>
     <div id="navy"></div>
@@ -19,40 +19,40 @@
     <main>
         <div class="container">
             <div class="text_container">
-                <h1>¿Cómo puedo dar en adopción?</h1>
-                <p>Como Fundación La Manada agradecemos la confianza que depositas en nosotros al darnos a tu mascota en adopción, es por ello que te brindamos esta serie de pasos a seguir para que puedas hacer el proceso sin complicaciones.</p>
+                <h1>How can I give up for adoption?</h1>
+                <p>As La Manada Foundation we appreciate the trust you place in us by giving us your pet for adoption, that is why we provide this series of steps to follow so you can make the process smoothly.</p>
                 <div class="steps">
                     <figure id="step1"> 
                         <!--<div style="color: black;">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, suscipit dolore est incidunt maiores beatae quis error sint quia. Et, placeat dolor omnis? Delectus, id, minus. Earum, doloremque harum nihil.
                         </div>-->
                         <img id="hidden" src="../src/icons/iniciar-sesion.svg" alt="" width="100px" height="100px">
-                        <figcaption>Paso 1: Inicia sesión</figcaption>
+                        <figcaption>Step 1: Login</figcaption>
                     </figure>
                     <figure> 
                         <img src="../src/icons/pets_species-01.svg" alt="" width="100px" height="100px">
-                        <figcaption>Paso 2: Selecciona la especie que quieres dar en adopción</figcaption>
+                        <figcaption>Step 2: Select the species you want to give up for adoption</figcaption>
                     </figure>
                     <figure>
                         <img src="../src/icons/form_icon2.svg" alt="" width="100px" height="100px">
-                        <figcaption>Paso 3: Llena el formulario con los datos solicitados</figcaption>
+                        <figcaption>Step 3: Complete the form with the requested data</figcaption>
                     </figure>
                 </div>
                 <div class="steps2">
                    <figure>
                         <img src="../src/icons/photo_step.svg" alt="" width="100px" height="100px">
-                        <figcaption>Paso 4: Sube almenos 3 fotografias de la mascota</figcaption>
+                        <figcaption>Step 4: Upload at least 3 photos of the pet</figcaption>
                     </figure>
                     <figure>
                         <img src="../src/icons/check-data.svg" alt="" width="100px" height="100px">
-                    <figcaption>Paso 5: Evaluaremos los datos que nos brindaste (Puede tomar tiempo)</figcaption>
+                    <figcaption>Step 5: We will evaluate the data you provided us (it may take time)</figcaption>
                     </figure>
                     <figure>
                         <img src="../src/icons/find_home.svg" alt="" width="100px" height="100px">
-                    <figcaption>Paso 6: ¡Listo! si se cumplen los requisitos te contactaremos para que nos entregues a la mascota y buscarle un nuevo hogar</figcaption>
+                    <figcaption>Step 6: Ready! If the requirements are met, we will contact you to give us the pet and find a new home for it.</figcaption>
                     </figure>
                 </div>
-                <a id="back" href="../guides.php">Volver</a>
+                <a id="back" href="../guides.php">Go back</a>
             </div>
 
             <div class="img_container">

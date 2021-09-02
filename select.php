@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="./css/footer_style.css">
         <script src="./js/navfootMaker.js"></script>
         <script type="text/javascript">window.session = "<?php echo $login ?>";</script>
-        <title>Héroes como tú... ∙ La Manada</title>
+        <title>Heroes like you... ∙ La Manada</title>
     </head>
     <body>
         <div id="navy"></div>
@@ -20,31 +20,23 @@
         <section>
             <img class="img" src="./src/select_upsidePuppy.png">
             <div class="intro">
-                <h1>¡Gracias por unirte a la causa!</h1>
+                <h1>¡Thank you for joining the cause!</h1>
                 <p>
-                    Gracias por permitir que tu mascota pueda tener un lugar donde pueda dormir y vivir 
-                    en paz, muchas mascotas no corren con la misma suerte y son abandonados cruelmente, 
-                    donde el destino les da una triste realidad de maltrato y sufrimiento. En nuestro 
-                    país El Salvador el 70% de la poblacion canina se encuentra abandonada en la calle,
-                    y en cuanto a gatos el 65% de la poblacion felina se encuentran en abandono.
+                    Thank you for allowing your pet to have a place to sleep and live in peace, many pets do not have the same fate and are cruelly abandoned, where fate gives them a sad reality of abuse and suffering. In our country El Salvador 70% of the canine population is abandoned in the street, and as for cats, 65% of the feline population is abandoned.
                </p>
             </div>
 
             <div class="art1">
                 <img class="leftImg" src="./src/select_supercat.png">
-                <h1>Héroes como tú...</h1>
+                <h1>Heores like you...</h1>
                 <p>
-                    Gracias a ti podremos rescatar una mascota más y permitirle un hogar donde
-                    pueda ser feliz y brindarle todo el amor que merece y nesesita; tú eres una 
-                    persona con un gran corazón, para nosotros eres un gran héroe ya que quieres
-                    un mejor futuro para tu mascota, lejos del maltrato animal, tu mascota estará 
-                    a salvo con nosotros.
+                    Thanks to you we will be able to rescue one more pet and allow it a home where it can be happy and give it all the love it deserves and needs; you are a person with a big heart, for us you are a great hero because you want a better future for your pet, far from animal abuse, your pet will be safe with us.
                 </p>
             </div>
 
             <div class="select">
-                <h1>¿Quieres dar en adopción?</h1>
-                <p>Escoje el tipo de mascota que nos confiarás</p>
+                <h1>Do you want to give up for adoption?</h1>
+                <p>Choose the type of pet you will entrust us with</p>
                 <span>
                     <a href="./cat_form.php"><img class="zoom" src="./src/cat.svg" alt="¡Quiero poner en adopción a mi gato!"></a>
                     <a href="./dog_form.php"><img class="zoom" src="./src/perroo.svg" alt="¡Quiero poner en adopción a mi gato!"></a>

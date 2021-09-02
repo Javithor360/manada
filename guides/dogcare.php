@@ -5,7 +5,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Cuidado de perros ∙ La Manada</title>
+        <title>Dog care ∙ La Manada</title>
         <link rel="stylesheet" href="../css/dogcare.css">
         <link rel="stylesheet" href="../css/navbar2_style.css">
         <link rel="stylesheet" href="../css/footer_style.css">
@@ -17,22 +17,20 @@
         <div id="navy"></div>
     
         <div class="container">
-            <h1>Guía de cuidado para los caninos del hogar</h1>
+            <h1>Care guide for home canines</h1>
             <hr size=2px color='blue'>
     
             <section class="sect">
     
                 <p>
-                    Tener a un perro implica una gran responsabilidad. Aunque los consejos para cuidar a tu mascota son sencillos, se debe
-                    saber que serán para el resto de su vida, por lo tanto, cuidar a tu perro, o a ese perro que pretendes adoptar, no es tarea fácil.
-                    Además de facilitarle las cosas básicas como son la comida, el agua, el veterinario o hacer ejercicio, hay otros consejos 
-                    que son importantes para que tu mascota esté feliz y con una salud de hierro.
+                Having a dog implies a great responsibility. Although the tips for taking care of your pet are simple, you should know that they will be simple for the rest of your pet's life.
+                That is why taking care of your dog, or the one you intend to adopt, is not an easy task. In addition to providing basic things like food, water, veterinary care and exercise, there are other tips that are important for your pet to be happy and in good health.
                 </p>
     
                 <div class='img'>
                     <figure>
                      <img src="../src/dogAdvice.jpg">
-                            <p>"Dame una caricia y te seguiré hasta el fin del mundo"</p>
+                            <p>"Give me a caress and I'll follow you to the end of the world"</p>
                     </figure>
                 </div>
     
@@ -40,59 +38,57 @@
     
             <section class='sect'>
                
-                <h2>Alimentación saludable</h2>
+                <h2>Healthy nutrition</h2>
                 <hr size=2px color='blue'>
                 <img  id='food' src="../src/dogfood.jpg">
                     <p>
-                       Según la edad del cachorro le daremos de comer con más o menos frecuencia: tres veces al día si es un cachorro, dos o incluso una si es un perro adulto
+                        Depending on the age of the puppy, we will feed it more or less frequently: three times a day if it is a puppy, twice or even once if it is an adult dog.
                     </p>
 
                     <p>
-                        Siempre tendremos un poco de agua fresca en el cuenco para que el can esté hidratado, especialmente en los meses más calurosos del año.
+                        We will always have some fresh water in the bowl to keep the dog hydrated, especially in the hottest months of the year.
                     </p>
     
                     <p>
-                        Debes darle un pienso de calidad, nutritivo, y acorde a la edad del perro para que ingiera todos los nutrientes que necesita.
+                        You must give a quality and nutritious feed according to the age of the dog so that it ingests all the nutrients it needs.
                     </p>
     
                     <p>
-                        Los tres nutrientes esenciales para los perros son: <b>Hidratos de Carbono</b> o proporcionan energía, cuidan el intestino, las <b>proteinas</b> son 
-                       fundamentales para las células, los tejidos y <b>Vitaminas</b> para que su metabolismo funcione correctamente.
+                    The three essential nutrients for dogs are: <b>Carbohydrates</b>, they provide energy and take care of the intestine <b>proteins </b> which are essential for cells and tissues, <b>Vitamins</b> for their metabolism to function properly.
                     </p>
             </section>
     
             <section class="sect">
-                <h2>La hígiene</h2>
+                <h2>Hygiene</h2>
                 
                 <hr size=2px color='blue'>
                     <p>
-                        Esta es otra necesidad básica que no debemos nunca descuidar. Cuando hablamos de higiene, tenemos que tener en cuenta:
+                        This is another basic need that we must never neglect. When we talk about hygiene, we have to keep in mind:
                     </p>
     
                     <img id='care' src="../src/baño.jpg">   
                         <article>
-                            <h3>Baño</h3>
+                            <h3>Bath</h3>
                                 <p>
-                                    Para saber cuándo lavar a tu perro, observa si tiene el pelo sucio, con mal olor, si está muy acalorado o ha hecho ejercicio.Recuerda que bañarles demasiado puede perjudicarles.                        
+                                    To know when to bathe your dog, observe if its coat is dirty, smells bad, if it is very hot or if it has been exercising. Remember that bathing them too much can be harmful to them.                        
                                 </p>
     
-                            <h3>Mantener sus dientes sanos</h3>
+                            <h3>Keeping their teeth healthy</h3>
                                 <p>
-                                    La limpieza de la boca es fundamental para evitar bacterias, sarro, halitosis y otros problemas. Puedes limpiar tú mismo sus dientes a diario con un cepillo o tres veces a la semana con una pasta de dientes específica para perros.
+                                    Cleaning the mouth is essential to avoid bacteria, tartar, halitosis and other problems. You can clean their teeth yourself daily with a toothbrush or three times a week with a specific toothpaste for dogs.
                                 </p>
                         </article>
             </section>
     
             <section class="sect">
-                <h2>Los paseos</h2>
+                <h2>The walks</h2>
                 <hr size=2px color='blue'>
                     <p>
-                        Además de la alimentación, la actividad en tu mascota es fundamental para que esté en forma y se mantenga sana. Por eso, es necesario que haga ejercicio de manera habitual, pero con precaución para evitar lesiones o heridas.
-                        Esto le ayudará a expresarse, explorar, seguir rastros, mantenerse activo y, sobre todo, ¡divertirse!
+                        In addition to food, your pet's activity is essential for him to be fit and healthy. Therefore, it is necessary to exercise regularly, but with caution to avoid injurys. This will help him express himself, explore, follow trails, stay active and, above all, have fun!
                     </p>
     
                     <p>
-                        Dar paseos frecuentes, salir a correr o jugar con tu perro le ayudará a estar sano y os permitirá construir poco a poco un gran vínculo en vuestra relación.
+                        Taking frequent walks, going for a run or playing with your dog will help him stay healthy and allow us to gradually build a great bond in our relationship with the dog.
                     </p>
     
     
@@ -100,7 +96,7 @@
             </section>
     
             <div class="backB">
-                <a href="../guides.php"><button id='back'>Volver</button></a>
+                <a href="../guides.php"><button id='back'>Go back</button></a>
             </div>
     
         </div>

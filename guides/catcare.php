@@ -5,7 +5,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Cuidado de gatos ∙ La Manada</title> 
+    <title>Cat care ∙ La Manada</title> 
     <link rel="stylesheet" href="../css/catcare.css">
     <link rel="stylesheet" href="../css/navbar2_style.css">
     <link rel="stylesheet" href="../css/footer_style.css">
@@ -18,21 +18,19 @@
     <div id="navy"></div>
 
     <div class="container">
-        <h1>Guía de cuidado para los felinos del hogar</h1>
+        <h1>Care guide for home felines</h1>
         <hr size=2px color=#11698E>
 
         <section class="sect">
 
             <p>
-                ¿Es tu primera vez teniendo un peludo amigo? En esta guía conoceras información básica a tomar en cuenta para el cuidado de 
-                tu nuevo amigo, desde una alimentación saludable hasta la ayuda que le puedes brindar a la hora de su aseo. Un nuevo mundo se crea a la hora 
-                de recibir a tu primer gatito, es una tarea complicada pero estos amiguitos te ayudan a reducir el estrés, mejora la salud mental y mejora la salud en general.
+                Is this your first time having a furry friend? In this guide you will learn basic information to take into account for the care of your new friend, from a healthy diet to the help you can provide when it comes to grooming. A new world is created when you receive your first kitten, it is a complicated task but these little friends help you to reduce stress, improve mental health and improve overall health.
             </p>
 
             <div class='img'>
                 <figure>
                  <img src="../src/catAdvice.jpg">
-                        <p>"Solo necesito tres cosas de ti: Mucha atención, una dieta balanceada y que me des una patita con mi aseo."</p>
+                        <p>"I only need three things from you: lots of attention, a balanced diet and a little help with my grooming"</p>
                 </figure>
             </div>
 
@@ -40,72 +38,67 @@
 
         <section class='sect'>
            
-            <h2>Alimentación saludable</h2>
+            <h2>Healthy nutrition</h2>
             <hr size=2px color=#11698E>
             <img  id='food' src="../src/foodCat.jpg">
                 <p>  
-                    Al ser animales carnívoros su dieta tiene que incluir carne ya que son una fuente principal de energía y proteínas 
-                    para estos bellos animalitos.
+                    Being carnivorous animals, their diet must include meat, as it is a main source of energy and protein for these beautiful animals.
                 </p>
                 
                 <p>
-                    Procura que su dieta sea rica en proteínas y otros nutrientes ya que los estómagos de los gatitos son sensibles.
+                    Make sure their diet is rich in protein and other nutrients, as kittens stomachs are sensitive.
                 </p>
 
                 <p>
-                    ¡No son humanos! por lo que añadir comida humana o sumplementos a una dieta equilibrada puede causarle problemas muy graves en su estómago.
+                    They are not human! Therefore, adding human foods or supplements to a balanced diet can cause very serious problems in their stomach.
                 </p>
 
                 <p>
-                    Los tres nutrientes esenciales para los gatos son: <b>Taurina</b> para una vista águda y un corazón sano, el <b>ácido araquidónico</b> para una 
-                    piel saludable y un pelaje sedoso y la <b>vitamina A</b> nuevamente para su viste y el pelaje.
+                The three essential nutrients for cats are: <b>Taurine</b> for sharp eyesight and a healthy heart, <b>arachidonic acid</b> for healthy skin and a silky coat and <b>vitamin A</b> again for their eyesight and coat.
                 </p>
         </section>
 
         <section class="sect">
-            <h2>La hígiene es importante</h2>
+            <h2>Hygiene is important</h2>
             
             <hr size=2px color=#11698E>
                 <p>
-                    Apesar de ser independientes y exigentes con su propio aseo no les vendria mal una pequeña ayuda. Además esto podría crear un excelente vínculo con tu gatito.
+                    Although they are independent and picky about their own grooming, they could use a little help. This could also create an excellent bond with your kitten.
                 </p>
                 <img id='care' src="../src/brushCat.jpg">   
                     <article>
-                        <h3>Cepillado</h3>
+                        <h3>Brushing</h3>
                             <p>
-                                Podrías tomar un tiempo de 5 - 15 minutos para eliminar su pelo pelo enredado. A la mayoría de los gatos les gusta que los cepillen, 
-                                pero si al tuyo no, no lo fuerces.
+                                Could you take 5 to 15 minutes to remove tangled hair. Most cats like to be brushed, but if yours doesn't, don't force it.
                             </p>
 
-                        <h3>Un baño</h3>
+                        <h3>A bath</h3>
                             <p>
-                                En los gatos de pelo corto no es del todo necesario un baño pero si estan demasiados sucios no les vendria mal un baño. Pero a los gatos de pelo largo,
-                                un baño ocasional puede ayudar a mantener el pelaje suave y evita la acumulación de grasa.
+                                In short-haired cats, a bath is not entirely necessary, but if they are too dirty, a bath would not be a bad idea. But for long-haired cats, an occasional bath can help keep the coat soft and prevent the accumulation of grease.
                             </p>
                     </article>
         </section>
 
         <section class="sect">
-            <h2>¡Juega con ellos!</h2>
+            <h2>Play with them!</h2>
             <hr size=2px color=#11698E>
                 <p>
-                    Igual de importante que una alimentación o su aseo es el jugar con ellos, al estar entretenidos desarrollan su inteligencia, fomentan sus destrezas y a la vez practican deporte. 
-                    Los gatos al ser animales muy curiosos e independientes se pueden llegar a entretener con muchas cosas.
+                    Playing with them is just as important as feeding or grooming them, as they develop their intelligence, encourage their skills and at the same time practice sports.  Cats, being very curious and independent animals, can entertain themselves with many things.
                 </p>
 
                 <p>
-                    Un gato aburrido es un gato destructor, es necesario que tengas diferentes opciones para entretener a un gato en casa.
+                    A bored cat is a destructive cat, you need to have different options to entertain a cat at home.
                 </p>
 
                 <p>
-                    Dependiendo del tipo de juego, juguete o actividad y la interacción que necesite la actividad será el tiempo que tu gato este dispuestos a invertir en ella. Si se aburre fácil es que  no le pareció atractivo.
+                    Depending on the type of game, toy or activity and the interaction the activity requires, your cat will be willing to invest time in it. If he gets bored easiy, it is because he did not find it attractive.
                 </p>
 
             <img src="../src/playCat.jpg" id='play'>
         </section>
 
             <div class="backB">
-                <a href="../guides.php"><button id='back'>Volver</button></a>
+                <a href="../guides.php"><button id='back'>Go back</button></a>
             </div>
 
     </div>
