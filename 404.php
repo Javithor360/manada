@@ -23,11 +23,11 @@
 
                 container = document.getElementById('todo');
                 container.innerHTML +=  `<div class="container">`+
-                                            `<h1>¡Algo salió mal!</h1>`+
+                                            `<h1>Oops!</h1>`+
                                             `<img src="${pathway}src/error404.png" height="500px" width="750px">`+
                                             `<div id="right">`+
-                                                `<p>La página solicitada no ha sido encontrada...</p>`+
-                                                `<a href="${pathway}index.php"><button>Regresar</button></a>`+
+                                                `<p>Requested page not found...</p>`+
+                                                `<a href="${pathway}index.php"><button>Go back</button></a>`+
                                             `</div>`+
                                         `</div>`;
             }
@@ -35,7 +35,7 @@
         </script>
 
         <meta charset="UTF-8">
-        <title>Página no encontrada ∙ La Manada</title>
+        <title>Page not found ∙ La Manada</title>
     </head>
     <body>
             <div id="todo"></div>
