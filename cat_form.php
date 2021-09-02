@@ -11,7 +11,7 @@
         <meta charset="UTF-8"> 
         <script src="./js/navfootMaker.js"></script>
         <script type="text/javascript">window.session = "<?php echo $login ?>";</script>
-        <title>Formulario ∙ La Manada</title>
+        <title>Form ∙ La Manada</title>
     </head>
     <body>
         <div id="navy"></div>
@@ -19,55 +19,55 @@
         <br><br><br>
         <div class="formu">
             <form action="php/formu_dar.php" method="POST">
-                <label for="firstName" class="first-name">Nombres la mascota:</label>
-                <input class="input" id="firstName" type="text" name="nombre" placeholder="Ingrese sus nombres" required>
+                <label for="firstName" class="first-name">Pet's name:</label>
+                <input class="input" id="firstName" type="text" name="nombre" placeholder="Type the name" required>
 
-                <label for="age">Edad:</label>
-                <input class="input" for="age" type="number" name="edad" placeholder="Ingrese su edad" min="0" max="35" required>
+                <label for="age">Age:</label>
+                <input class="input" for="age" type="number" name="edad" placeholder="Type the age" min="0" max="35" required>
 
-                <label for="sex">Sexo:</label>
+                <label for="sex">Genrer:</label>
                 <select class="input" name="sexo">
                     <option>&nbsp;</option>
-                    <option>Macho</option>
-                    <option>Hembra</option>
+                    <option>Male</option>
+                    <option>Female</option>
                 </select>
-                <label for="vacunas">Vacunas con las que cuenta su mascota:</label>
+                <label for="vacunas">Applied vaccines:</label>
                 <br><br>
 
-                <label class="container">Contra Distemper
-                    <input type="checkbox" value="Contra Distemper" name="op1">
+                <label class="container">Distemper Vaccine
+                    <input type="checkbox" value="Distemper Vaccine" name="op1">
                     <span class="checkmark"></span>
                   </label>
                   
-                  <label class="container">Contra Herpesvirus
-                    <input type="checkbox" value="Contra Herpesvirus" name="op2">
+                  <label class="container">Herpesvirus Vaccine
+                    <input type="checkbox" value="Herpesvirus Vaccine" name="op2">
                     <span class="checkmark"></span>
                   </label>
                   
-                  <label class="container">Contra Calicivirus
-                    <input type="checkbox" value="Contra Calicivirus" name="op3">
+                  <label class="container">Calicivirus Vaccine
+                    <input type="checkbox" value="Calicivirus Vaccine" name="op3">
                     <span class="checkmark"></span>
                   </label>
 
-                  <label class="container">Contra Leucemia
-                    <input type="checkbox" value=">Contra Leucemia" name="op4">
+                  <label class="container">Leukemia Vaccine
+                    <input type="checkbox" value="Leukemia Vaccine" name="op4">
                     <span class="checkmark"></span>
                   </label>
-                  <label class="container">Contra Peritonitis infecciosa
-                    <input type="checkbox" value="Peritonitis infecciosa" name="op5">
+                  <label class="container">Infectious Peritonitis Vaccine
+                    <input type="checkbox" value="Infectious Peritonitis Vaccine" name="op5">
                     <span class="checkmark"></span>
                   </label>
-                  <label class="container">Contra Felis
-                    <input type="checkbox" value="Contra Felis" name="op6">
+                  <label class="container">Felis Vaccine
+                    <input type="checkbox" value="Felis Vaccine" name="op6">
                     <span class="checkmark"></span>
                   </label>
-                  <label class="container">Contra Rabia
-                    <input type="checkbox" value="Contra Rabia" name="op7">
+                  <label class="container">Rabies Vaccine
+                    <input type="checkbox" value="Rabies Vaccine" name="op7">
                     <span class="checkmark"></span>
                   </label>  
                   </label>
                   <br><br>
-                <button>Enviar</button>
+                <button>Send</button>
             </form>
         </div>
         <div id="foot"></div>

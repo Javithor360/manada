@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>La Manada | Iniciar sesión</title>
+	<title>Log in ∙ La Manada</title>
 	<link rel="stylesheet" type="text/css" href="../css/form_login.css">
 	<link rel="stylesheet" href="../css/footer_style.css">
 	<link rel="stylesheet" href="../css/navbar2_style.css">
@@ -24,17 +24,17 @@
 	<div class="body">
         
         <div class="forms">
-			<h2 class="info">Bienvenido de nuevo</h2>
+			<h2 class="info">Welcome Back!</h2>
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" class="form">
             
             <div class="inputs">
                 <input type="email" name="email" id="Email" required autocomplete="nope" placeholder="loveanimals@example.com">
-                <label for="email">Correo electrónico *</label>
+                <label for="email">Email address *</label>
             </div>
 
              <div class="inputs">
                 <input type="password" name="pw" id="pw" required autocomplete="nope">
-                <label for="pw">Contraseña *</label>
+                <label for="pw">Password *</label>
             </div>
 
              <?php if(!empty($error)): ?>
@@ -43,9 +43,9 @@
             </div>
             <?php endif; ?>
             
-            <div class="button"> <button id="submit" type="submit">Iniciar sesión</button> </div>
+            <div class="button"> <button id="submit" type="submit">Log In</button> </div>
 
-            <p>¿Todavía no tienes cuenta? <a href="registro.php">Regístrate.</a></p>
+            <p>Don't have an account yet? <a href="registro.php">Sign up.</a></p>
             </div>
         
 			

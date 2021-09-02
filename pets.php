@@ -11,14 +11,14 @@
         <link rel="stylesheet" href="./css/footer_style.css">
         <script src="./js/navfootMaker.js"></script>
         <script type="text/javascript">window.session = "<?php echo $login ?>";</script>
-        <title>Mascotas ∙ La Manada</title>
+        <title>Pets ∙ La Manada</title>
     </head>
     <body>
 <div class="fBody">
         <div id="navy"></div>
 
         <section class="panel">
-            <h2 id="articles">¡Conoce a tu nuevo amigo!</h2>
+            <h2 id="articles">Meet your new buddy!</h2>
             <div class="container">
                 <main class="grid">
 

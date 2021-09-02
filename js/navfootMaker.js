@@ -13,7 +13,7 @@ function navfootMaker() {
         login =    '<div class="user">'+
                         '<a href="'+ longpath +'php/logout.php">'+
                             '<button class="login">'+
-                                'Cerrar Sesión'+
+                                'Log out'+
                             '</button>'+
                         '</a>'+
                     '</div>';
@@ -21,7 +21,7 @@ function navfootMaker() {
         login =    '<div class="user">'+
                         '<a href="'+ longpath +'php/login.php">'+
                             '<button class="login">'+
-                                'Iniciar sesión'+
+                                'Log in'+
                             '</button>'+
                         '</a>'+
                     '</div>';       
@@ -35,11 +35,11 @@ function navfootMaker() {
                                 '<nav>'+
                                     '<div class="menu">'+
                                         '<div class="menucontent">'+
-                                            '<a href="'+ longpath +'pets.php">Mascotas</a>'+
+                                            '<a href="'+ longpath +'pets.php">Pets</a>'+
                                             '<p>|</p>'+
-                                            '<a href="'+ longpath +'guides.php">¿Cómo Adoptar?</a>'+
+                                            '<a href="'+ longpath +'guides.php">How to adopt?</a>'+
                                             '<p>|</p>'+
-                                            '<a href="'+ longpath +'contact.php">Contacto</a>'+
+                                            '<a href="'+ longpath +'contact.php">Contact us</a>'+
                                         '</div>'+
                                     '</div>'+
                                     login+
@@ -55,13 +55,13 @@ function navfootMaker() {
                                             '<a href="'+ longpath +'index.php"><img src="'+ longpath +'src/logos/logo_circle_full.svg" alt=""></a>'+
                                         '</div>'+
                                         '<div class="menucontent">'+
-                                            '<a href="'+ longpath +'php/index.php">Inicio</a>'+
+                                            '<a href="'+ longpath +'php/index.php">Home</a>'+
                                             '<p>|</p>'+
-                                            '<a href="'+ longpath +'pets.php">Mascotas</a>'+
+                                            '<a href="'+ longpath +'pets.php">Pets</a>'+
                                             '<p>|</p>'+
-                                            '<a href="'+ longpath +'guides.php">¿Cómo Adoptar?</a>'+
+                                            '<a href="'+ longpath +'guides.php">How to adopt?</a>'+
                                             '<p>|</p>'+
-                                            '<a href="'+ longpath +'contact.php">Contacto</a>'+
+                                            '<a href="'+ longpath +'contact.php">Contact us</a>'+
                                         '</div>'+
                                     '</div>'+
                                     login+
@@ -72,15 +72,15 @@ function navfootMaker() {
     let footer =  document.getElementById('foot');
     footer.innerHTML =  '<footer>'+
                             '<div class="container_footer">'+
-                                '<h3>Fundación: La Manada</h3>'+
-                                '<p>"Respetar a los animales es una obligación, amarlos es un privilegio"</p>'+
+                                '<h3>La Manada Foundation</h3>'+
+                                '<p>"Respecting animals is an obligation, loving them is an honor"</p>'+
                                 '<ul class="redes">'+
                                     '<li><a href="https://www.instagram.com/la.manadasv/"target="blank"><img id="img_footer" src="'+ longpath +'src/icons/instagram.svg" width="40px" height="40px"></a></li>'+
                                     '<li><a href="https://www.facebook.com/profile.php?id=100070244422672"target="blank"><img id="img_footer" src="'+ longpath +'src/icons/facebook.svg" width="40px" height="40px"></a></li>'+
                                 '</ul>'+
                             '</div>'+
                             '<div class="footer_bottom">'+
-                                '<p>Copyright &copy;2021 Fundación: La Manada. <span>by Grupo 8</span></p>'+
+                                '<p>Copyright &copy;2021 La Manada Foundation. <span>by Grupo 8</span></p>'+
                             '</div>'+
                         '</footer>';
 }

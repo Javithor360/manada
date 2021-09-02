@@ -11,22 +11,22 @@
         <link rel="stylesheet" href="./css/adopcion.css">
         <script src="./js/navfootMaker.js"></script>
         <script type="text/javascript">window.session = "<?php echo $login ?>";</script>
-        <title>Adopción ∙ La Manada</title>
+        <title>Adoptation ∙ La Manada</title>
     </head>
     <body>
         <div id="navy"></div>
 
         <div class="formu">
             <form action="php/forms_adopt.php" method="POST">
-                <label for="">¿Cual es tu nombre?:</label>
+                <label for="">What's your name?:</label>
                 <input type="text" name="name" placeholder="Ingresa tu nombre" required>
 
-                <label for="">Correo Electronico:</label>
+                <label for="">E-mail address:</label>
                 <input type="text" name="email" placeholder="Ingresa tu correo" required>
                 
-                <label for="">¿Cual es el motivo por el que deseas adoptar?:</label>
+                <label for="">Why do you want to adopt?:</label>
                 <textarea name="info" placeholder="Justifica tu respuesta" id="" cols="30" rows="10" required></textarea>
-                <button class="boton">Enviar</button>
+                <button class="boton">Send</button>
             </form>
         </div>
         <div id="foot"></div>
