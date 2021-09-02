@@ -11,27 +11,25 @@
         <link rel="stylesheet" href="../../css/navbar2_style.css">
         <script src="../../js/navfootMaker.js"></script>
         <script type="text/javascript">window.session = "<?php echo $login ?>";</script>
-        <title>¡Conoce a Liliana! ∙ La Manada</title>
+        <title>¡Meet Liliana! ∙ La Manada</title>
     </head>
     <body>
         <div id="navy"></div>
         
         <div class="cont">
-            <h1 class="h1">¡Conoce a Liliana!</h1>
+            <h1 class="h1">¡Meet Liliana!</h1>
             <img src="../../src/pets/dog/Liliana.png" id="pet_pic">
-            <h3>Edad:</h3>
-            <p>4 años</p><br>
-            <h3>Sexo:</h3>
-            <p>Hembra</p><br>
-            <h3>Descripcion:</h3>
+            <h3>Age:</h3>
+            <p>4 years old</p><br>
+            <h3>Sex:</h3>
+            <p>Female</p><br>
+            <h3>Description:</h3>
             <p>
-                Este perrito fue entregada a nuestro refugio ya que su dueña no podia cuidarlo por más tiempo,pero espera que seas tu quien lo adopte,
-                no pierdas la oprtunidad, Esta perrita es una gran corredora, es un poco iperactiva, le gusta que la saquen a pasear y la lleven a que
-                le corten el pelo.
+                This doggy was given to our shelter because her owner couldn't take care of her any longer, but she is waiting for you to adopt her, don't miss the opportunity. This doggy is a great runner, she is a little bit hyperactive, she likes to be taken for a walk and to have her hair cut.
             </p><br>
-            <h3>¿Deseas Adoptarme?</h3><br>
-            <a href="../../pets.php"><button class="boton">Volver</button></a>
-            <a href="../../adopt_form.php"><button class="boton">Adoptar</button></a>
+            <h3>¿Do You Want to Adopt Me?</h3><br>
+            <a href="../../pets.php"><button class="boton">Back to</button></a>
+            <a href="../../adopt_form.php"><button class="boton">Adopt</button></a>
         </div><br><br><br>
         
         <div id="foot"></div>

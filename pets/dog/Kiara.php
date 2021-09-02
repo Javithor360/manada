@@ -11,27 +11,25 @@
         <link rel="stylesheet" href="../../css/mascotas.css">
         <script src="../../js/navfootMaker.js"></script>
         <script type="text/javascript">window.session = "<?php echo $login ?>";</script>
-        <title>¡Conoce a Kiara! ∙ La Manada</title>
+        <title>¡Meet Kiara! ∙ La Manada</title>
     </head>
     <body>
         <div id="navy"></div>
         
         <div class="cont">
-            <h1 class="h1">¡Conoce a Kiara!</h1>
+            <h1 class="h1">¡Meet Kiara!</h1>
             <img src="../../src/pets/dog/kiara.png" id="pet_pic">
-            <h3>Edad:</h3>
-            <p>5 años</p><br>
-            <h3>Sexo:</h3>
-            <p>Hembra</p><br>
-            <h3>Descripcion:</h3>
+            <h3>Age:</h3>
+            <p>5 years old</p><br>
+            <h3>Sex:</h3>
+            <p>Female</p><br>
+            <h3>Description:</h3>
             <p>
-                Este perrito fue entregada a nuestro refugio ya que su dueña no podia cuidarlo por más tiempo,pero espera que seas tu quien lo adopte,
-                no pierdas la oprtunidad, es un perrito muy cariñosoy muy leal, le gusta que lo acaricien y lo lleven de paseo a lugares con abundante
-                pasto, le gusta jugar frisbee y comer croquetas sabbor pollo, es un poco dormilon pero cuando despierta es muy juguetón.
+                This dog was given to our shelter because his owner couldn't take care of him any longer, but he is waiting for you to adopt him, He is a very affectionate and loyal dog, he likes to be petted and taken for a walk to places with plenty of grass, he likes to play frisbee and eat chicken sabbor kibble. He likes to play frisbee and eat chicken sabbor croquettes, he is a little sleepy but when he wakes up he is very playful.
             </p><br>
-            <h3>¿Deseas Adoptarme?</h3><br>
-            <a href="../../pets.php"><button class="boton">Volver</button></a>
-            <a href="../../adopt_form.php"><button class="boton">Adoptar</button></a>
+            <h3>¿Do You Want to Adopt Me?</h3><br>
+            <a href="../../pets.php"><button class="boton">Back to</button></a>
+            <a href="../../adopt_form.php"><button class="boton">Adopt</button></a>
         </div><br><br><br>
         
         <div id="foot"></div>

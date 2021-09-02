@@ -11,27 +11,25 @@
         <link rel="stylesheet" href="../../css/navbar2_style.css">
         <script src="../../js/navfootMaker.js"></script>
         <script type="text/javascript">window.session = "<?php echo $login ?>";</script>
-        <title>¡Conoce a Luca! ∙ La Manada</title>
+        <title>¡Meet Luca! ∙ La Manada</title>
     </head>
     <body>
         <div id="navy"></div>
         
         <div class="cont">
-            <h1 class="h1">¡Conoce a Luca!</h1>
+            <h1 class="h1">¡Meet Luca!</h1>
             <img src="../../src/pets/cat/Luca.png" id="pet_pic">
-            <h3>Edad:</h3>
-            <p>1 años</p><br>
-            <h3>Sexo:</h3>
-            <p>Macho</p><br>
-            <h3>Descripcion:</h3>
+            <h3>Age:</h3>
+            <p>1 year</p><br>
+            <h3>Sex:</h3>
+            <p>Male</p><br>
+            <h3>Description:</h3>
             <p>
-                Este gatito fue entregado a nuestro refugio ya que su dueñ@ no podia cuidarlo por más tiempo,pero espera que seas tu quien lo adopte,
-                no pierdas la oprtunidad, le gusta jugar mucho, le gusta estar siempre al lado de su dueño y si tu lo llamas por su nombre vendra
-                de inmediato.
+                This kitten was delivered to our shelter because his owner couldn't take care of him any longer, but he is waiting for you to adopt him, don't miss the opportunity, he likes to play a lot, he likes to be always next to his owner and if you call him by his name he will come right away.
             </p><br>
-            <h3>¿Deseas Adoptarme?</h3><br>
-            <a href="../../pets.php"><button class="boton">Volver</button></a>
-            <a href="../../adopt_form.php"><button class="boton">Adoptar</button></a>
+            <h3>¿Do You Want to Adopt Me?</h3><br>
+            <a href="../../pets.php"><button class="boton">Back to</button></a>
+            <a href="../../adopt_form.php"><button class="boton">Adopt</button></a>
         </div><br><br><br>
         
         <div id="foot"></div>

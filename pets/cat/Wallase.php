@@ -11,25 +11,25 @@
         <link rel="stylesheet" href="../../css/navbar2_style.css">
         <script src="../../js/navfootMaker.js"></script>
         <script type="text/javascript">window.session = "<?php echo $login ?>";</script>
-        <title>¡Conoce a Wallase! ∙ La Manada</title>
+        <title>¡Meet Wallase! ∙ La Manada</title>
     </head>
     <body>
         <div id="navy"></div>
 
         <div class="cont">
-            <h1 class="h1">¡Conoce a Wallase!</h1>
+            <h1 class="h1">¡Meet Wallase!</h1>
             <img src="../../src/pets/cat/wallase.png" id="pet_pic">
-            <h3>Edad:</h3>
-            <p>5 años</p><br>
-            <h3>Sexo:</h3>
-            <p>Macho</p><br>
-            <h3>Descripcion:</h3>
-            <p>Este gatito fue entregado a nuestro refugio ya que su dueñ@ no podia cuidarlo por más tiempo,pero espera que seas tu quien lo adopte,
-                no pierdas la oprtunidad, le gusta que lo acaricien la espalda y que lo alimenten con su comida favorita el pollo aunque es un poco dormilon.
+            <h3>Age:</h3>
+            <p>5 years old</p><br>
+            <h3>Sex:</h3>
+            <p>Male</p><br>
+            <h3>Description</h3>
+            <p>
+                This kitten was given to our shelter because his owner couldn't take care of him any longer, but he is waiting for you to adopt him, He likes to be petted on his back and fed his favorite food, chicken, although he is a bit of a sleepyhead.
             </p><br>
-            <h3>¿Deseas Adoptarme?</h3><br>
-            <a href="../../pets.php"><button class="boton">Volver</button></a>
-            <a href="../../adopt_form.php"><button class="boton">Adoptar</button></a>
+            <h3>¿Do You Want to Adopt Me?</h3><br>
+            <a href="../../pets.php"><button class="boton">Back to</button></a>
+            <a href="../../adopt_form.php"><button class="boton">Adopt</button></a>
         </div><br><br><br>
         
         <div id="foot"></div>

@@ -11,27 +11,25 @@
         <link rel="stylesheet" href="../../css/navbar2_style.css">
         <script src="../../js/navfootMaker.js"></script>
         <script type="text/javascript">window.session = "<?php echo $login ?>";</script>
-        <title>¡Conoce a Linda! ∙ La Manada</title>
+        <title>¡Meet Linda! ∙ La Manada</title>
     </head>
     <body>
         <div id="navy"></div>
 
         <div class="cont">
-            <h1 class="h1">¡Conoce a Linda!</h1>
+            <h1 class="h1">¡Meet Linda!</h1>
             <img src="../../src/pets/cat/Linda.png" id="pet_pic">
-            <h3>Edad:</h3>
-            <p>3 años</p><br>
-            <h3>Sexo:</h3>
-            <p>Hembra</p><br>
-            <h3>Descripcion:</h3>
+            <h3>Age:</h3>
+            <p>3 years old</p><br>
+            <h3>Sex:</h3>
+            <p>Female</p><br>
+            <h3>Description:</h3>
             <p>
-                Este gatito fue entregado a nuestro refugio ya que su dueñ@ no podia cuidarlo por más tiempo,pero espera que seas tu quien lo adopte,
-                no pierdas la oprtunidad, le gusta pasar las tardes dormida en su cama o aveses busca su juguete chillon, y su comida favorita es el
-                atun.
+                This kitten was surrendered to our shelter because his owner couldn't take care of him any longer, but he is waiting for you to adopt him, He likes to spend the afternoons sleeping in his bed or looking for his squeaky toy, and his favorite food is tuna fish.
             </p><br>
-            <h3>¿Deseas Adoptarme?</h3><br>
-            <a href="../../pets.php"><button class="boton">Volver</button></a>
-            <a href="../../adopt_form.php"><button class="boton">Adoptar</button></a>
+            <h3>¿Do You Want to Adopt Me?</h3><br>
+            <a href="../../pets.php"><button class="boton">Back to</button></a>
+            <a href="../../adopt_form.php"><button class="boton">Adopt</button></a>
         </div><br><br><br>
         
         <div id="foot"></div>
