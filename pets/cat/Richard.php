@@ -21,15 +21,15 @@
             <img src="../../src/pets/cat/Richard.png" id="pet_pic">
             <h3>Age:</h3>
             <p>5 years old</p><br>
-            <h3>Sex:</h3>
+            <h3>Gender:</h3>
             <p>Male</p><br>
             <h3>Description:</h3>
             <p>
                 This kitten was given to our shelter because his owner couldn't take care of him any longer, but he is waiting for you to adopt him, he likes to take naps, he usually spends his time in his bed but he will let you bathe him if you want to.
             </p>
             <br>
-            <h3>¿Do You Want to Adopt Me?</h3><br>
-            <a href="../../pets.php"><button class="boton">Back to</button></a>
+            <h3>Do You Want to Adopt Me?</h3><br>
+            <a href="../../pets.php"><button class="boton">Go back</button></a>
             <a href="../../adopt_form.php"><button class="boton">Adopt</button></a>
         </div><br><br><br>
         

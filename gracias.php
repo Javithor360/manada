@@ -11,7 +11,7 @@
             <h1>Thank you!</h1>
             <img src="./src/gracias.png" height="550px" width="680px">
             <div id="right">
-                <p>Your adoption application is being processed, you will receive an answer as soon as possible.</p>
+                <p>Your application is being processed, you will receive an answer as soon as possible.</p>
                 <a href="./index.php"><button>Go back</button></a>
             </div>
         </div>

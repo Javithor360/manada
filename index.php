@@ -85,7 +85,7 @@
                                                 <p>Contact us</p>
                                         </div>
                                         <div id="frase">
-                                                <h1>¡Let's save the animals!</h1>
+                                                <h1>Let's save the animals!</h1>
                                         </div>
                                 </div>
                                 

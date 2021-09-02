@@ -35,7 +35,7 @@
         </script>
 
         <meta charset="UTF-8">
-        <title>Page not found ∙ La Manada</title>
+        <title>Page Not Found ∙ La Manada</title>
     </head>
     <body>
             <div id="todo"></div>

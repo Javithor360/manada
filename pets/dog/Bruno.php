@@ -21,14 +21,14 @@
             <img id="pet_pic" src="../../src/pets/dog/Bruno.png">
             <h3>Age:</h3>
             <p>2 years old</p><br>
-            <h3>Sex:</h3>
+            <h3>Gender:</h3>
             <p>Male</p><br>
             <h3>Description:</h3>
             <p>
                 This dog was given to our shelter because his owner couldn't take care of him any longer, but he is waiting for you to adopt him, He is a very quiet dog, but he is very loyal, he likes to go out to play in parks and to be scratched behind his ears.
             </p><br>
-            <h3>¿Do You Want to Adopt Me?</h3><br>
-            <a href="../../pets.php"><button class="boton">Back to</button></a>
+            <h3>Do You Want to Adopt Me?</h3><br>
+            <a href="../../pets.php"><button class="boton">Go back</button></a>
             <a href="../../adopt_form.php"><button class="boton">Adopt</button></a>
         </div><br><br><br>
         

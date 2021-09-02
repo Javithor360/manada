@@ -24,7 +24,7 @@
             <label for="age">Age:</label>
             <input class="input" for="age" type="number" name="edad" placeholder="Type the age" min="0" max="35" required>
     
-            <label for="sex">Genrer:</label>
+            <label for="sex">Gender:</label>
             <select class="input" name="sexo">
                 <option>&nbsp;</option>
                 <option>Male</option>

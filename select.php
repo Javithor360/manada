@@ -20,7 +20,7 @@
         <section>
             <img class="img" src="./src/select_upsidePuppy.png">
             <div class="intro">
-                <h1>¡Thank you for joining the cause!</h1>
+                <h1>Thank you for joining the cause!</h1>
                 <p>
                     Thank you for allowing your pet to have a place to sleep and live in peace, many pets do not have the same fate and are cruelly abandoned, where fate gives them a sad reality of abuse and suffering. In our country El Salvador 70% of the canine population is abandoned in the street, and as for cats, 65% of the feline population is abandoned.
                </p>

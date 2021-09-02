@@ -21,14 +21,14 @@
             <img src="../../src/pets/dog/Roco.png" id="pet_pic">
             <h3>Age:</h3>
             <p>2 years old</p><br>
-            <h3>Sex:</h3>
+            <h3>Gender:</h3>
             <p>Male</p><br>
             <h3>Description:</h3>
             <p>
                 This dog was given to our shelter because his owner could not take care of him any longer, but he is waiting for you to adopt him, don't miss the opportunity. He is a puppy that likes to be taken for a walk, his favorite food is chicken croquettes with vegetables and he likes to play ball
             </p><br>
-            <h3>¿Do You Want to Adopt Me?</h3><br>
-            <a href="../../pets.php"><button class="boton">Back to</button></a>
+            <h3>Do You Want to Adopt Me?</h3><br>
+            <a href="../../pets.php"><button class="boton">Go back</button></a>
             <a href="../../adopt_form.php"><button class="boton">Adopt</button></a>
         </div><br><br><br>
         

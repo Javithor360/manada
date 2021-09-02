@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="./css/footer_style.css">
 	<script src="./js/navfootMaker.js"></script>
 	<script type="text/javascript">window.session = "<?php echo $login ?>";</script>
-	<title>Contacto ∙ La Manada</title>
+	<title>Contact ∙ La Manada</title>
 </head>
 <body>
 <div class="fBody">	
@@ -21,15 +21,15 @@
 		<div class="container">
 		<div class="form">
 			<form action="./php/mailsender.php" method="POST">
-				<label id="title1">Comunicate con nosotros!</label>
-				<label id="title2">Dejános tu comentario, duda o sugerencia, será un gusto ayudarte</label>
-				<input type="text" name="nombre" placeholder="Nombre">
-				<input placeholder="Correo electronico" type="email" name="email" autocomplete="off" required="">
+				<label id="title1">Contact us!</label>
+				<label id="title2">Leave a comment, question or feedback.</label>
+				<input type="text" name="nombre" placeholder="Name">
+				<input placeholder="E-mail address" type="email" name="email" autocomplete="off" required="">
 				
-					<textarea id="textbox" required="" name="mensaje" placeholder="Escribe aquí, ¿En que te podemos ayudar?"></textarea>
+					<textarea id="textbox" required="" name="mensaje" placeholder="What do you need?"></textarea>
 				
 				<button id='enviar'type="submit">
-					Enviar
+					Send
 				</button>
 			</form>
 		</div>

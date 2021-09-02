@@ -19,13 +19,13 @@
         <div class="formu">
             <form action="php/forms_adopt.php" method="POST">
                 <label for="">What's your name?:</label>
-                <input type="text" name="name" placeholder="Ingresa tu nombre" required>
+                <input type="text" name="name" placeholder="Type your name" required>
 
                 <label for="">E-mail address:</label>
-                <input type="text" name="email" placeholder="Ingresa tu correo" required>
+                <input type="text" name="email" placeholder="Type your email address" required>
                 
                 <label for="">Why do you want to adopt?:</label>
-                <textarea name="info" placeholder="Justifica tu respuesta" id="" cols="30" rows="10" required></textarea>
+                <textarea name="info" placeholder="Tell us why are you interested!" id="" cols="30" rows="10" required></textarea>
                 <button class="boton">Send</button>
             </form>
         </div>

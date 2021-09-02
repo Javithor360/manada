@@ -21,14 +21,14 @@
             <img src="../../src/pets/cat/Camila.png" id="pet_pic">
             <h3>Age:</h3>
             <p>3 years old</p><br>
-            <h3>Sex:</h3>
+            <h3>Gender:</h3>
             <p>Female</p><br>
             <h3>Description:</h3>
             <p>
                 This kitten was given to our shelter because his owner couldn't take care of him any longer, but he is waiting for you to adopt him, don't miss the opportunity, he likes to take naps, he usually spends in his bed but if you feed him with his favorite food he will obey almost everything you say to him, he will be very obedient will obey almost everything you tell him.
             </p><br>
-            <h3>¿Do You Want to Adopt Me?</h3><br>
-            <a href="../../pets.php"><button class="boton">Back to</button></a>
+            <h3>Do You Want to Adopt Me?</h3><br>
+            <a href="../../pets.php"><button class="boton">Go back</button></a>
             <a href="../../adopt_form.php"><button class="boton">Adopt</button></a>
         </div><br><br><br>
 

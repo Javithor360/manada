@@ -21,14 +21,14 @@
             <img src="../../src/pets/dog/Taco.png" id="pet_pic">
             <h3>Age:</h3>
             <p>3 years old</p><br>
-            <h3>Sex:</h3>
+            <h3>Gender:</h3>
             <p>Male</p><br>
             <h3>Description:</h3>
             <p>
                 This doggy was given to our shelter because his owner couldn't take care of him any longer, but he is waiting for you to adopt him, don't miss the chance, he is a very sleepy doggy but he likes to eat a lot, his favorite food is chicken croquettes and he likes to be rubbed on his back and he likes to be rubbed on his back.
             </p><br>
-            <h3>¿Do You Want to Adopt Me?</h3><br>
-            <a href="../../pets.php"><button class="boton">Back to</button></a>
+            <h3>Do You Want to Adopt Me?</h3><br>
+            <a href="../../pets.php"><button class="boton">Go back</button></a>
             <a href="../../adopt_form.php"><button class="boton">Adopt</button></a>
         </div><br><br><br>
         
