@@ -30,7 +30,7 @@
                 </ul>
                 <div id="slider_text_container">
                         <h1 id="adopta">
-                                ¡Adopt!
+                                Adopt!
                         </h1>
                         <h2>
                                 You save a lot of animals and get a new best friend
