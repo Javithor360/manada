@@ -19,13 +19,12 @@ html{
 .main-container {
     position: relative;
     min-height: 100vh;
+    margin-left: 100px;
+    padding: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #fff;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1161px;
 }
 
 .postnav {
@@ -39,7 +38,6 @@ html{
 .postnav .text {
     position: relative;
     max-width: 700px;
-    margin-left: 100px;
 }
 
 .postnav .text h2 {
@@ -85,15 +83,15 @@ html{
     color: red;
 }
 
-.container{
+/* .container{
     width: 961px;
     margin-left: auto;
     margin-right: auto;
-}
-/* 
+} */
+ 
 .container h2 {
     margin-left: 200px;
-} */
+}  
 
 .container h2::before {
 	content: '';
@@ -107,7 +105,7 @@ html{
 .grid {
     align-items: center;
     place-self: center center;
-    margin: 20px 0px 20px 0px;
+    margin: 20px 200px 20px 200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
@@ -171,15 +169,23 @@ html{
     color: #fff;
 }
 
-@media (max-width: 1366px) {
+/* @media screen and (min-width: 1367px) {
+    .rightImg{margin-left: 100px;}
+} */
+
+@media screen and (max-width: 1366px) {
     .postnav .text {
         max-width: 500px;
     }
 
     .postnav .rightImg {
-        margin-left: 100px;
+        margin-left: 70px;
         height: 100%;
+        width: 419px !important;
+        padding-right: 0;
     }
+
+    .text{margin-right: 40px;}
 
     .grid > article {
         width: 300px;
@@ -190,6 +196,42 @@ html{
         width: 300px;
         height: 180px;
     }
+
+    .main-container {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #fff;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1161px;
+    }
+
+    .postnav .text {
+        position: relative;
+        max-width: 700px;
+        margin-left: 0;
+    }
+
+    .container{
+        width: 961px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .grid {
+        align-items: center;
+        place-self: center center;
+        margin: 20px 0px 20px 0px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        position: relative;
+    }
+
+    .container h2{margin: 0;}
 }
 
 @media screen and (max-width:1200px) {
@@ -276,7 +318,7 @@ html{
 }
 
 @media screen and (max-width: 675px){
-    .text,.main-container,.postnav{padding-top: 75px;}
+    /* .text,.main-container,.postnav{padding-top: 75px;} */
 
     .main-container h2{font-size: 35px !important;}
 
