@@ -276,6 +276,10 @@ html{
 }
 
 @media screen and (max-width: 675px){
+    .text,.main-container,.postnav{padding-top: 75px;}
+
+    .main-container h2{font-size: 35px !important;}
+
     .grid > article {
         width: 270px;
         height: 440px;

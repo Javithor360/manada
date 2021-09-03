@@ -514,7 +514,7 @@ footer {
   width: 100%;
   padding-top: 40px;
   color: #fff;
-  margin-top: -50px;
+  margin-top: 40px;
 }
 
 .container_footer {
@@ -697,6 +697,10 @@ body::-webkit-scrollbar-thumb {
   #circulo3 img {
     height: 110px;
     width: 110px;
+  }
+
+  footer{
+    margin-top: -50px;
   }
 }
 
