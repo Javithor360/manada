@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>La Manada | Iniciar sesión</title>
+	<title>Iniciar sesión ∙ La Manada</title>
 	<link rel="stylesheet" type="text/css" href="../css/form_login.css">
 	<link rel="stylesheet" href="../css/footer_style.css">
 	<link rel="stylesheet" href="../css/navbar2_style.css">

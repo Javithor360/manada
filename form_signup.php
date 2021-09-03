@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>La Manada | Registro</title>
+	<title>Registro ∙ La Manada</title>
 	<link rel="stylesheet" href="../css/form_signup.css">
     <link rel="stylesheet" href="../css/navbar2_style.css">
     <link rel="stylesheet" href="../css/footer_style.css">
