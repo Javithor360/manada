@@ -1,5 +1,16 @@
 <?php session_start();
-        $login = isset($_SESSION['email']);   
+         
+        if(isset($_SESSION['email'])){
+                //conexion a la base
+                $conexion = new mysqli("localhost","root","","login");
+                $emaillogged = $_SESSION['email'];
+                $db_consulta = "SELECT email, name, lastNames FROM usuarioslogin WHERE email = '$emaillogged'";
+                $result = $conexion->query($db_consulta);
+                $printuser = $result->fetch_assoc();
+        }
+        $login = isset($_SESSION['email']);
+        
+        
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,13 +23,20 @@
         <script src="js/navfootMaker.js"></script>
 </head>
 <body>
-
 <div class="fBody">
                 <header id="logo">
                         <img src="src/logos/logo_full.svg" width="366px" height="120px">
                 </header>
         <div id="navyIndex"></div>
-
+        <!--impresion de los datos del usuario-->
+        <?php 
+                if(isset($_SESSION['email'])){
+                        echo ($printuser['name']); 
+                        echo (" ");
+                        echo ($printuser['lastNames']);
+                }
+                 
+        ?>
         <div class="slider_img_container">
                 <ul>
                         <li><img src="src/perro1_slider.jpg"></li>
