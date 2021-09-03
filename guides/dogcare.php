@@ -15,7 +15,7 @@
     </head>
     <body>
         <div id="navy"></div>
-    
+    <div class="main">
         <div class="container">
             <h1>Guía de cuidado para los caninos del hogar</h1>
             <hr size=2px color='blue'>
@@ -104,6 +104,7 @@
             </div>
     
         </div>
+    </div>
     
         <div id="foot"></div>
     

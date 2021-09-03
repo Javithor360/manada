@@ -191,3 +191,18 @@ FOOTER (?)
 #back:hover{
 	background-size: 100% 2px;
 } */
+
+@media screen and (max-width: 770px){
+    .container{width: 90%;}
+    .text_container{width: 100%}
+    .img_container{display: none;}
+}
+
+@media screen and (max-width: 600px){
+    .container figure img{
+        width: 75px !important;
+        height: 75px;
+    }
+    .container figcaption, p{font-size: 15px;}
+    .container h1{font-size: 20px;}
+}

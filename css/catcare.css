@@ -104,8 +104,17 @@ body{
     margin-right: 200px;
 }
 
+.main{
+    width: 100%;
+    text-align: center;
+}
+
+
 .container{
-    padding: 50px 200px
+    width: 961px;
+    display: inline-block;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 
 .sect p{
@@ -223,4 +232,18 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 990px){
+    .container{width: 90%;}
+    .main{width: 100%}
+}
+
+@media screen and (max-width: 800px){
+    #care, #food{float: none !important; height: 225px !important; width: auto !important;} #play{height: 200px !important; width: auto !important;}
+    .main h1{font-size: 27px;}
+    .main p{font-size: 16px;}
+    .main h2{font-size: 23px;}
+    .main h3{font-size: 20px;}
+
 }

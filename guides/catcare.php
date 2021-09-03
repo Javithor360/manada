@@ -14,9 +14,10 @@
     <script type="text/javascript">window.session = "<?php echo $login ?>";</script>
 </head>    
 <body>
-    
+ 
     <div id="navy"></div>
 
+<div class="main"> 
     <div class="container">
         <h1>Guía de cuidado para los felinos del hogar</h1>
         <hr size=2px color=#11698E>
@@ -109,6 +110,7 @@
             </div>
 
     </div>
+</div>
 
     <div id="foot"></div>
 

@@ -12,15 +12,20 @@ html{
     scroll-behavior: smooth;
 }
 
+.fBody{
+    width: 100%;
+}
+
 .main-container {
     position: relative;
     min-height: 100vh;
-    margin-left: 100px;
-    padding: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1161px;
 }
 
 .postnav {
@@ -34,6 +39,7 @@ html{
 .postnav .text {
     position: relative;
     max-width: 700px;
+    margin-left: 100px;
 }
 
 .postnav .text h2 {
@@ -47,6 +53,7 @@ html{
 .postnav .text a {
     display: inline-block;
     margin-top: 20px;
+    margin-bottom: 20px;
     padding: 8px 20px;
     background: #316eed;
     color: #fff;
@@ -78,9 +85,15 @@ html{
     color: red;
 }
 
+.container{
+    width: 961px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* 
 .container h2 {
     margin-left: 200px;
-}
+} */
 
 .container h2::before {
 	content: '';
@@ -94,7 +107,7 @@ html{
 .grid {
     align-items: center;
     place-self: center center;
-    margin: 20px 200px 20px 200px;
+    margin: 20px 0px 20px 0px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
@@ -177,4 +190,120 @@ html{
         width: 300px;
         height: 180px;
     }
+}
+
+@media screen and (max-width:1200px) {
+    .main-container{width: 90%;} .container{width: 90%;}
+    .text{margin-left: 0 !important;}
+    .main-container h2{font-size: 50px !important;}
+    .rightImg, .glassDog{width: 340px !important; height: auto !important;}
+    a[href="#articles"]{font-size: 14px !important;}
+    
+    .grid > article {
+        width: 320px;
+        height: 500px;
+    }
+    .grid > article img {
+        width: 320px;
+        height: 210px;
+    }
+
+    .blogText h3{font-size: 16px;} .blogText p{font-size: 15px;}
+}
+
+@media screen and (max-width:1080px){
+    .grid > article {
+        width: 300px;
+        height: 500px;
+    }
+    .grid > article img {
+        width: 300px;
+        height: 190px;
+    }
+}
+
+@media screen and (max-width: 1020px){
+    .grid{width: 90%;}
+    .grid > article {
+        width: 270px;
+        height: 440px;
+    }
+    .grid > article img {
+        width: 270px;
+        height: 160px;
+    }
+
+    .blogText h3{font-size: 15px;} .blogText p{font-size: 13px;}
+}
+
+@media screen and (max-width:995px){
+    .rightImg, .text, .postnav{display: block !important;}
+    .text{width: 100% !important; max-width: 900px !important;}
+    .rightImg, .glassDog{width: 270px !important; height: auto !important; margin-left: auto !important;
+        margin-right: auto !important;}
+}
+
+@media screen and (max-width:930px){
+    .grid{grid-template-columns: repeat(2, 1fr);}
+
+    .grid > article {
+        width: 320px;
+        height: 500px;
+    }
+    .grid > article img {
+        width: 320px;
+        height: 210px;
+    }
+
+    .blogText h3{font-size: 16px;} .blogText p{font-size: 15px;}
+}
+
+@media screen and (max-width: 800px){
+    .main-container h2{font-size: 40px !important;}
+}
+
+@media screen and (max-width: 740px){
+    .grid > article {
+        width: 300px;
+        height: 440px;
+    }
+    .grid > article img {
+        width: 300px;
+        height: 190px;
+    }
+
+    .blogText h3{font-size: 15px;} .blogText p{font-size: 13px;}
+}
+
+@media screen and (max-width: 675px){
+    .grid > article {
+        width: 270px;
+        height: 440px;
+    }
+    .grid > article img {
+        width: 270px;
+        height: 160px;
+    }
+
+    .blogText h3{font-size: 15px;} .blogText p{font-size: 13px;}
+}
+
+@media screen and (max-width: 610px){
+    .container h2::before{
+        width: 90%;
+    }
+
+    .grid{grid-template-columns: repeat(1, 1fr); width: 320px !important; margin-left: auto !important; margin-right: auto !important;}
+
+    .grid > article {
+        width: 320px;
+        height: 500px;
+    }
+    .grid > article img {
+        width: 320px;
+        height: 210px;
+    }
+
+    .blogText h3{font-size: 16px;} .blogText p{font-size: 15px;}
+
 }

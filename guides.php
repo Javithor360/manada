@@ -15,6 +15,7 @@
     </head>
     <body>
         <div id="navy"></div>
+<div class="fBody">
         <section class="main-container">
             <div class="postnav">
                 <div class="text">
@@ -74,6 +75,7 @@
                 </article>
             </main>
         </div>
+</div>
         <div id="foot"></div>
     </body>
 </html>
