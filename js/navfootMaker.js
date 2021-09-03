@@ -13,7 +13,7 @@ function navfootMaker() {
         login =    '<div class="user">'+
                         '<a href="'+ longpath +'php/logout.php">'+
                             '<button class="login">'+
-                                'Cerrar Sesión'+
+                                window.username+
                             '</button>'+
                         '</a>'+
                     '</div>';
