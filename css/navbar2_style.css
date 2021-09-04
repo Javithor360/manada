@@ -49,7 +49,7 @@ header .menu .menucontent {
 header .menu .menucontent a {
   font-size: 12pt;
   float: right;
-  padding: 16px 8px;
+  padding: 18.5px 8px;
   color: #fff;
   text-decoration: none;
   background: transparent;
@@ -60,7 +60,7 @@ header .menu .menucontent a {
 header .menu .menucontent p {
   float: right;
   font-size: 14pt;
-  padding: 14px 8px;
+  padding: 1rem 8px;
   color: #fff;
   text-decoration: none;
   background: transparent;

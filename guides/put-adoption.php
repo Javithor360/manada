@@ -1,6 +1,6 @@
-<?php session_start();
-        $login = isset($_SESSION['email']);   
-?>
+<?php  session_start();
+        require '../php/username-conexion.php';
+ ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/footer_style.css">
     <script src="../js/navfootMaker.js"></script>
     <script type="text/javascript">window.session = "<?php echo $login ?>";</script>
+    <script type="text/javascript">window.username = "<?php echo $username ?>";</script>
     <title>¿Cómo puedo dar en adopción? ∙ La Manada</title>
 </head>
 <body>

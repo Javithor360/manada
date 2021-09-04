@@ -1,16 +1,6 @@
-<?php session_start();
-         
-        if(isset($_SESSION['email'])){
-                //conexion a la base
-                $conexion = new mysqli("localhost","root","","login");
-                $emaillogged = $_SESSION['email'];
-                $db_consulta = "SELECT email, name, lastNames FROM usuarioslogin WHERE email = '$emaillogged'";
-                $result = $conexion->query($db_consulta);
-                $printuser = $result->fetch_assoc();
-                $username = $printuser['name'] . " " . $printuser['lastNames'];
-        }
-        $login = isset($_SESSION['email']);
-?>
+<?php  session_start();
+        require 'php/username-conexion.php';
+ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -27,7 +17,7 @@
     <body>
         <div id="navy"></div>
 
-        <div class="formu">
+        <div class="formu" onSubmit="document.getElementById('enviar').disabled=true;">
             <form action="php/forms_adopt.php" method="POST">
                 <label for="">¿Cual es tu nombre?:</label>
                 <input type="text" name="name" placeholder="Ingresa tu nombre" required>
@@ -37,7 +27,7 @@
                 
                 <label for="">¿Cual es el motivo por el que deseas adoptar?:</label>
                 <textarea name="info" placeholder="Justifica tu respuesta" id="" cols="30" rows="10" required></textarea>
-                <button class="boton">Enviar</button>
+                <button id="enviar" type="submit" class="boton">Enviar</button>
             </form>
         </div>
         <div id="foot"></div>

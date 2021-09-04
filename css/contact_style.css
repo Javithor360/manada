@@ -47,10 +47,10 @@ html{
 	transition: box-shadow .3s;
 	box-shadow: 2px 2px  8px #fff;
 }
-.form:hover{
+/*.form:hover{
 	box-shadow: 2px 2px  8px #11698E;
 	transition: box-shadow .3s;
-}
+}*/
 #title1{
 	color: #fff;
 	font-size: 2.5em;
@@ -145,7 +145,17 @@ textarea{
 	margin-left: .75rem;
 	margin-top: .40rem;
 	margin-bottom: .30rem;
+	border: none;
+	/*font-weight: bold;*/
+	font-size: .9rem;
+	color: #000000;
+	border-radius: 5px;
+	transition: background-color .7s;
 }
+  #enviar:hover{
+	cursor: pointer;
+	filter: brightness(90%);
+  }
 
 @media screen and (max-width: 720px) {
 
