@@ -12,9 +12,9 @@ function crearboton(){
                         '</a>'+
                     '</div>';
     }else{
-        login =        '<a href="php/login.php">'+
+        login =        '<a href="'+ longpath +'php/login.php">'+
                             '<button class="boton">'+
-                                'Iniciar sesiÃ³n para Adoptar'+
+                                'Iniciar sesion para Adoptar'+
                             '</button>'+
                         '</a>'+
                     '</div>';       
