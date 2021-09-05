@@ -47,13 +47,42 @@ button:hover {
     background: #6998ff;
 }
 
-button a {
+a{
     text-decoration: none;
     color: #fff;
 }
 
-button a:visited {
+a:visited {
     text-decoration: none;
     color: #fff;
 }
 
+@media screen and (max-width: 1366px){
+    p{font-size: 30px;}
+    h1{margin-top: 35px; margin-bottom: 35px;}
+    img{height: 500px; width: 700px; margin-right: 70px;}
+    h1{font-size: 80px;}
+    #right{margin-top: 70px !important; width: 1229.390px; margin: 0;}
+    #right p{margin-bottom: 30px;}
+    button{font-size: 17px}
+}
+
+@media screen and (max-width: 1250px){
+    #right{width: 95%;}
+    p{font-size: 25px}
+    h1{font-size: 60px}
+    img{height: 400px; width: 550px;}
+}
+
+@media screen and (max-width: 1000px){
+    img{height: 350px; width: 500px;}
+}
+
+@media screen and (max-width: 850px){
+    img{float: none; display: block; margin-left: auto; margin-right: auto;}
+    body{overflow: visible;}
+    #right{width: 90%; margin-left: auto; margin-right: auto; margin-top: 20px !important;}
+    p{text-align: center;}
+    h1{margin-bottom: 20px;}
+    button{display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px; text-decoration: none; font-size: 16px;}
+}
