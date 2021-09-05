@@ -1,6 +1,6 @@
-<?php session_start();
-        $login = isset($_SESSION['email']);   
-?>
+<?php  session_start();
+        require 'php/username-conexion.php';
+ ?>
 <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="./css/footer_style.css">
         <script type="text/javascript">window.session = "<?php echo $login ?>";</script>
         <script src="js/navfootMaker.js"></script>
+        <script type="text/javascript">window.username = "<?php echo $username ?>";</script>
     </head>
     <body>
         <div id="navy"></div>

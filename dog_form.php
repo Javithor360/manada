@@ -1,16 +1,6 @@
-<?php session_start();
-         
-        if(isset($_SESSION['email'])){
-                //conexion a la base
-                $conexion = new mysqli("localhost","root","","login");
-                $emaillogged = $_SESSION['email'];
-                $db_consulta = "SELECT email, name, lastNames FROM usuarioslogin WHERE email = '$emaillogged'";
-                $result = $conexion->query($db_consulta);
-                $printuser = $result->fetch_assoc();
-                $username = $printuser['name'] . " " . $printuser['lastNames'];
-        }
-        $login = isset($_SESSION['email']);
-?>
+<?php  session_start();
+        require 'php/username-conexion.php';
+ ?>
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -28,7 +18,7 @@
         <div id="navy"></div>
 
         <div class="formu">
-            <form action="php/formu_dar2.php" method="POST">
+            <form action="php/formu_dar2.php" method="POST" onSubmit="document.getElementById('enviar').disabled=true;">
                 <label for="firstName" class="first-name">Nombres la mascota:</label>
                 <input class="input" id="firstName" type="text" name="nombre" placeholder="Ingrese sus nombres" required>
     
@@ -77,7 +67,7 @@
                   </label>  
                   </label>
                   <br><br>
-            <button>Enviar</button>
+            <button id="enviar" type="submit">Enviar</button>
           </form>
         </div>
 
