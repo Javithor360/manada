@@ -26,7 +26,7 @@
     </head>
     <body>
         <div id="navy"></div>
-        
+<div class="fBod">
         <div class="cont">
             <h1 class="h1">¡Conoce a Bruno!</h1>
             <img id="pet_pic" src="../../src/pets/dog/Bruno.png">
@@ -43,8 +43,9 @@
             <h3>¿Deseas Adoptarme?</h3><br>
             <a href="../../pets.php"><button class="boton">Volver</button></a>
             <a href="../../adopt_form.php"><button class="boton">Adoptar</button></a>
-        </div><br><br><br>
-        
+        </div>
+</div>
+
         <div id="foot"></div>
     </body>
 </html>

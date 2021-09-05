@@ -80,12 +80,47 @@ a .boton{
     text-decoration: none;
 }
 
+.fBody{width: 100%;}
+
 @media (max-width: 1366px) {
     .boton {
         padding: 1.5em 2.9em;
+        margin-bottom: 20px;
     }
 
     #pet_pic {
         margin-left: -20px;
     }
+
+    .cont{width: 952.718px; margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        margin-left: auto; margin-right: auto;}
+
+}
+
+@media screen and (max-width: 985px) {
+    .cont{width: 95%;}
+
+    #pet_pic{width: 400px; height: auto;}
+
+    .cont p{font-size: 20px;}
+    .cont h3{font-size: 35px;}
+    .cont h1{font-size: 45px;}
+
+    .boton{padding: 1em 2em; font-size: 12px;}
+}
+
+@media screen and (max-width: 730px){
+    #pet_pic{width: 300px !important; height: auto;}
+    .cont p{font-size: 18px;}
+    .cont h3{font-size: 30px;}
+}
+
+@media screen and (max-width: 600px){
+    #pet_pic{float: none; margin-left: auto; margin-right: auto; display: block;}
+
+    .cont p{font-size: 20px;}
+    .cont h3{font-size: 35px;}
+    .cont h1{font-size: 45px;}
 }
