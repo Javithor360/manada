@@ -20,40 +20,40 @@
     <main>
         <div class="container">
             <div class="text_container">
-                <h1>¿Cómo puedo dar en adopción?</h1>
-                <p>Como Fundación La Manada agradecemos la confianza que depositas en nosotros al darnos a tu mascota en adopción, es por ello que te brindamos esta serie de pasos a seguir para que puedas hacer el proceso sin complicaciones.</p>
+                <h1> <?php echo $putadoption ['PutAdoptHeaderTitle'] ?></h1>
+                <p> <?php echo $putadoption ['PutAdoptHeaderDesc'] ?> </p>
                 <div class="steps">
                     <figure id="step1"> 
                         <!--<div style="color: black;">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, suscipit dolore est incidunt maiores beatae quis error sint quia. Et, placeat dolor omnis? Delectus, id, minus. Earum, doloremque harum nihil.
                         </div>-->
                         <img id="hidden" src="../src/icons/iniciar-sesion.svg" alt="" width="100px" height="100px">
-                        <figcaption>Paso 1: Inicia sesión</figcaption>
+                        <figcaption> <?php echo $putadoption ['PutAdoptStep1'] ?> </figcaption>
                     </figure>
                     <figure> 
                         <img src="../src/icons/pets_species-01.svg" alt="" width="100px" height="100px">
-                        <figcaption>Paso 2: Selecciona la especie que quieres dar en adopción</figcaption>
+                        <figcaption> <?php echo $putadoption ['PutAdoptStep2'] ?> </figcaption>
                     </figure>
                     <figure>
                         <img src="../src/icons/form_icon2.svg" alt="" width="100px" height="100px">
-                        <figcaption>Paso 3: Llena el formulario con los datos solicitados</figcaption>
+                        <figcaption> <?php echo $putadoption ['PutAdoptStep3'] ?> </figcaption>
                     </figure>
                 </div>
                 <div class="steps2">
                    <figure>
                         <img src="../src/icons/photo_step.svg" alt="" width="100px" height="100px">
-                        <figcaption>Paso 4: Sube almenos 3 fotografias de la mascota</figcaption>
+                        <figcaption> <?php echo $putadoption ['PutAdoptStep4'] ?> </figcaption>
                     </figure>
                     <figure>
                         <img src="../src/icons/check-data.svg" alt="" width="100px" height="100px">
-                    <figcaption>Paso 5: Evaluaremos los datos que nos brindaste (Puede tomar tiempo)</figcaption>
+                    <figcaption> <?php echo $putadoption ['PutAdoptStep5'] ?> </figcaption>
                     </figure>
                     <figure>
                         <img src="../src/icons/find_home.svg" alt="" width="100px" height="100px">
-                    <figcaption>Paso 6: ¡Listo! si se cumplen los requisitos te contactaremos para que nos entregues a la mascota y buscarle un nuevo hogar</figcaption>
+                    <figcaption ><?php echo $putadoption ['PutAdoptStep6'] ?> </figcaption>
                     </figure>
                 </div>
-                <a id="back" href="../guides.php">Volver</a>
+                <a id="back" href="../guides.php"><?php echo $putadoption ['GoBackButton'] ?></a>
             </div>
 
             <div class="img_container">

@@ -30,41 +30,41 @@
         </section>
         <span id="articles"></span>
         <div class="container">
-            <h2>Nuestros artículos</h2>
+            <h2><?php echo $blog ['ArtsTitle'] ?></h2>
             <main class="grid">
                 <article>
                     <img src="./src/blog_dogcare.jpg">
                     <div class="blogText">
-                        <h3>¿Cómo cuidar a mi perro?</h3>
-                        <p>Tener a un perro implica una gran responsabilidad. Aunque los consejos para cuidar a tu mascota son sencillos, se debe saber que serán para el resto de su vida, por lo tanto, cuidar a tu perro [...]</p>
-                        <a href="./guides/dogcare.php"><button>Leer más</button></a>
+                        <h3><?php echo $blog ['ArtsDogTitle'] ?></h3>
+                        <p> <?php echo $blog ['ArtsDogDesc'] ?> </p>
+                        <a href="./guides/dogcare.php"><button> <?php echo $blog ['ReadMoreButton'] ?> </button></a>
                     </div>
                 </article>
             
                 <article>
                     <img src="./src/blog_catcare.jpg">
                     <div class="blogText">
-                        <h3>¿Cómo cuidar a mi gato?</h3>
-                        <p>¿Es tu primera vez teniendo un peludo amigo? En esta guía conoceras información básica a tomar en cuenta para el cuidado de tu nuevo amigo, desde una alimentación saludable hasta la ayuda que le puedes brindar a la hora de su aseo [...]</p>
-                        <a href="./guides/catcare.php"><button>Leer más</button></a>
+                        <h3> <?php echo $blog ['ArtsCatTitle'] ?> </h3>
+                        <p> <?php echo $blog ['ArtsCatDesc'] ?> </p>
+                        <a href="./guides/catcare.php"><button><?php echo $blog ['ReadMoreButton'] ?></button></a>
                     </div>
                 </article>
 
                 <article>
                     <img src="./src/blog_adopt.jpg">
                     <div class="blogText">
-                        <h3>¿Cómo puedo adoptar?</h3>
-                        <p>Como Fundación La Manada nos preocupamos para que tengas la mejor experiencia con nuestro sitio, es por ello que te brindamos esta práctica guía en la que explicamos de forma sencilla los pasos que a seguir para adoptar a tu nuevo amigo [...]</p>
-                        <a href="./guides/how_to_adopt.php"><button>Leer más</button></a>
+                        <h3> <?php echo $blog ['ArtsHowAdoptTitle'] ?> </h3>
+                        <p> <?php echo $blog ['ArtsHowAdoptDesc'] ?> </p>
+                        <a href="./guides/how_to_adopt.php"><button><?php echo $blog ['ReadMoreButton'] ?></button></a>
                     </div>
                 </article>
 
                 <article>
                     <img src="./src/blog_bringadopt.jpg">
                     <div class="blogText">
-                        <h3>¿Cómo puedo poner en adopción?</h3>
-                        <p>Puede ser que por ciertos motivos ya no puedas tener a tu mascota contigo y decidas darla en adopción, cuidaremos a tu amigo hasta que tenga un nuevo hogar, te brindamos una serie de pasos que debes seguir para realizar este proceso [...]</p>
-                        <a href="./guides/put-adoption.php"><button>Leer más</button></a>
+                        <h3> <?php echo $blog ['ArtsGivePetTitle'] ?> </h3>
+                        <p> <?php echo $blog ['ArtsGivePetDesc'] ?> </p>
+                        <a href="./guides/put-adoption.php"><button><?php echo $blog ['ReadMoreButton'] ?></button></a>
                     </div>
                 </article>
             </main>

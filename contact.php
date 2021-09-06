@@ -22,13 +22,13 @@
 		<div class="container">
 		<div class="form">
 			<form  id="#form"action="./php/mailsender.php" method="POST" onSubmit="document.getElementById('enviar').disabled=true;">
-				<label id="title1">Comunicate con nosotros!</label>
-				<label id="title2">Dejános tu comentario, duda o sugerencia, será un gusto ayudarte</label>
-				<input type="text" name="nombre" placeholder="Nombre" required="">
-				<input placeholder="Correo electronico" type="email" name="email" autocomplete="off" required="">
-					<textarea id="textbox" required="" name="mensaje" placeholder="Escribe aquí, ¿En que te podemos ayudar?"></textarea>
+				<label id="title1"> <?php echo $contact ['ContactHeaderTitle'] ?> </label>
+				<label id="title2"> <?php echo $contact ['ContactHeaderDesc'] ?> </label>
+				<input type="text" name="nombre" placeholder="<?php echo $contact ['ContactPlaceHolder1'] ?>" required="">
+				<input placeholder="<?php echo $contact ['ContactPlaceHolder2'] ?>" type="email" name="email" autocomplete="off" required="">
+					<textarea id="textbox" required="" name="mensaje" placeholder="<?php echo $contact ['ContactPlaceHolder3'] ?>"></textarea>
 				<button id='enviar'type="submit">
-					Enviar
+					<?php echo $contact ['ContactSendButton'] ?>
 				</button>
 			</form>
 		</div>
