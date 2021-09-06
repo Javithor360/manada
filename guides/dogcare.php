@@ -40,9 +40,9 @@
                 <h2> <?php echo $dogcare ['DogCareHealthyNutTitle'] ?> </h2>
                 <hr size=2px color='blue'>
                 <img  id='food' src="../src/dogfood.jpg">
-                    <p>
+                   <p>
                         <?php echo $dogcare ['DogCareHealthyNutDescLine1'] ?>
-                    </p> 
+                    </p>  
 
                     <p>
                         <?php echo $dogcare ['DogCareHealthyNutDescLine2'] ?>

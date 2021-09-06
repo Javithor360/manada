@@ -140,4 +140,8 @@
         'ContactPlaceHolder3' => "Escribe aquí, ¿En que te podemos ayudar?",
         'ContactSendButton' => "Enviar",
     );
+
+    $pets = array(
+        'PetsHeaderTitle' => "¡Conoce a tu nuevo amigo!",
+    );
 ?>

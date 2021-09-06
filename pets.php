@@ -19,7 +19,7 @@
         <div id="navy"></div>
 
         <section class="panel">
-            <h2 id="articles">¡Conoce a tu nuevo amigo!</h2>
+            <h2 id="articles"> <?php echo $pets ['PetsHeaderTitle'] ?> </h2>
             <div class="container">
                 <main class="grid">
 

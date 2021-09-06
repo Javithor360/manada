@@ -149,4 +149,7 @@
         'ContactSendButton' => "Send",
     );
     
+    $pets = array(
+        'PetsHeaderTitle' => "Meet your new buddy!",
+    );
 ?>
