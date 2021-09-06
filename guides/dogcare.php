@@ -1,7 +1,7 @@
 <?php  session_start();
         require '../php/username-conexion.php';
         include('../php/define_lang.php');
- ?>
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -17,7 +17,7 @@
         <div id="navy"></div>
     <div class="main">
         <div class="container">
-            <h1>XD</h1>
+            <h1>Borré esto sin querer y no sé que ponía sorry xd</h1>
             <hr size=2px color='blue'>
     
             <section class="sect">
