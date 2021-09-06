@@ -1,34 +1,27 @@
 <?php  session_start();
         require 'php/username-conexion.php';
+        include('php/define_lang.php');
  ?>
 <!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Blog ∙ La Manada</title>
+        <title><?php echo $blog['pageBlogTitle'] ?></title>
         <link rel="shortcut icon" href="./src/logos/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/navbar2_style.css">
         <link rel="stylesheet" href="css/guides.css">
         <link rel="stylesheet" href="css/footer_style.css">
         <script src="js/navfootMaker.js"></script>
-        <script type="text/javascript">window.session = "<?php echo $login ?>";</script>
-        <script type="text/javascript">window.username = "<?php echo $username ?>";</script>
-    </head>
+        <script type="text/javascript">window.navfoot = { lang: "<?php echo $_SESSION['lang']?>", session: "<?php echo $login ?>", username: "<?php echo $username ?>", navbar: { home: "<?php echo $navbar['home'] ?>", pets: "<?php echo $navbar['pets'] ?>", howAdopt: "<?php echo $navbar['howAdopt'] ?>", contact: "<?php echo $navbar['contact'] ?>", login: "<?php echo $navbar['login'] ?>" }, footer: { language: "<?php echo $footer['language'] ?>", languageOpc1: "<?php echo $footer['languageOpc1'] ?>", languageOpc2: "<?php echo $footer['languageOpc2'] ?>", title: "<?php echo $footer['title'] ?>", phrase: "<?php echo $footer['phrase'] ?>", copyright: "<?php echo $footer['copyright'] ?>" } }</script>
     <body>
         <div id="navy"></div>
 <div class="fBody">
         <section class="main-container">
             <div class="postnav">
                 <div class="text">
-                    <h2>¿Te interesan las mascotas?</h2>
-                    <p>
-                        Bien dicen que las mascotas son compañeras perfectas para nosotros.
-                        Cuidar de nuestros compañeros es un obligación y un privilegio para todos,
-                        hay una infinidad de cosas que no sabemos de ellos, curiosidades y tips 
-                        de cuido para nuestros compañeros de cuatro patas; por eso, en este apartado podrás encontrar mucha información relacionada a los procesos
-                        de nuestra página e información acerca de nuestros fieles compañeros.
-                    </p>
-                    <a href="#articles">Ver artículos</a>
+                    <h2><?php echo $blog['headerBlogTitle'] ?></h2>
+                    <p><?php echo $blog['headerBlogDesc'] ?></p>
+                    <a href="#articles"><?php echo $blog['headerBlogButton']; ?></a>
                 </div>
                 <div class="rightImg">
                     <img class="glassDog" src="./src/blogPet.png" alt="¡Lee nuestros artículos">

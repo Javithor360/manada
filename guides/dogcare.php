@@ -1,24 +1,23 @@
 <?php  session_start();
         require '../php/username-conexion.php';
+        include('../php/define_lang.php');
  ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Cuidado de perros ∙ La Manada</title>
+        <title>TITULOS</title>
         <link rel="stylesheet" href="../css/dogcare.css">
         <link rel="stylesheet" href="../css/navbar2_style.css">
         <link rel="stylesheet" href="../css/footer_style.css">
         <link rel="shortcut icon" href="../src/logos/favicon.ico" type="image/x-icon">
         <script src="../js/navfootMaker.js"></script>
-        <script type="text/javascript">window.session = "<?php echo $login ?>";</script>
-        <script type="text/javascript">window.username = "<?php echo $username ?>";</script>
-    </head>
+        <script type="text/javascript">window.navfoot = { lang: "<?php echo $_SESSION['lang']?>", session: "<?php echo $login ?>", username: "<?php echo $username ?>", navbar: { home: "<?php echo $navbar['home'] ?>", pets: "<?php echo $navbar['pets'] ?>", howAdopt: "<?php echo $navbar['howAdopt'] ?>", contact: "<?php echo $navbar['contact'] ?>", login: "<?php echo $navbar['login'] ?>" }, footer: { language: "<?php echo $footer['language'] ?>", languageOpc1: "<?php echo $footer['languageOpc1'] ?>", languageOpc2: "<?php echo $footer['languageOpc2'] ?>", title: "<?php echo $footer['title'] ?>", phrase: "<?php echo $footer['phrase'] ?>", copyright: "<?php echo $footer['copyright'] ?>" } }</script>
     <body>
         <div id="navy"></div>
     <div class="main">
         <div class="container">
-            <h1>Guía de cuidado para los caninos del hogar</h1>
+            <h1>XD</h1>
             <hr size=2px color='blue'>
     
             <section class="sect">

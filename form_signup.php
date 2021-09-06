@@ -1,4 +1,6 @@
-
+<?php  session_start();
+        include('php/define_lang.php');
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +9,7 @@
 	<link rel="stylesheet" href="../css/form_signup.css">
     <link rel="stylesheet" href="../css/navbar2_style.css">
     <link rel="stylesheet" href="../css/footer_style.css">
-    <script type="text/javascript">window.session = "<?php echo $login ?>";</script>
+    <script type="text/javascript">window.navfoot = { lang: "<?php echo $_SESSION['lang']?>", session: "<?php echo $login ?>", navbar: { home: "<?php echo $navbar['home'] ?>", pets: "<?php echo $navbar['pets'] ?>", howAdopt: "<?php echo $navbar['howAdopt'] ?>", contact: "<?php echo $navbar['contact'] ?>", login: "<?php echo $navbar['login'] ?>" }, footer: { language: "<?php echo $footer['language'] ?>", languageOpc1: "<?php echo $footer['languageOpc1'] ?>", languageOpc2: "<?php echo $footer['languageOpc2'] ?>", title: "<?php echo $footer['title'] ?>", phrase: "<?php echo $footer['phrase'] ?>", copyright: "<?php echo $footer['copyright'] ?>" } }</script>
     <script type="text/javascript" src="../js/navfootMaker.js"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

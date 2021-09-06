@@ -8,6 +8,8 @@
                 $result = $conexion->query($db_consulta);
                 $printuser = $result->fetch_assoc();
                 $username = $printuser['name'] . " " . $printuser['lastNames'];
+        }else{
+                $username = 'Not found...';
         }
         $login = isset($_SESSION['email']);
 ?>

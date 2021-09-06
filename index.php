@@ -1,32 +1,23 @@
 <?php  session_start();
         require 'php/username-conexion.php';
+        include('php/define_lang.php');
  ?>
 <!DOCTYPE html>
 <html>
 <head>
         <meta charset="UTF-8">
-        <title>Fundación: La manada</title>
+        <title><?php echo $index['pageIndexTitle'] ?></title>
         <link rel="stylesheet" type="text/css" href="css/index_style.css">
         <link rel="shortcut icon" href="src/logos/favicon.ico" type="image/x-icon">
-        <script type="text/javascript">window.session = "<?php echo $login ?>";</script>
-        <script type="text/javascript">window.username = "<?php echo $username ?>";</script>
-        <script src="js/navfootMaker.js"></script>
+        <script type="text/javascript">window.navfoot = { lang: "<?php echo $_SESSION['lang']?>", session: "<?php echo $login ?>", username: "<?php echo $username ?>", navbar: { home: "<?php echo $navbar['home'] ?>", pets: "<?php echo $navbar['pets'] ?>", howAdopt: "<?php echo $navbar['howAdopt'] ?>", contact: "<?php echo $navbar['contact'] ?>", login: "<?php echo $navbar['login'] ?>" }, footer: { language: "<?php echo $footer['language'] ?>", languageOpc1: "<?php echo $footer['languageOpc1'] ?>", languageOpc2: "<?php echo $footer['languageOpc2'] ?>", title: "<?php echo $footer['title'] ?>", phrase: "<?php echo $footer['phrase'] ?>", copyright: "<?php echo $footer['copyright'] ?>" } }</script>
+        <script src="./js/navfootMaker.js"></script>
 </head>
 <body>
 <div class="fBody">
-                <header id="logo">
-                        <img src="src/logos/logo_full.svg" width="366px" height="120px">
-                </header>
+        <header id="logo">
+                <?php echo $navbar['indexHeader'] ?>
+        </header>
         <div id="navyIndex"></div>
-        <!--impresion de los datos del usuario-->
-<!--         <?php 
-                //if(isset($_SESSION['email'])){
-                  //      echo ($printuser['name']); 
-                    //    echo (" ");
-                 //       echo ($printuser['lastNames']);
-                //}
-                 
-        ?> -->
         <div class="slider_img_container">
                 <ul>
                         <li><img src="src/perro1_slider.jpg"></li>
@@ -37,13 +28,9 @@
                         <li><img src="src/perro4_slider.jpg"></li>
                 </ul>
                 <div id="slider_text_container">
-                        <h1 id="adopta">
-                                ¡Adopta!
-                        </h1>
-                        <h2>
-                                Salvas muchos animales y consigues un nuevo mejor amigo
-                        </h2>
-                        <a class="boton" id="hover_slide_button" href="pets.php">Quiero Adoptar</a>
+                        <h1 id="adopta"><?php echo $index['sliderTitle'] ?></h1>
+                        <h2><?php echo $index['sliderDesc'] ?></h2>
+                        <a class="boton" id="hover_slide_button" href="pets.php"><?php echo $index['sliderButton'] ?></a>
                         <p>
                                 <a href="#down"><img id="flecha" src="src/icons/flechaabajo.svg"></a>
                         </p>
@@ -55,57 +42,46 @@
                 <div id="container-div1">
                         <div id="mision_vision_container" style="display: flex;">
                                 <div id="mision_div">
-                                        <h1>Misión</h1>
-                                        <p>
-                                                Somos una fundación salvadoreña especializada en el cuido de animales
-                                                domésticos y nos encargarmos de brindar la mejorar atención a aquellos
-                                                amigos de cuatro patas que han sido puestos en adopción, asegurando su 
-                                                cuido mientras encuentran un nuevo hogar. 
-                                        </p>
+                                        <h1><?php echo $index['misionTitle'] ?></h1>
+                                        <p><?php echo $index['misionDesc'] ?></p>
                                 </div>
                                 <div id="vision_div">
-                                        <h1>Visión</h1>
-                                        <p>
-                                                Ser una fundación bastante reconocida por nuestra labor para expandirnos
-                                                a otros países del contiente centroaméricano y así ejercer nuestra labor 
-                                                de cuido en el extranjero ampliando nuestro rumbo al rescate de animales
-                                                en las calles para brindarles el buen cuido que merecen. 
-                                        </p>
+                                        <h1><?php echo $index['visionTitle'] ?></h1>
+                                        <p><?php echo $index['visionDesc'] ?></p>
                                 </div>
                         </div>
                 </div>
                 <hr>
                 <div id="container-div2">
-                        <h1>Nuestros Servicios</h1>
+                        <h1><?php echo $index['servicesTitle'] ?></h1>
                         <div class="servicios-logo-container">
                                 <div class="logos_servicios">
                                         <div class="contenedor">
                                                 <div id="circulo1">
                                                         <a href="select.php"><img src="src/icons/icon1-01.svg" width="180px" height="150px"></a>
                                                 </div>
-                                                <p>Dar en adopción</p>
+                                                <p><?php echo $index['servicesButton1'] ?></p>
                                         </div>
                                         <div class="contenedor2">
                                                 <div id="circulo2">
                                                         <a href="guides.php"><img src="src/icons/icon2-01.svg" width="200px" height="200px"></a>
                                                 </div>
-                                                <p>Guias de cuidado</p>
+                                                <p><?php echo $index['servicesButton2'] ?></p>
                                         </div>
                                         <div class="contenedor3">
                                                 <div id="circulo3">
                                                         <a href="contact.php"><img src="src/icons/icon3-01.svg" width="180px" height="190px"></a>
                                                 </div>
-                                                <p>Contacto</p>
+                                                <p><?php echo $index['servicesButton3'] ?></p>
                                         </div>
                                         <div id="frase">
-                                                <h1>¡Cuidemos los Animales!</h1>
+                                                <h1><?php echo $index['lastTitle'] ?></h1>
                                         </div>
                                 </div>
                                 
                         </div>
                 </div>
         </main>
-
         <div id="foot"></div>
 </div>  
 </body>

@@ -1,5 +1,6 @@
 <?php  session_start();
         require 'php/username-conexion.php';
+        include('php/define_lang.php');
  ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -10,8 +11,7 @@
         <link rel="stylesheet" href="./css/navbar2_style.css">
         <link rel="stylesheet" href="./css/footer_style.css">
         <script src="./js/navfootMaker.js"></script>
-        <script type="text/javascript">window.session = "<?php echo $login ?>";</script>
-        <script type="text/javascript">window.username = "<?php echo $username ?>";</script>
+        <script type="text/javascript">window.navfoot = { lang: "<?php echo $_SESSION['lang']?>", session: "<?php echo $login ?>", username: "<?php echo $username ?>", navbar: { home: "<?php echo $navbar['home'] ?>", pets: "<?php echo $navbar['pets'] ?>", howAdopt: "<?php echo $navbar['howAdopt'] ?>", contact: "<?php echo $navbar['contact'] ?>", login: "<?php echo $navbar['login'] ?>" }, footer: { language: "<?php echo $footer['language'] ?>", languageOpc1: "<?php echo $footer['languageOpc1'] ?>", languageOpc2: "<?php echo $footer['languageOpc2'] ?>", title: "<?php echo $footer['title'] ?>", phrase: "<?php echo $footer['phrase'] ?>", copyright: "<?php echo $footer['copyright'] ?>" } }</script>
         <title>Héroes como tú... ∙ La Manada</title>
     </head>
     <body>
