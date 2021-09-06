@@ -116,4 +116,26 @@ function navfootMaker() {
                                 `<p>${window.navfoot.footer.copyright}</span></p>`+
                             `</div>`+
                         `</footer>`;
+
+    if(location.pathname.includes('/pets/')){
+        if(window.navfoot.session == true){
+            login =   
+                            '<a href="'+ longpath +'adopt_form.php">'+
+                                '<button class="boton">'+
+                                    'Adoptar'+
+                                '</button>'+
+                            '</a>'+
+                        '</div>';
+        }else{
+            login =        '<a href="'+ longpath +'/php/login.php">'+
+                                '<button class="boton">'+
+                                    'Iniciar sesion<br>para adoptar'+
+                                '</button>'+
+                            '</a>'+
+                        '</div>';       
+        }
+        
+     
+        document.getElementById('boton').innerHTML +=login;
+    }
 }
