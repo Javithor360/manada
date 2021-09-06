@@ -153,7 +153,7 @@ input:focus{
     outline: none;
 }
 
-select{
+.formu select{
     border: rgba(0, 0, 0, 0.178);
     background-color: rgba(255, 255, 255, 0.212);
     width: 70%;
@@ -163,15 +163,15 @@ select{
     color: #fff;
 }
 
-select:focus{
+.formu select:focus{
     outline: none;
 }
 
-select option {
+.formu select option {
     color: black;
 }
 
-input{
+.formu input{
     font-family: poppins;
     color: white;
 }

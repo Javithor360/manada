@@ -58,7 +58,7 @@ main{
     justify-content: center;
 }
 
-input, select{
+.forms input, .forms select{
     display: block;
     width: 100%;
     padding: 0.625rem 0.625rem 0.625rem 0.3125rem;
