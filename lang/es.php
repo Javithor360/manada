@@ -227,7 +227,8 @@
     );
 
     $cat_form = array(
-        'CatFormHeaderTitle' => "Formulario",
+        'CatFormTitle' => "Formulario",
+        'CatFormHeaderTitle' => "Nombre",
         'CatFormHolder1' => "Nombre de mascota",
         'CatFormHolder1Desc' => "Ingrese sus nombres",
         'CatFormHolder2' => "Edad",

@@ -227,7 +227,8 @@
     );
 
     $cat_form = array(
-        'CatFormHeaderTitle' => "Form",
+        'CatFormTitle' => "Form",
+        'CatFormHeaderTitle' => "Nombre",
         'CatFormHolder1' => "Pet's Name",
         'CatFormHolder1Desc' => "Type the name",
         'CatFormHolder2' => "Age",
@@ -243,5 +244,6 @@
         'CatFormHolder4Desc5' => "Infectious Peritonitis Vaccine",
         'CatFormHolder4Desc6' => "Felis Vaccine",
         'CatFormHolder4Desc7' => "Rabies Vaccine",
+        'CatSendButton' => "Send",
     );
 ?>
