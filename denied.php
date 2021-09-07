@@ -1,3 +1,7 @@
+<?php  session_start();
+        include('php/define_lang.php');
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -22,11 +26,11 @@
 
                 container = document.getElementById('todo');
                 container.innerHTML +=  `<div class="container">`+
-                                            `<h1>¡Acceso denegado!</h1>`+
+                                            `<h1> <?php echo $denied ['DeniedHeaderTitle'] ?> </h1>`+
                                             `<img src="${img[Math.floor(Math.random() * img.length)]}" height="500px" width="750px">`+
                                             `<div id="right">`+
-                                                `<p>Credenciales inválidas para acceder</p>`+
-                                                `<a href="${pathway}php/login.php"><button>Iniciar sesión</button></a>`+
+                                                `<p> <?php echo $denied ['DeniedDesc'] ?> </p>`+
+                                                `<a href="${pathway}php/login.php"><button> <?php echo $denied ['DeniedLogIn'] ?> </button></a>`+
                                             `</div>`+
                                         `</div>`;
             }

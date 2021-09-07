@@ -46,7 +46,7 @@
         'ArtsCatTitle' => "How to take care of my cat?",
         'ArtsCatDesc' => "Is this your first time having a furry friend? In this guide you will learn basic information to take keep in mind for the care of your new friend, from a healthy diet to the help you can provide when it comes to grooming [...]",
         'ReadMoreButton' => "Read more",
-        'ArtsHowAdoptTitle' => "¿How can i adopt?",     
+        'ArtsHowAdoptTitle' => "How can i adopt?",     
         'ArtsHowAdoptDesc' => "As La Manada Foundation we care about you to have the best experience with our site, that is why we offer you this practical guide in which we explain in a simple way the steps to follow to adopt your new friend [...]",
         'ReadMoreButton' => "Read more",
         'ArtsGivePetTitle' => "How can I give up for adoption?",
@@ -245,5 +245,25 @@
         'CatFormHolder4Desc6' => "Felis Vaccine",
         'CatFormHolder4Desc7' => "Rabies Vaccine",
         'CatSendButton' => "Send",
+    );
+
+    $error404 = array(
+        '404PageTitle' => "Page not found ∙ La Manada",
+        '404HeaderTitle' => "Oops!",
+        '404Desc' => "Requested page not found...",
+        '404Back' => "Come Back",
+    );
+
+    $denied = array( 
+        'DeniedHeaderTitle' => "Access denied!",
+        'DeniedDesc' => "Invalid credentials to access",
+        'DeniedLogIn' => "Log In",
+    );
+    
+    $thanks = array(
+        'ThanksPageTitle' => "Thanks ∙ La Manada",
+        'ThanksHeaderTitle' => "Thanks!",
+        'ThanksHeaderDesc' => "Your adoption request is being processed, you will receive a response as soon as possible",
+        'ThanksBack' => "Go back",
     );
 ?>

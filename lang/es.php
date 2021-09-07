@@ -246,5 +246,25 @@
         'CatFormHolder4Desc6' => "Contra Felis",
         'CatFormHolder4Desc7' => "Contra Contra Rabia",
         'CatSendButton' => "Enviar",
+    );  
+
+    $error404 = array(
+        '404PageTitle' => "Pagina no encontrada ∙ La Manada",
+        '404HeaderTitle' => "¡Algo salió mal!",
+        '404Desc' => "La página solicitada no ha sido encontrada...",
+        '404Back' => "Regresar",
+    );
+
+    $denied = array( 
+        'DeniedHeaderTitle' => "¡Acceso denegado!",
+        'DeniedDesc' => "Credenciales inválidas para acceder",
+        'DeniedLogIn' => "Inicias sesión",
+    );
+
+    $thanks = array(
+        'ThanksPageTitle' => "Gracias ∙ La Manada",
+        'ThanksHeaderTitle' => "¡Gracias!",
+        'ThanksHeaderDesc' => "Tu solicitud de adopcion está siendo procesada, recibirás una respuesta lo más pronto posible",
+        'ThanksBack' => "Regresar",
     );
 ?>

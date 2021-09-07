@@ -1,6 +1,6 @@
-<?php
-    http_response_code(404);
-?>
+<?php  session_start();
+        include('php/define_lang.php');
+ ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,11 +26,11 @@
 
                 container = document.getElementById('todo');
                 container.innerHTML +=  `<div class="container">`+
-                                            `<h1>¡Algo salió mal!</h1>`+
+                                            `<h1> <?php echo $error404 ['404HeaderTitle'] ?> </h1>`+
                                             `<img src="${img[Math.floor(Math.random() * img.length)]}" height="500px" width="750px">`+
                                             `<div id="right">`+
-                                                `<p>La página solicitada no ha sido encontrada...</p>`+
-                                                `<a href="${pathway}index.php"><button>Regresar</button></a>`+
+                                                `<p> <?php  echo $error404 ['404Desc']  ?> </p>`+
+                                                `<a href="${pathway}php/index.php"><button> <?php echo $error404 ['404Back'] ?> </button></a>`+
                                             `</div>`+
                                         `</div>`;
             }
@@ -38,7 +38,7 @@
         </script>
 
         <meta charset="UTF-8">
-        <title>Página no encontrada ∙ La Manada</title>
+        <title> <?php echo $error404 ['404PageTitle'] ?> </title>
     </head>
     <body>
             <div id="todo"></div>
