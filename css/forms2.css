@@ -188,7 +188,7 @@ input{
 
 @media (max-width: 1366px) {
     .formu{height: 100%;}
-    .input{width:364.458px}
+    .input{width:364.458px !important}
     .formu label{font-size: 125%;}
 }
 

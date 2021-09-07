@@ -23,7 +23,7 @@
             <h3><?php echo $dog ['DogStep1'] ?></h3>
             <p>2 <?php echo $dog ['DogStep1Desc'] ?></p><br>
             <h3><?php echo $dog ['DogStep2'] ?></h3>
-            <p><?php echo $dog ['DogStep2Desc2'] ?>/p><br>
+            <p><?php echo $dog ['DogStep2Desc2'] ?></p><br>
             <h3>Descripcion:</h3>
             <p>
                 Este perrito fue entregada a nuestro refugio ya que su dueña no podia cuidarlo por más tiempo,pero espera que seas tu quien lo adopte,
