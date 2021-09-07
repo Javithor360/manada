@@ -185,12 +185,14 @@ input:focus{
 
 @media (max-width: 1366px) {
     .formu{height: 100%;}
-    .input{width:364.458px}
+    .input{width:364.458px !important}
+    .formu label{font-size: 125%;}
 }
 
 @media screen and (max-width: 800px){
     .formu label{font-size: 120%;}
     .formu .input{font-size: 90%;}
+    
 }
 
 @media screen and (max-width: 600px){
