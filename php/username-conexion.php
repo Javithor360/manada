@@ -1,5 +1,17 @@
 <?php
          
+         if (!function_exists('str_contains')) {
+                function str_contains(string $haystack, string $needle): bool
+                {
+                    return '' === $needle || false !== strpos($haystack, $needle);
+                }
+        }
+
+        if(str_contains($_SERVER['SCRIPT_FILENAME'], '/pets/')){ $pathway = '../../denied.php'; }
+        else if(str_contains($_SERVER['SCRIPT_FILENAME'], '/guides/')) { $pathway = '../denied.php'; }
+        else if(str_contains($_SERVER['SCRIPT_FILENAME'], '/php/')) { $pathway = '../denied.php'; }
+        else { $pathway = './denied.php'; }
+
         if(isset($_SESSION['email'])){
                 //conexion a la base
                 $conexion = new mysqli("localhost","root","","login");
@@ -11,5 +23,15 @@
         }else{
                 $username = 'Not found...';
         }
-        $login = isset($_SESSION['email']);
+        //$login = isset($_SESSION['email']);
+        if(str_contains($_SERVER['SCRIPT_FILENAME'], 'cat_form') || str_contains($_SERVER['SCRIPT_FILENAME'], 'dog_form') || str_contains($_SERVER['SCRIPT_FILENAME'], 'adopt_form')){ 
+                if(isset($_SESSION['email']) == 1){
+                        $login = isset($_SESSION['email']); 
+                }else{
+                        header("Location: $pathway");
+                        die();
+                }
+        } else { 
+                $login = isset($_SESSION['email']);
+        }
 ?>
