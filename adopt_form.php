@@ -18,7 +18,7 @@
         <div id="navy"></div>
 
         <div class="formu" onSubmit="document.getElementById('enviar').disabled=true;">
-            <form action="php/forms_adopt.php" method="POST">
+            <form action="php/decline_adopt.php" method="POST">
                 <label for="">¿Cual es tu nombre?:</label>
                 <input type="text" name="name" placeholder="Ingresa tu nombre" required>
 
