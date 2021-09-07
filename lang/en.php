@@ -151,7 +151,7 @@
         'PetsHeaderTitle' => "Meet your new buddy!",
     );
 
-    $login = array(
+    $formLogin = array(
         'pageLoginTitle' => "Log In ∙ La Manada",
         'loginHeader' => "Welcome back!",
         'loginEmail' => "Email",

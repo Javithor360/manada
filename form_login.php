@@ -5,7 +5,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title><?php echo $login['pageLoginTitle'] ?></title>
+	<title><?php echo $formLogin['pageLoginTitle'] ?></title>
 	<link rel="stylesheet" type="text/css" href="../css/form_login.css">
 	<link rel="stylesheet" href="../css/footer_style.css">
 	<link rel="stylesheet" href="../css/navbar2_style.css">
@@ -26,17 +26,17 @@
 	<div class="body">
         
         <div class="forms">
-			<h2 class="info"><?php echo $login['loginHeader'] ?></h2>
+			<h2 class="info"><?php echo $formLogin['loginHeader'] ?></h2>
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" class="form">
             
             <div class="inputs">
-                <input type="email" name="email" id="Email" required autocomplete="nope" placeholder="<?php echo $login['loginEmailPlaceholder'] ?>">
-                <label for="email"><?php echo $login['loginEmail'] ?> *</label>
+                <input type="email" name="email" id="Email" required autocomplete="nope" placeholder="<?php echo $formLogin['loginEmailPlaceholder'] ?>">
+                <label for="email"><?php echo $formLogin['loginEmail'] ?> *</label>
             </div>
 
              <div class="inputs">
                 <input type="password" name="pw" id="pw" required autocomplete="nope">
-                <label for="pw"><?php echo $login['loginPassword'] ?> *</label>
+                <label for="pw"><?php echo $formLogin['loginPassword'] ?> *</label>
             </div>
 
              <?php if(!empty($error)): ?>
@@ -45,9 +45,9 @@
             </div>
             <?php endif; ?>
             
-            <div class="button"> <button id="submit" type="submit"><?php echo $login['loginButton'] ?></button> </div>
+            <div class="button"> <button id="submit" type="submit"><?php echo $formLogin['loginButton'] ?></button> </div>
 
-            <p><?php echo $login['loginNotAcc'] ?> <a href="registro.php"><?php echo $login['loginSignUp'] ?></a></p>
+            <p><?php echo $formLogin['loginNotAcc'] ?> <a href="registro.php"><?php echo $formLogin['loginSignUp'] ?></a></p>
             </div>
         
 			

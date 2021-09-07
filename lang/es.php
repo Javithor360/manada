@@ -144,7 +144,7 @@
         'ContactPlaceHolder1' => "Nombre",
         'ContactPlaceHolder2' => "Correo Electronico",
         'ContactPlaceHolder3' => "Escribe aquí, ¿En que te podemos ayudar?",
-        'ContactSendButton' => "Enviar",
+        'ContactSendButton' => "Enviar"
     );
 
     $pets = array(
@@ -152,7 +152,7 @@
         'PetsHeaderTitle' => "¡Conoce a tu nuevo amigo!"
     );
 
-    $login = array(
+    $formLogin = array(
         'pageLoginTitle' => "Iniciar sesión ∙ La Manada",
         'loginHeader' => "¡Bienvenido de nuevo!",
         'loginEmail' => "Correo electrónico",
