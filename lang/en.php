@@ -181,4 +181,67 @@
         'registerAcc' => "Do you already have an account?",
         'registerLogin' => "Log In."
     );
+
+    $dog = array(
+        'DogHeaderTitle' =>  "Meet ",
+        'DogStep1' => "Age:",
+        'DogStep1Desc' => "years old",
+        'DogStep1Desc1' => "year",
+        'DogStep2' => "Gender:",
+        'DogStep2Desc1' => "Male",
+        'DogStep2Desc2' => "Female",
+        'DogStep3' => "¿Do You Want to Adopt Me?",
+        'DogBottom1' => "Back to",
+    );
+
+    $cat = array(
+        'CatHeaderTitle' =>  "Meet ",
+        'CatStep1' => "Age:",
+        'CatStep1Desc' => "years old",
+        'CatStep1Desc1' => "year",
+        'CatStep2' => "Gender:",
+        'CatStep2Desc1' => "Male",
+        'CatStep2Desc2' => "Female",
+        'CatStep3' => "¿Do You Want to Adopt Me?",
+        'CatBottom1' => "Back to",
+    ); 
+
+    $dog_form = array(
+        'DogFormHeaderTitle' => "Form",
+        'DogFormHolder1' => "Pet's Name",
+        'DogFormHolder1Desc' => "Type the name",
+        'DogFormHolder2' => "Age",
+        'DogFormHolder2Desc' => "Type the age",
+        'DogFormHolder3' => "Genrer",
+        'DogFormHolder3Desc1' => "Male",
+        'DogFormHolder3Desc2' => "Female",
+        'DogFormHolder4' => "Vaccinations your Pet has:",
+        'DogFormHolder4Desc1' => "Distemper Vaccine",
+        'DogFormHolder4Desc2' => "Herpesvirus Vaccine",
+        'DogFormHolder4Desc3' => "Parpovirus Vaccine",
+        'DogFormHolder4Desc4' => "Boedetollis Vaccine",
+        'DogFormHolder4Desc5' => "Parainfluenza Vaccine",
+        'DogFormHolder4Desc6' => "Leptoporosis Vaccine",
+        'DogFormHolder4Desc7' => "Rabies Vaccine",
+        'DogSendButton' => "Send",
+    );
+
+    $cat_form = array(
+        'CatFormHeaderTitle' => "Form",
+        'CatFormHolder1' => "Pet's Name",
+        'CatFormHolder1Desc' => "Type the name",
+        'CatFormHolder2' => "Age",
+        'CatFormHolder2Desc' => "Type the age",
+        'CatFormHolder3' => "Genrer",
+        'CatFormHolder3Desc1' => "Male",
+        'CatFormHolder3Desc2' => "Female",
+        'CatFormHolder4' => "Vaccinations your Pet has:",
+        'CatFormHolder4Desc1' => "Distemper Vaccine",
+        'CatFormHolder4Desc2' => "Herpesvirus Vaccine",
+        'CatFormHolder4Desc3' => "Calicivirus Vaccines",
+        'CatFormHolder4Desc4' => "Leukemia Vaccine",
+        'CatFormHolder4Desc5' => "Infectious Peritonitis Vaccine",
+        'CatFormHolder4Desc6' => "Felis Vaccine",
+        'CatFormHolder4Desc7' => "Rabies Vaccine",
+    );
 ?>

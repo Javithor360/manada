@@ -182,4 +182,67 @@
         'registerAcc' => "¿Ya tienes una cuenta?",
         'registerLogin' => "Inicia sesión."
     );
+
+    $dog = array(
+        'DogHeaderTitle' =>  "Conoce a ",
+        'DogStep1' => "Edad:",
+        'DogStep1Desc' => "años",
+        'DogStep2' => "Sexo:",
+        'DogStep2Desc1' => "Macho",
+        'DogStep2Desc2' => "Hembra",
+        'DogStep3' => "¿Deseas Adoptarme?",
+        'DogBottom1' => "Volver",
+    );
+
+    $cat = array(
+        'CatHeaderTitle' =>  "Conoce a ",
+        'CatStep1' => "Edad:",
+        'CatStep1Desc' => "años",
+        'CatStep1Desc1' => "año",
+        'CatStep2' => "Sexo:",
+        'CatStep2Desc1' => "Macho",
+        'CatStep2Desc2' => "Hembra",
+        'CatStep3' => "¿Deseas Adoptarme?",
+        'CatBottom1' => "Volver",
+    );
+
+    $dog_form = array(
+        'DogFormHeaderTitle' => "Formulario",
+        'DogFormHolder1' => "Nombre de mascota",
+        'DogFormHolder1Desc' => "Ingrese sus nombres",
+        'DogFormHolder2' => "Edad",
+        'DogFormHolder2Desc' => "Ingrese su edad",
+        'DogFormHolder3' => "Sexo",
+        'DogFormHolder3Desc1' => "Macho",
+        'DogFormHolder3Desc2' => "Hembra",
+        'DogFormHolder4' => "Vacunas con las que cuenta su mascota",
+        'DogFormHolder4Desc1' => "Contra Distemper",
+        'DogFormHolder4Desc2' => "Contra Herpesvirus",
+        'DogFormHolder4Desc3' => "Contra Parpovirus",
+        'DogFormHolder4Desc4' => "Contra Boedetollis",
+        'DogFormHolder4Desc5' => "Contra Parainfluenza",
+        'DogFormHolder4Desc6' => "Contra Leptoporosis",
+        'DogFormHolder4Desc7' => "Contra Contra Rabia",
+        'DogSendButton' => "Enviar",
+    );
+
+    $cat_form = array(
+        'CatFormHeaderTitle' => "Formulario",
+        'CatFormHolder1' => "Nombre de mascota",
+        'CatFormHolder1Desc' => "Ingrese sus nombres",
+        'CatFormHolder2' => "Edad",
+        'CatFormHolder2Desc' => "Ingrese su edad",
+        'CatFormHolder3' => "Sexo",
+        'CatFormHolder3Desc1' => "Macho",
+        'CatFormHolder3Desc2' => "Hembra",
+        'CatFormHolder4' => "Vacunas con las que cuenta su mascota",
+        'CatFormHolder4Desc1' => "Contra Distemper",
+        'CatFormHolder4Desc2' => "Contra Herpesvirus",
+        'CatFormHolder4Desc3' => "Contra Calicivirus",
+        'CatFormHolder4Desc4' => "Contra Leucemia",
+        'CatFormHolder4Desc5' => "Contra Peritonitis infecciosa",
+        'CatFormHolder4Desc6' => "Contra Felis",
+        'CatFormHolder4Desc7' => "Contra Contra Rabia",
+        'CatSendButton' => "Enviar",
+    );
 ?>

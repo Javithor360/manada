@@ -12,26 +12,26 @@
         <link rel="stylesheet" href="../../css/footer_style.css">
         <script src="../../js/navfootMaker.js"></script>
         <script type="text/javascript">window.navfoot = { lang: "<?php echo $_SESSION['lang']?>", session: "<?php echo $login ?>", username: "<?php echo $username ?>", navbar: { home: "<?php echo $navbar['home'] ?>", pets: "<?php echo $navbar['pets'] ?>", howAdopt: "<?php echo $navbar['howAdopt'] ?>", contact: "<?php echo $navbar['contact'] ?>", login: "<?php echo $navbar['login'] ?>" }, footer: { language: "<?php echo $footer['language'] ?>", languageOpc1: "<?php echo $footer['languageOpc1'] ?>", languageOpc2: "<?php echo $footer['languageOpc2'] ?>", title: "<?php echo $footer['title'] ?>", phrase: "<?php echo $footer['phrase'] ?>", copyright: "<?php echo $footer['copyright'] ?>" } }</script>
-        <title>¡Conoce a Bruno! ∙ La Manada</title>
+        <title>¡<?php echo $dog ['DogHeaderTitle'] ?> Bruno! ∙ La Manada</title>
     </head>
     <body>
         <div id="navy"></div>
 <div class="fBod">
         <div class="cont">
-            <h1 class="h1">¡Conoce a Bruno!</h1>
+            <h1 class="h1">¡<?php echo $dog ['DogHeaderTitle'] ?> Bruno!</h1>
             <img id="pet_pic" src="../../src/pets/dog/Bruno.png">
-            <h3>Edad:</h3>
-            <p>2 años</p><br>
-            <h3>Sexo:</h3>
-            <p>Macho</p><br>
+            <h3><?php echo $dog ['DogStep1'] ?></h3>
+            <p>2 <?php echo $dog ['DogStep1Desc'] ?></p><br>
+            <h3><?php echo $dog ['DogStep2'] ?></h3>
+            <p><?php echo $dog ['DogStep2Desc1'] ?></p><br>
             <h3>Descripción:</h3>
             <p>
                 Este perrito fue entregada a nuestro refugio ya que su dueña no podía cuidarlo por más tiempo,pero espera que seas tú quien lo adopte,
                 no pierdas la oportunidad, Es un perrito muy tranquilo pero eso si es muy leal, le gusta salir a jugar en parques y que le rasquen detras
                 de las orejas.
             </p><br>
-            <h3>¿Deseas Adoptarme?</h3><br>
-            <a href="../../pets.php"><button class="boton">Volver</button></a>
+            <h3><?php echo $dog ['DogStep3'] ?></h3><br>
+            <a href="../../pets.php"><button class="boton"><?php echo $dog ['DogBottom1'] ?></button></a>
             <span id="boton">
         </div>
 </div>
