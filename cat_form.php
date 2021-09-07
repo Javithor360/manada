@@ -21,10 +21,10 @@
         <div class="formu">
             <form action="php/formu_dar.php" method="POST" onSubmit="document.getElementById('enviar').disabled=true;">
                 <label for="firstName" class="first-name"><?php echo $cat_form ['CatFormHeaderTitle'] ?>:</label>
-                <input class="input" id="firstName" type="text" name="nombre" placeholder="<?php echo $dog_form ['CatFormHolder1Desc'] ?>" required>
+                <input class="input" id="firstName" type="text" name="nombre" placeholder="<?php echo $cat_form ['CatFormHolder1Desc'] ?>" required>
 
                 <label for="age"><?php echo $cat_form ['CatFormHolder2'] ?>:</label>
-                <input class="input" for="age" type="number" name="edad" placeholder="<?php echo $dog_form ['CatFormHolder2Desc'] ?>" min="0" max="35" required>
+                <input class="input" for="age" type="number" name="edad" placeholder="<?php echo $cat_form ['CatFormHolder2Desc'] ?>" min="0" max="35" required>
 
                 <label for="sex"><?php echo $cat_form ['CatFormHolder3'] ?>:</label>
                 <select class="input" name="sexo">

@@ -187,6 +187,7 @@
         'DogHeaderTitle' =>  "Conoce a ",
         'DogStep1' => "Edad:",
         'DogStep1Desc' => "años",
+        'DogStep1Desc1' => "año",
         'DogStep2' => "Sexo:",
         'DogStep2Desc1' => "Macho",
         'DogStep2Desc2' => "Hembra",
