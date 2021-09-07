@@ -6,7 +6,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Cuidado de gatos ∙ La Manada</title> 
+    <title><?php echo $catcare['pageCatCareTitle'] ?></title> 
     <link rel="stylesheet" href="../css/catcare.css">
     <link rel="stylesheet" href="../css/navbar2_style.css">
     <link rel="stylesheet" href="../css/footer_style.css">

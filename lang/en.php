@@ -55,6 +55,7 @@
     );
 
     $dogcare = array(
+        'pageDogCareTitle' => "Dog Care ∙ La Manada",
         'DogCareHeaderTitle' => "Care guide for home canines",
         'DogCareHeaderDesc' => " Having a dog implies a great responsibility. Although the tips for taking care of your pet are simple, you should know that they will be simple for the rest of your pet's life. That is why taking care of your dog, or the one you intend to adopt, is not an easy task. In addition to providing basic things like food, water, veterinary care and exercise, there are other tips that are important for your pet to be happy and in good health.",
         'DogCareHeaderImage' => '"Give me a caress and I will follow you to the end of the world"',
@@ -68,7 +69,7 @@
         'DogCareBathTitle' => "Bath",
         'DogCareBathDesc' => "To know when to bathe your dog, observe if its coat is dirty, smells bad, if it is very hot or if it has been exercising. Remember that bathing them too much can be harmful to them.",
         'DogCareTeethTitle' => "Keeping their teeth healthy",
-        'DogCareTeethDesc' => "Cleaning the mouth is essential to avoid bacteria, tartar, halitosis and other problems. You can clean their teeth yourself daily with a toothbrush or three times a week with a specific toothpaste for dogss",
+        'DogCareTeethDesc' => "Cleaning the mouth is essential to avoid bacteria, tartar, halitosis and other problems. You can clean their teeth yourself daily with a toothbrush or three times a week with a specific toothpaste for dogs",
         'DogCaresWalksTitle' => "The walks",
         'DogCareWalksDescP1' => "In addition to food, your pet's activity is essential for him to be fit and healthy. Therefore, it is necessary to exercise regularly, but with caution to avoid injurys. This will help him express himself, explore, follow trails, stay active and, above all, have fun!",
         'DogCareWalksDescP2' => "Taking frequent walks, going for a run or playing with your dog will help him stay healthy and allow us to gradually build a great bond in our relationship with the dog",
@@ -76,6 +77,7 @@
     );
 
     $catcare = array(
+        'pageCatCareTitle' => "Cat Care ∙ La Manada",
         'CatCareHeaderTitle' => "Care guide for home felines", 
         'CatCareHeaderDesc' => "Is this your first time having a furry friend? In this guide you will learn basic information to take into account for the care of your new friend, from a healthy diet to the help you can provide when it comes to grooming. A new world is created when you receive your first kitten, it is a complicated task but these little friends help you to reduce stress, improve mental health and improve overall health.",
         'CatCareHeaderImage' => '"I only need three things from you: lots of attention, a balanced diet and a little help with my grooming"', 
@@ -98,6 +100,7 @@
     );   
 
     $howtoadopt = array(
+        'pageAdoptTitle' => "How to Adopt? ∙ La Manada",
         'AdoptHeaderTitle' => "How can I adopt?",
         'AdoptHeaderDesc' => "In La Manada Foundation we offer the service of animal adoption in an easy and simple way, if you want to find a new furry member to your family follow the steps that we show you below and you will see that soon you will have your furry friend enjoying with you at home.",
         'AdoptStep1' => "Step 1: Login",
@@ -111,6 +114,7 @@
     );
     
     $putadoption = array(
+        'pagePutAdoptTitle' => "How to give up for adoption ∙ La Manada",
         'PutAdoptHeaderTitle' => "How can I give up for adoption?",
         'PutAdoptHeaderDesc' => "As La Manada Foundation we appreciate the trust you place in us by giving us your pet for adoption, that is why we provide this series of steps to follow so you can make the process smoothly.",
         'PutAdoptStep1' => "Step 1: Login",
@@ -123,24 +127,17 @@
     );
 
     $select = array(
+        'pagSelectTitle' => "Heroes like you... ∙ La Manada",
         'SelectHeaderTitle' => "Thank you for joining the cause!",
         'SelectHeaderDesc' => "Thank you for allowing your pet to have a place to sleep and live in peace, many pets do not have the same fate and are cruelly abandoned, where fate gives them a sad reality of abuse and suffering. In our country El Salvador 70% of the canine population is abandoned in the street, and as for cats, 65% of the feline population is abandoned.",
-        'SelectSubHeaderTitle' => "Heores like you...",
+        'SelectSubHeaderTitle' => "Heroes like you...",
         'SelectSubHeaderDesc' => "Thanks to you we will be able to rescue one more pet and allow it a home where it can be happy and give it all the love it deserves and needs; you are a person with a big heart, for us you are a great hero because you want a better future for your pet, far from animal abuse, your pet will be safe with us.",
         'SelectPetTitle' => "Do you want to give up for adoption?", 
         'SelectPetesc' => "Choose the type of pet you will entrust us with",
     );
     
     $contact = array(
-        'ContactHeaderTitle' => "Comunicate con nosotros!",
-        'ContactHeaderDesc' => "Dejános tu comentario, duda o sugerencia, será un gusto ayudarte",
-        'ContactPlaceHolder1' => "Nombre",
-        'ContactPlaceHolder2' => "Correo Electronico",
-        'ContactPlaceHolder3' => "Escribe aquí, ¿En que te podemos ayudar?",
-        'ContactSendButton' => "Enviar",
-    );
-    
-    $contact = array(
+        'pageContactTitle' => "Contact us! ∙ La Manada",
         'ContactHeaderTitle' => "Contact us!",
         'ContactHeaderDesc' => "Leave a comment, question or feedback.",
         'ContactPlaceHolder1' => "Name",
@@ -150,6 +147,38 @@
     );
     
     $pets = array(
+        'pagePetsTitle' => "Pets ∙ La Manada",
         'PetsHeaderTitle' => "Meet your new buddy!",
+    );
+
+    $login = array(
+        'pageLoginTitle' => "Log In ∙ La Manada",
+        'loginHeader' => "Welcome back!",
+        'loginEmail' => "Email",
+        'loginEmailPlaceholder' => "loveanimals@example.com",
+        'loginPassword' => "Password",
+        'loginButton' => "Log In",
+        'loginNotAcc' => "Don't have an account yet?",
+        'loginSignUp' => 'Sign Up.'
+    );
+
+    $register = array(
+        'pageRegisterTitle' => "Sign Up ∙ La Manada",
+        'registerHeader' => "Complete the required data",
+        'registerNames' => "Names",
+        'registerLastNames' => "Last Names",
+        'registerGender' => "Gender",
+        'registerGenderOpc1' => "Male",
+        'registerGenderOpc2' => "Female",
+        'registerEmail' => "Email address",
+        'registerEmailPlaceholder' => "loveanimals@example.com",
+        'registerPassword' => "Password",
+        'registerConfirmPassword' => "Confirm Password",
+        'registerPhone' => "Phone Number",
+        'registerBD' => "Birthday",
+        'registerBDPlaceholder' => "dd/mm/yyyy",
+        'registerButton' => "Create Account",
+        'registerAcc' => "Do you already have an account?",
+        'registerLogin' => "Log In."
     );
 ?>

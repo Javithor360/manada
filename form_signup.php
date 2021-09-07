@@ -5,7 +5,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Registro ∙ La Manada</title>
+	<title><?php echo $register['pageRegisterTitle'] ?></title>
 	<link rel="stylesheet" href="../css/form_signup.css">
     <link rel="stylesheet" href="../css/navbar2_style.css">
     <link rel="stylesheet" href="../css/footer_style.css">
@@ -25,7 +25,7 @@
 	<div class="body">
         
         <div class="forms">
-			<h2 class="info">Ingrese sus datos personales</h2>
+			<h2 class="info"><?php echo $register['registerHeader'] ?></h2>
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" class='form'>
             
             <?php if(!empty($error)): ?>
@@ -37,53 +37,53 @@
             
             <div class="inputs">
             <input type="text" id="names" name='name' required autocomplete="nope" size='10px'>
-            <label for="names">Nombres *</label>
+            <label for="names"><?php echo $register['registerNames'] ?> *</label>
             </div>
             
             <div class="inputs">
             <input type="text" name="lastNames" id="lastName" required autocomplete="nope" placeholder="">
-            <label for="lastName">Apellidos *</label>
+            <label for="lastName"><?php echo $register['registerLastNames'] ?> *</label>
             </div>
 
             <div class="inputs">
                 <select name="gender" id="gender" class='gender'>
                     <option value="no"></option>
-                    <option value="M">Masculino</option>
-                    <option value="F">Femenino</option>
+                    <option value="M"><?php echo $register['registerGenderOpc1'] ?></option>
+                    <option value="F"><?php echo $register['registerGenderOpc2'] ?></option>
                 </select>
-                <label for="gender">Género *</label>
+                <label for="gender"><?php echo $register['registerGender'] ?> *</label>
             </div>
 
             <div class="inputs">
                 <input type="email" name="email" id="Email" required autocomplete="nope" placeholder="loveanimals@example.com">
-                <label for="email">Correo electrónico *</label>
+                <label for="email"><?php echo $register['registerEmail'] ?> *</label>
             </div>
 
              <div class="inputs">
                 <input type="password" name="pw" id="pw" required autocomplete="nope">
-                <label for="pw">Contraseña *</label>
+                <label for="pw"><?php echo $register['registerPassword'] ?> *</label>
             </div>
 
             <div class="inputs">
                 <input type="password" name="pwc" id="pwc">
-                <label for="pwc">Confirmar contraseña *</label>
+                <label for="pwc"><?php echo $register['registerConfirmPassword'] ?> *</label>
             </div>
 
             <div class="inputs">
                 <input type="tel" name="tel" id="tel" required autocomplete="nope" pattern="[0-9]{4}-[0-9]{4}" placeholder="XXXX-XXXX">
-                <label for="tel">Número de teléfono *</label>
+                <label for="tel"><?php echo $register['registerPhone'] ?> *</label>
             </div>
 
             <div class="inputs">
             <input type="date" name="bD" id="bDay" required>
-            <label for="date">Día de nacimiento *</label>
+            <label for="date"><?php echo $register['registerBD'] ?> *</label>
 
             
 
-            <div class="button"> <button id="submit" type="submit">Crear cuenta</button> </div>
+            <div class="button"> <button id="submit" type="submit"><?php echo $register['registerButton'] ?></button> </div>
             </div>
 
-			<p>¿Ya tienes una cuenta? <a id='Login' href="login.php">Inicie sesión.</a></p>
+			<p><?php echo $register['registerAcc'] ?> <a id='Login' href="login.php"><?php echo $register['registerLogin'] ?></a></p>
 
         </form>
         </div>

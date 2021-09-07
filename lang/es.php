@@ -51,11 +51,12 @@
         'ReadMoreButton' => "Leer más",
         'ArtsGivePetTitle' => "¿Como puedo poner en adopción?",
         'ArtsGivePetDesc' => "Puede ser que por ciertos motivos ya no puedas tener a tu mascota contigo y decidas darla en adopción, cuidaremos a tu amigo hasta que tenga un nuevo hogar, te brindamos una serie de pasos que debes seguir para realizar este proceso [...]",
-        'ReadMoreButton' => "Leer más",
+        'ReadMoreButton' => "Leer más"
 
     );
 
     $dogcare = array(
+        'pageDogCareTitle' => "Cuido de perros ∙ La Manada",
         'DogCareHeaderTitle' => "Guía de cuidado para los caninos del hogar",
         'DogCareHeaderDesc' => "Tener a un perro implica una gran responsabilidad. Aunque los consejos para cuidar a tu mascota son sencillos, se debe saber que serán para el resto de su vida, por lo tanto, cuidar a tu perro, o a ese perro que pretendes adoptar, no es tarea fácil. Además de facilitarle las cosas básicas como son la comida, el agua, el veterinario o hacer ejercicio, hay otros consejos que son importantes para que tu mascota esté feliz y con una salud de hierro.",
         'DogCareHeaderImage' => '"Dame una caricia y te seguiré hasta el fin del mundo"',
@@ -73,10 +74,11 @@
         'DogCaresWalksTitle' => "Los paseos",
         'DogCareWalksDescP1' => "Además de la alimentación, la actividad en tu mascota es fundamental para que esté en forma y se mantenga sana. Por eso, es necesario que haga ejercicio de manera habitual, pero con precaución para evitar lesiones o heridas. Esto le ayudará a expresarse, explorar, seguir rastros, mantenerse activo y, sobre todo, ¡divertirse!",
         'DogCareWalksDescP2' => "Dar paseos frecuentes, salir a correr o jugar con tu perro le ayudará a estar sano y os permitirá construir poco a poco un gran vínculo en vuestra relación.",
-        'GoBackButton' => "Volver",
+        'GoBackButton' => "Volver"
     );
 
     $catcare = array(
+        'pageCatCareTitle' => "Cuido de gatos ∙ La Manada",
         'CatCareHeaderTitle' => "Guía de cuidado para los felinos del hogar",
         'CatCareHeaderDesc' => "¿Es tu primera vez teniendo un peludo amigo? En esta guía conoceras información básica a tomar en cuenta para el cuidado de tu nuevo amigo, desde una alimentación saludable hasta la ayuda que le puedes brindar a la hora de su aseo. Un nuevo mundo se crea a la hora de recibir a tu primer gatito, es una tarea complicada pero estos amiguitos te ayudan a reducir el estrés, mejora la salud mental y mejora la salud en general.",
         'CatCareHeaderImage' => '"Solo necesito tres cosas de ti: Mucha atención, una dieta balanceada y que me des una patita con mi aseo."', 
@@ -95,11 +97,12 @@
         'CatCarePlayDescLine1' => "Igual de importante que una alimentación o su aseo es el jugar con ellos, al estar entretenidos desarrollan su inteligencia, fomentan sus destrezas y a la vez practican deporte. Los gatos al ser animales muy curiosos e independientes se pueden llegar a entretener con muchas cosas.",
         'CatCarePlayDescLine2' => "Un gato aburrido es un gato destructor, es necesario que tengas diferentes opciones para entretener a un gato en casa",
         'CatCarePlayDescLine3' => "Dependiendo del tipo de juego, juguete o actividad y la interacción que necesite la actividad será el tiempo que tu gato este dispuestos a invertir en ella. Si se aburre fácil es que no le pareció atractivo.",
-        'GoBackButton' => "Come Back",
+        'GoBackButton' => "Come Back"
 
     );
 
     $howtoadopt = array(
+        'pageAdoptTitle' => "¿Cómo Adoptar? ∙ La Manada",
         'AdoptHeaderTitle' => "¿Cómo Adoptar?",
         'AdoptHeaderDesc' => "En Fundación La Manada brindamos el servicio de adopción de animales de una forma fácil y sencilla, si deseas encontrar un nuevo integrante peludo a tu familia sigue los pasos que te mostramos a continuación y verás que pronto tendrás a tu amigo peludo disfrutando contigo en casa.",
         'AdoptStep1' => "Paso 1: Inicia sesión",
@@ -108,10 +111,11 @@
         'AdoptStep4' => "Paso 4: Llena el formulario con los datos solicitados",
         'AdoptStep5' => "Paso 5: Espera la confirmacion para adoptar en tu correo electronico",
         'AdoptStep6' => "Paso 6: ¡Listo! puedes pasar por tu nueva mascota cuando quieras",
-        'GoBackButton' => "Volver",
+        'GoBackButton' => "Volver"
     );
 
     $putadoption = array(
+        'pagePutAdoptTitle' => "¿Cómo dar en adopción? ∙ La Manada",
         'PutAdoptHeaderTitle' => "¿Cómo puedo dar en adopción?",
         'PutAdoptHeaderDesc' => "Como Fundación La Manada agradecemos la confianza que depositas en nosotros al darnos a tu mascota en adopción, es por ello que te brindamos esta serie de pasos a seguir para que puedas hacer el proceso sin complicaciones.",
         'PutAdoptStep1' => "Paso 1: Inicia sesión",
@@ -120,20 +124,22 @@
         'PutAdoptStep4' => "Paso 4: Sube almenos 3 fotografias de la mascota",
         'PutAdoptStep5' => "Paso 5: Evaluaremos los datos que nos brindaste (Puede tomar tiempo)",
         'PutAdoptStep6' => "Paso 6: ¡Listo! si se cumplen los requisitos te contactaremos para que nos entregues a la mascota y buscarle un nuevo hogar",
-        'GoBackButton' => "Volver",
+        'GoBackButton' => "Volver"
     );
 
     $select = array(
+        'pagSelectTitle' => "Héroes cómo tú... ∙ La Manada",
         'SelectHeaderTitle' => "¡Gracias por unirte a la causa!",
         'SelectHeaderDesc' => "Gracias por permitir que tu mascota pueda tener un lugar donde pueda dormir y vivir en paz, muchas mascotas no corren con la misma suerte y son abandonados cruelmente, donde el destino les da una triste realidad de maltrato y sufrimiento. En nuestro país El Salvador el 70% de la poblacion canina se encuentra abandonada en la calle, y en cuanto a gatos el 65% de la poblacion felina se encuentran en abandono.",
         'SelectSubHeaderTitle' => "Héroes como tú...",
         'SelectSubHeaderDesc' => "Gracias a ti podremos rescatar una mascota más y permitirle un hogar donde pueda ser feliz y brindarle todo el amor que merece y nesesita; tú eres una persona con un gran corazón, para nosotros eres un gran héroe ya que quieres un mejor futuro para tu mascota, lejos del maltrato animal, tu mascota estará a salvo con nosotros.",
         'SelectPetTitle' => "¿Quieres dar en adopción?", 
-        'SelectPetesc' => "Escoje el tipo de mascota que nos confiarás",
+        'SelectPetesc' => "Escoje el tipo de mascota que nos confiarás"
     );
 
     $contact = array(
-        'ContactHeaderTitle' => "Comunicate con nosotros!",
+        'pageContactTitle' => "Contacto ∙ La Manada",
+        'ContactHeaderTitle' => "¡Comunícate con nosotros!",
         'ContactHeaderDesc' => "Dejános tu comentario, duda o sugerencia, será un gusto ayudarte",
         'ContactPlaceHolder1' => "Nombre",
         'ContactPlaceHolder2' => "Correo Electronico",
@@ -142,6 +148,38 @@
     );
 
     $pets = array(
-        'PetsHeaderTitle' => "¡Conoce a tu nuevo amigo!",
+        'pagePetsTitle' => "Mascotas ∙ La Manada",
+        'PetsHeaderTitle' => "¡Conoce a tu nuevo amigo!"
+    );
+
+    $login = array(
+        'pageLoginTitle' => "Iniciar sesión ∙ La Manada",
+        'loginHeader' => "¡Bienvenido de nuevo!",
+        'loginEmail' => "Correo electrónico",
+        'loginEmailPlaceholder' => "amolosperros@ejemplo.com",
+        'loginPassword' => "Contraseña",
+        'loginButton' => "Iniciar sesión",
+        'loginNotAcc' => "¿Todavía no tienes cuenta?",
+        'loginSignUp' => 'Regístrate.'
+    );
+
+    $register = array(
+        'pageRegisterTitle' => "Registro ∙ La Manada",
+        'registerHeader' => "Ingrese sus datos personales",
+        'registerNames' => "Nombres",
+        'registerLastNames' => "Apellidos",
+        'registerGender' => "Género",
+        'registerGenderOpc1' => "Masculino",
+        'registerGenderOpc2' => "Femenino",
+        'registerEmail' => "Correo electrónico",
+        'registerEmailPlaceholder' => "amoanimales@ejemplo.com",
+        'registerPassword' => "Contraseña",
+        'registerConfirmPassword' => "Confirmar contraseña",
+        'registerPhone' => "Número de teléfono",
+        'registerBD' => "Día de nacimiento",
+        'registerBDPlaceholder' => "dd/mm/yyyy",
+        'registerButton' => "Crear cuenta",
+        'registerAcc' => "¿Ya tienes una cuenta?",
+        'registerLogin' => "Inicia sesión."
     );
 ?>

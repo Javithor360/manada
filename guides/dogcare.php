@@ -6,7 +6,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Dog Care</title>
+        <title><?php echo $dogcare ['pageDogCareTitle'] ?></title>
         <link rel="stylesheet" href="../css/dogcare.css">
         <link rel="stylesheet" href="../css/navbar2_style.css">
         <link rel="stylesheet" href="../css/footer_style.css">
