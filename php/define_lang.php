@@ -1,7 +1,7 @@
 <?php
 
     if(!isset($_SESSION['lang'])){
-        $_SESSION['lang'] = 'en';
+        $_SESSION['lang'] = 'es';
     }
 
     if (!function_exists('str_contains')) {

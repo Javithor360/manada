@@ -21,7 +21,7 @@
             <h1 class="h1">¡<?php echo $dog ['DogHeaderTitle'] ?> Carlita!</h1>
             <img src="../../src/pets/dog/Carlita.png" id="pet_pic">
             <h3><?php echo $dog ['DogStep1'] ?></h3>
-            <p>1 ?php echo $dog ['DogStep1Desc1'] ?>/p><br>
+            <p>1 <?php echo $dog ['DogStep1Desc1'] ?></p><br>
             <h3><?php echo $dog ['DogStep2'] ?></h3>
             <p><?php echo $dog ['DogStep2Desc2'] ?></p><br>
             <h3>Descripcion:</h3>

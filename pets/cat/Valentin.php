@@ -22,7 +22,7 @@
             <img src="../../src/pets/cat/Valentin.png" id="pet_pic">
             <h3><?php echo $cat ['CatStep1'] ?></h3>
             <p>1  <?php echo $cat ['CatStep1Desc1'] ?></p><br>
-            <h3><?php echo $cat ['CatStep2'] ?>/h3>
+            <h3><?php echo $cat ['CatStep2'] ?></h3>
             <p><?php echo $cat ['CatStep2Desc1'] ?></p><br>
             <h3>Descripcion:</h3>
             <p>Este gatito fue entregado a nuestro refugio ya que su dueñ@ no podia cuidarlo por más tiempo,pero espera que seas tu quien lo adopte,

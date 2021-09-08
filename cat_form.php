@@ -12,7 +12,7 @@
         <meta charset="UTF-8"> 
         <script src="./js/navfootMaker.js"></script>
         <script type="text/javascript">window.navfoot = { lang: "<?php echo $_SESSION['lang']?>", session: "<?php echo $login ?>", username: "<?php echo $username ?>", navbar: { home: "<?php echo $navbar['home'] ?>", pets: "<?php echo $navbar['pets'] ?>", howAdopt: "<?php echo $navbar['howAdopt'] ?>", contact: "<?php echo $navbar['contact'] ?>", login: "<?php echo $navbar['login'] ?>" }, footer: { language: "<?php echo $footer['language'] ?>", languageOpc1: "<?php echo $footer['languageOpc1'] ?>", languageOpc2: "<?php echo $footer['languageOpc2'] ?>", title: "<?php echo $footer['title'] ?>", phrase: "<?php echo $footer['phrase'] ?>", copyright: "<?php echo $footer['copyright'] ?>" } }</script>
-        <title><?php echo $cat_form ['CatFormHeaderTitle'] ?> ∙ La Manada</title>
+        <title><?php echo $cat_form ['CatFormTitle'] ?> ∙ La Manada</title>
     </head>
     <body>
         <div id="navy"></div>
@@ -21,10 +21,10 @@
         <div class="formu">
             <form action="php/formu_dar.php" method="POST" onSubmit="document.getElementById('enviar').disabled=true;">
                 <label for="firstName" class="first-name"><?php echo $cat_form ['CatFormHeaderTitle'] ?>:</label>
-                <input class="input" id="firstName" type="text" name="nombre" placeholder="<?php echo $dog_form ['CatFormHolder1Desc'] ?>" required>
+                <input class="input" id="firstName" type="text" name="nombre" placeholder="<?php echo $cat_form ['CatFormHolder1Desc'] ?>" required>
 
                 <label for="age"><?php echo $cat_form ['CatFormHolder2'] ?>:</label>
-                <input class="input" for="age" type="number" name="edad" placeholder="<?php echo $dog_form ['CatFormHolder2Desc'] ?>" min="0" max="35" required>
+                <input class="input" for="age" type="number" name="edad" placeholder="<?php echo $cat_form ['CatFormHolder2Desc'] ?>" min="0" max="35" required>
 
                 <label for="sex"><?php echo $cat_form ['CatFormHolder3'] ?>:</label>
                 <select class="input" name="sexo">
@@ -32,7 +32,7 @@
                     <option><?php echo $cat_form ['CatFormHolder3Desc1'] ?></option>
                     <option><?php echo $cat_form ['CatFormHolder3Desc2'] ?></option>
                 </select>
-                <label for="vacunas"><?php echo $cat_form ['CatFormHolder4'] ?>:</label>
+                <label for="vacunas"><?php echo $cat_form ['CatFormHolder4'] ?></label>
                 <br><br>
 
                 <label class="container"><?php echo $cat_form ['CatFormHolder4Desc1'] ?>

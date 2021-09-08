@@ -32,7 +32,7 @@
                 <option><?php echo $dog_form ['DogFormHolder3Desc2'] ?></option>
             </select>
             <br><br>
-            <label for="vacunas"><?php echo $dog_form ['DogFormHolder4'] ?>:</label>
+            <label for="vacunas"><?php echo $dog_form ['DogFormHolder4'] ?></label>
 
                 <label class="container"><?php echo $dog_form ['DogFormHolder4Desc1'] ?>
                     <input type="checkbox"value="Contra Distemper" name="opc1">

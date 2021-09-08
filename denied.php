@@ -26,11 +26,11 @@
 
                 container = document.getElementById('todo');
                 container.innerHTML +=  `<div class="container">`+
-                                            `<h1> <?php echo $error404 ['404HeaderTitle'] ?> </h1>`+
+                                            `<h1> <?php echo $denied ['DeniedHeaderTitle'] ?> </h1>`+
                                             `<img src="${img[Math.floor(Math.random() * img.length)]}" height="500px" width="750px">`+
                                             `<div id="right">`+
-                                                `<p> <?php  echo $error404 ['404Desc']  ?> </p>`+
-                                                `<a href="${pathway}php/index.php"><button> <?php echo $error404 ['404Back'] ?> </button></a>`+
+                                                `<p> <?php echo $denied ['DeniedDesc'] ?> </p>`+
+                                                `<a href="${pathway}php/login.php"><button> <?php echo $denied ['DeniedLogIn'] ?> </button></a>`+
                                             `</div>`+
                                         `</div>`;
             }
@@ -38,7 +38,7 @@
         </script>
 
         <meta charset="UTF-8">
-        <title> <?php echo $error404 ['404PageTitle'] ?> </title>
+        <title>Acceso denegado ∙ La Manada</title>
     </head>
     <body>
             <div id="todo"></div>
