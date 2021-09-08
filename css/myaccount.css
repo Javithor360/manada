@@ -1,0 +1,131 @@
+@font-face{
+	font-family: Dosis;
+	src: url(../src/fonts/Dosis.ttf);
+	font-weight: normal;
+	font-size: normal;
+}
+@font-face{
+	font-family: Poppins;
+	src: url(../src/fonts/Poppins-Regular.ttf);
+	font-weight: normal;
+	font-size: normal;
+}
+html{
+	background-color: #fff;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*====Navbar====*/
+header{
+	background: #11698E;
+	font-size: 14pt;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+header nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+header nav .menu{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+header nav .menu .logo a img{
+	width: 55px;
+}
+header .menu .menucontent{
+	display: flex;
+}
+header .menu .menucontent a{
+	font-size: 12pt;
+	float: right;
+	padding: 16px 8px;
+	color: #fff;
+	text-decoration: none;
+	background: transparent;
+	border-bottom: 2px solid transparent;
+	transition: background .3s ease-in-out;
+	font-family: Poppins;
+}
+header .menu .menucontent p{
+	float: right;
+	font-size: 14pt;
+	padding: 14px 8px;
+	color: #fff;
+	text-decoration: none;
+	background: transparent;
+	transition: background .3s ease-in-out;
+	font-family: Poppins;
+}
+header .menu .menucontent a:hover{
+	background: rgba(0, 0, 0, .3);
+	transition: background .3s ease-in-out;
+}
+header nav .user a .login{
+	background-color: #fff;
+	color: #1A5276;
+	border: none;
+	margin-right: 5px;
+	padding: 5px;
+	font-size: 14pt;
+	transition: color .3s ease;
+	border-radius: 8px;
+	font-family: 'Dosis';
+	/*  */
+	background-image: url(../src/icons/userIcon.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 30px;
+	padding-right: 35px;	
+
+}
+header nav .user a .login:hover{
+	color: #5499C7;
+	cursor: pointer;
+	transition: color .3s ease;
+}
+header button:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+    transition: all 400ms ease;
+    color: white;
+    border: 2px #30336b solid;
+}
+/*====Main====*/
+main{
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    margin: 1rem 0rem 1rem 0rem;
+}
+.user_img{
+    padding: 1rem;
+}
+.user_data_container{
+    padding: 1rem;
+    width: 70rem;
+}
+#user_data{
+    display: flex;
+}
+.user_info{
+    margin: 1rem;
+}
+.user_options>a{
+    border: 1px solid #922B21;
+    background-color: #922B21;
+    border-radius: 5px;
+    color: #fff;
+    margin: 1rem;
+    padding: 0.5rem;
+    text-decoration: none;
+}

@@ -10,13 +10,29 @@ function navfootMaker() {
     let navbar, login;
 
     if(window.navfoot.session == true){
-        login =    `<div class="user">`+
-                        `<a href="`+ longpath +`php/logout.php">`+
-                            `<button class="login">`+
-                                window.navfoot.username+
-                            `</button>`+
-                        `</a>`+
-                    `</div>`;
+        login =    `<div class="user-menu-container">`+
+                        `<label for="btn" class="button">`+
+                            window.navfoot.username+
+                            `<img src="`+ longpath +`src/icons/down-arrow-icon.svg" alt="">`+
+                        `</label>`+
+                        `<input type="checkbox" id="btn">`+
+                        `<ul class="list">`+
+                            `<li>`+
+                                `<a href="`+ longpath +`myaccount.php">`+
+                                    `<label>Mi cuenta`+
+                                        `<img  src="`+ longpath +`src/icons/userIcon.svg" width="25px" alt="">`+
+                                    `</label>`+
+                                `</a>`+
+                            `</li>`+
+                            `<li  id="bottom">`+
+                                    `<a href="`+ longpath +`php/logout.php">`+
+                                    `<label>Cerrar sesión`+
+                                        `<img  src="`+ longpath +`src/icons/logout-icon.svg" alt="">`+
+                                    `</label>`+
+                                `</a>`+
+                            `</li>`+
+                        `</ul>`+
+                    `</div>`
     }else{
         login =    `<div class="user">`+
                         `<a href="`+ longpath +`php/login.php">`+

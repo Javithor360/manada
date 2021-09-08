@@ -146,7 +146,7 @@ header {
   border-radius: 8px;
   font-family: "Dosis";
   /*  */
-  background-image: url(../src/icons/userIcon.svg);
+  background-image: url(../src/icons/userIcon-blue.svg);
   background-repeat: no-repeat;
   background-position: right;
   background-size: 30px;
@@ -163,6 +163,101 @@ button:hover {
   transition: all 400ms ease;
   color: white;
   border: 2px #30336b solid;
+}
+/*====User-dropdown menu====*/
+.user-menu-container{
+  right: .2rem;
+  position: absolute;
+  background: #fff;
+  padding: 8px 8px 8px 8px;
+  border-radius: 8px;
+}
+.user-menu-container label{
+  color: #1a5276;
+  transition: color 0.2s ease;
+  font-size: 14pt;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  font-family: 'Dosis', sans-serif;
+}
+.user-menu-container label:hover{
+  color: #5499c7;
+  transition: color 0.3s ease;
+}
+.user-menu-container ul label{
+  color: #fff;
+}
+.list li a label img{
+  margin-right: 1em;
+  width: 1em;
+  float: left;
+}
+.user-menu-container .button img{
+  margin-left: .3em;
+  margin-right: .3em;
+  width: .8em;
+  padding-top: .3em;
+  float: right;
+}
+.user-menu-container ul{
+  position: absolute;
+  background: #272727;
+  list-style: none;
+  top: 50px;
+  right: .2rem;
+  min-width: 8em;
+  border-radius: 8px;
+  border:1px solid rgb(180, 180, 180);
+  display: none;
+  box-shadow: 0px 2px 28px -10px rgba(0,0,0,0.59);
+
+}
+[id^=btn]:checked + ul{
+  display: block;
+}
+.user-menu-container .list:before{
+  position: absolute;
+  content: '';
+  height: 10px;
+  width: 10px;
+  background: #272727;
+  right: .7em;
+  top: -6px;
+  transform: rotate(45deg);
+  z-index: 1;
+  border-top: 1px solid rgb(180, 180, 180);
+  border-left: 1px solid rgb(180, 180, 180);
+}
+.user-menu-container ul li{
+  padding: 5px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.user-menu-container ul #bottom{
+  border-bottom: none;
+}
+.user-menu-container ul li label{
+  font-size: 14pt;
+}
+.user-menu-container ul li label:hover{
+  color: rgb(161, 161, 161);
+}
+.user-menu-container ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+input{
+  display: none;
+}
+.menu li a label img{
+  width: 20px;
+  height: 20px;
+  float: right;
+  padding: 0;
+  margin: 0;
 }
 /*====Slider de imagenes====*/
 .slider_img_container {
