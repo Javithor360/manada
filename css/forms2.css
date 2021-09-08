@@ -77,11 +77,11 @@ form button:hover{
     margin-top: 2%;
 }
 
-input::placeholder{
+form input::placeholder{
     color: rgba(255, 255, 255, 0.445);
 }
 
-label{
+form label{
     font-family: poppins;
     color: white;
     font-size: 30px;

@@ -185,7 +185,7 @@ header button:hover {
   font-size: 18px;
   display: block;
 }
-input{
+.user-menu-container input{
   display: none;
 }
 .menu li a label img{
