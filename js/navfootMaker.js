@@ -19,14 +19,14 @@ function navfootMaker() {
                         `<ul class="list">`+
                             `<li>`+
                                 `<a href="`+ longpath +`myaccount.php">`+
-                                    `<label>Mi cuenta`+
+                                    `<label>${window.navfoot.navbar.profile}`+
                                         `<img  src="`+ longpath +`src/icons/userIcon.svg" width="25px" alt="">`+
                                     `</label>`+
                                 `</a>`+
                             `</li>`+
-                            `<li  id="bottom">`+
-                                    `<a href="`+ longpath +`php/logout.php">`+
-                                    `<label>Cerrar sesión`+
+                            `<li id="bottom">`+
+                                `<a href="`+ longpath +`php/logout.php">`+
+                                    `<label>${window.navfoot.navbar.logout}`+
                                         `<img  src="`+ longpath +`src/icons/logout-icon.svg" alt="">`+
                                     `</label>`+
                                 `</a>`+
@@ -85,23 +85,6 @@ function navfootMaker() {
                             `</header>`
     }
 
-/*     var opc;
-
-    if(window.lang == undefined){
-        opc =   `<option value="es">Español</option>`+
-                `<option value="en">Inglés</option>`;
-        window.lang = `es`;
-    }else{
-        if(window.lang == `es`){
-            opc =   `<option value="es">Español</option>`+
-                    `<option value="en">Inglés</option>`; 
-        }else{
-            opc =   `<option value="en">Inglés</option>`+
-                    `<option value="es">Español</option>`;  
-        }
-    } */
-/*     alert(window.lang) */
-
     let footer =  document.getElementById(`foot`),
         lang;
 
@@ -138,14 +121,14 @@ function navfootMaker() {
             login =   
                             '<a href="'+ longpath +'adopt_form.php">'+
                                 '<button class="boton">'+
-                                    'Adoptar'+
+                                    window.navfoot.button.success+
                                 '</button>'+
                             '</a>'+
                         '</div>';
         }else{
             login =        '<a href="'+ longpath +'/php/login.php">'+
                                 '<button class="boton">'+
-                                    'Iniciar sesion<br>para adoptar'+
+                                    window.navfoot.button.fail+
                                 '</button>'+
                             '</a>'+
                         '</div>';       

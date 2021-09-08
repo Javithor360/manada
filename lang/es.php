@@ -6,6 +6,8 @@
         'howAdopt' => '¿Cómo Adoptar?',
         'contact' => 'Contacto',
         'login' => 'Iniciar sesión',
+        'logout' => 'Cerrar sesión',
+        'profile' => 'Mi cuenta',
         'indexHeader' => '<img src="./src/logos/logo_full.svg" width="366px" height="120px">'
     );
 
@@ -191,8 +193,11 @@
         'DogStep2' => "Sexo:",
         'DogStep2Desc1' => "Macho",
         'DogStep2Desc2' => "Hembra",
+        'DogStep2.5' => "Descripción",
         'DogStep3' => "¿Deseas Adoptarme?",
         'DogBottom1' => "Volver",
+        'DogButton2' => "Adoptar",
+        'DogButtonLogin' => "Inicia sesión",
     );
 
     $cat = array(
@@ -203,8 +208,11 @@
         'CatStep2' => "Sexo:",
         'CatStep2Desc1' => "Macho",
         'CatStep2Desc2' => "Hembra",
+        'CatStep2.5' => "Descripción",
         'CatStep3' => "¿Deseas Adoptarme?",
         'CatBottom1' => "Volver",
+        'CatButton2' => "Adoptar",
+        'CatButtonLogin' => "Inicia sesión"
     );
 
     $dog_form = array(
