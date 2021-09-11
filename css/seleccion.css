@@ -97,3 +97,67 @@ body{
 footer {
   clear: both;
 }
+
+@media screen and (max-width: 1366px){
+  /* Ajustes de tamaño en cuanto a letra e imágenes */
+  .intro p, .art1 p{font-size: 22px;}
+  .intro h1, .art1 h1{font-size: 50px}
+  .img{width: 450px !important; height: auto;}
+  .leftImg{width: 350px !important; height: 400px !important;}
+  .select h1{font-size: 60px;}
+  .select p{font-size: 35px;}
+
+  /* Acomodaciones (Fácilita el responsive) */
+  .intro p, .intro h1{margin: 0;}
+  .intro {width: 861px; display: block; margin-left: auto; margin-right: auto;} .intro p{width: 561px; margin-left: auto; margin-right: auto;}
+
+  .art1{width: 961px; margin: 100px auto 300px auto;}
+
+  .select{width: 661px; margin: 0 auto;}
+
+  .select a{width: 661px;}
+  .select span a:first-child{margin-right: 0;}
+  .select span a:nth-child(2){margin-left: 0;}
+}
+
+@media screen and (max-width: 1020px){
+  .intro, .art1, .select, .img{width: 90%;}
+
+  /* Ajustes de tamaño en cuanto a letra e imágenes */
+  .intro p, .art1 p{font-size: 18px;}
+  .intro h1, .art1 h1{font-size: 40px}
+  img.img{width: 400px !important; height: auto;}
+  img.leftImg{width: 300px !important; height: 350px !important;}
+  .select h1{font-size: 50px;}
+  .select p{font-size: 27px;}
+  /* .art1{margin-bottom: 200px;} */
+
+  .zoom:hover {transform: scale(1.4);}
+}
+
+@media screen and (max-width: 785px){
+  img.leftImg{float: none !important; display: block; margin-left: auto !important; margin-right: auto !important;}
+  .art1 p{ width: 561px; margin-left: auto; margin-right: auto;}
+  .art1 h1{text-align: center;}
+  .art1{margin-bottom: 100px;}
+}
+
+@media screen and (max-width: 710px){
+  .intro p, .art1 p{width: 80%;}
+}
+
+@media screen and (max-width: 685px){
+  .select a{width: 90%;}
+  .select span a:first-child{margin-right: 0;}
+  .select span a:nth-child(2){margin-left: 0;}
+
+  .select h1{font-size: 40px;}
+  .select p{font-size: 23px;}
+
+  .select img{padding: 0; width: 190px; height: 190px;}
+}
+
+@media screen and (max-width: 600px){
+  .zoom:hover {transform: scale(1.2);}
+  .select img {width: 140px; height: 140px !important;}
+}

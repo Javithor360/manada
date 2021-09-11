@@ -18,7 +18,7 @@
         <div id="navy"></div>
         
 
-        <section>
+        <section class="fBody">
             <img class="img" src="./src/select_upsidePuppy.png">
             <div class="intro">
                 <h1> <?php echo $select ['SelectHeaderTitle'] ?> </h1>
