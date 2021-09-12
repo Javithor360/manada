@@ -227,6 +227,24 @@ body::-webkit-scrollbar-thumb {
     background-size: 27px;
     padding-right: 35px;
   }
+
+  .user-menu-container label{font-size: 14px;}
+  .user-menu-container label.button img {height: 11.759px !important;}
+  .user-menu-container ul img {height: 18.656px !important;}
+  .user-menu-container ul label {font-size: 13px !important;}
+
+  a[href="./contact.php"] {
+    display: none;
+  }
+  a[href="../../contact.php"] {
+    display: none;
+  }
+  a[href="../contact.php"] {
+    display: none;
+  }
+  .menucontent p:nth-child(4) ~ p {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -250,9 +268,7 @@ body::-webkit-scrollbar-thumb {
     background-size: 25px;
     padding-right: 35px;
   }
-}
 
-@media screen and (max-width: 565px) {
   a[href="./contact.php"] {
     display: none;
   }
@@ -265,4 +281,18 @@ body::-webkit-scrollbar-thumb {
   .menucontent p:nth-child(4) ~ p {
     display: none;
   }
+  .user-menu-container label{font-size: 12px;}
+}
+
+@media screen and (max-width: 530px) {
+  a[href="./php/index.php"] {
+    display: none;
+  }
+  a[href="../../php/index.php"] {
+    display: none;
+  }
+  a[href="../php/index.php"] {
+    display: none;
+  }
+
 }
