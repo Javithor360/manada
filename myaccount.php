@@ -18,38 +18,81 @@
     <div id="navy"></div>
     <main>
         <div class="container">
-            <div class="user_img">
-                <img src="src/icons/usuario.svg" width="100px">
-            </div>
-            <div class="user_data_container">
+            <div id="user">
+                <span>
+                    <?php 
+                        if ($gender=="M") {
+                    ?>        
+                        <div class="user_img">
+                            <img src="src/icons/male_user_icon.svg" width="100px">
+                        </div>
+                    <?php   
+                        }else if ($gender=="F") {
+                    ?>
+                            <div class="user_img">
+                                <img src="src/icons/female_user_icon.svg" width="100px">
+                            </div>
+                    <?php        
+                        }
+                    ?>
+                </span>
                 <span id="name">
                     <?php 
                         echo ($username);
                     ?>
+                    <hr size=2px color=' #11698e' width="750px">
                 </span>
+
+            </div>
+            
+            <div class="user_data_container">
                 <div id="user_data">
                     <div class="user_info">
-                        <span>Correo Electronico</span>
-                        <span>
+                        <div id="text_info">
+                            <small><img src="src/icons/email-user-icon.svg" alt=""></small>
+                            <p>Correo Electronico</p>
+                        </div>
+                        
+                        <span id="text">
                             <?php 
                                 echo ($mail);
                             ?>
                         </span>
                     </div>
                     <div class="user_info">
-                        <span>Numero telefonico</span>
-                        <span>
+                        <div id="text_info">
+                            <small><img src="src/icons/phone.svg" alt=""></small>
+                            <p>Numero telefonico</p>
+                        </div>
+                        
+                        <span id="text">
                             <?php 
                                 echo ($tel);
                             ?>
                         </span>
                     </div>
+                    <div class="user_info">
+                        <div id="text_info">
+                            <small><img src="src/icons/calendar.svg" alt=""></small>
+                            <p>Fecha de nacimiento</p>
+                        </div>
+                        
+                        <span id="text">
+                            <?php 
+                                echo ($bD);
+                            ?>
+                        </span>
+                    </div>
+                    
                 </div>
+                
             </div>
-            <div class="user_options">
-                <a href="">Salir</a>
+            <div id="button-container">
+                    <a  id="button"href="php/logout.php">Cerrar Sesión</a>
             </div>
         </div>
+           
+
     </main>
     <div id="foot"></div>
 </body>

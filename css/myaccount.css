@@ -102,17 +102,30 @@ header button:hover{
 /*====Main====*/
 main{
     min-height: 100vh;
+
 }
 .container{
-    display: flex;
-    margin: 1rem 0rem 1rem 0rem;
+    display: grid;
+    width: 60rem;
+    padding: 33px;
+    margin: 5rem auto 1rem auto;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+	box-shadow: 0px -1px 28px -8px rgba(0,0,0,0.59);
 }
 .user_img{
     padding: 1rem;
 }
 .user_data_container{
-    padding: 1rem;
-    width: 70rem;
+	width: 60rem;
+	display: flex;
+	margin-left: 7rem;
+    padding: 0;
+}
+#name{
+	font-family: 'Poppins', sans-serif;
+	font-size: 2em;
+	padding-top: 2rem;
 }
 #user_data{
     display: flex;
@@ -120,7 +133,14 @@ main{
 .user_info{
     margin: 1rem;
 }
-.user_options>a{
+.user_info small{
+	margin-right: .5rem;
+}
+.user_info p{
+	font-family: 'Poppins', sans-serif;
+	font-size: 14pt;
+}
+#exit{
     border: 1px solid #922B21;
     background-color: #922B21;
     border-radius: 5px;
@@ -128,4 +148,43 @@ main{
     margin: 1rem;
     padding: 0.5rem;
     text-decoration: none;
+}
+#text_info{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+#user{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 30rem;
+}
+#text{
+	padding-left:2.2rem;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+}
+#button-container{
+	margin-left: 47rem;
+	padding-top: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#button{
+	margin-top: 3rem;
+	width: 10rem;
+	padding: 10px;
+	border-radius: 5px;
+	border-radius: 8px;
+	border: 1px solid #E74C3C;
+	color: #E74C3C;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	transition: all .3s;
+}
+#button:hover{
+	background-color: #E74C3C;
+	color: #fff;
+	transition: all .3s;
 }
