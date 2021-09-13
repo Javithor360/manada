@@ -13,13 +13,11 @@
 
 <!-- About -->
 ## Nuestro proyecto
----
 ![Index](./src/readme/index.jpg)
 
 Nuestro equipo de desarrolladores está trabajando en la creación de una página web que permita facilitar la adopción de animales domésticos. Nos apoyamos por medio de una fundación; como programadores diseñamos un sitio que sirva de ayuda a aquellas personas interesadas en apoyar la causa, facilitándole la interacción con el sitio y la fundación. Nuestro propósito es establecer una comunicación entre el usuario y los miembros de la fundación para realizar los trámites requeridos.
 
 ## Nuestra fundación
----
 Fundación: La manada; es una organización que tiene por objetivo conseguir un nuevo hogar a los animales que lo necesiten mientras son atendidos por nuestros colaboradores.
 
 * **Misión**
@@ -31,7 +29,6 @@ Fundación: La manada; es una organización que tiene por objetivo conseguir un 
 
 <!-- Tools -->
 ## Herramientas utilizadas para el desarrollo
----
 Para la elaboración del proyecto, utilizamos un sinfín de softwares y herramientas de apoyo para moldear el desarrollo Fullstack en el sitio web. Entre todas las herramientas, cabe destacar:
 
 |   | Herramientas       |
@@ -44,7 +41,6 @@ Para la elaboración del proyecto, utilizamos un sinfín de softwares y herramie
 
 <!-- How to use -->
 ## Cómo instalar
----
 Por el momento, el sitio únicamente funciona de manera local y requiere seguir una serie de pasos para hacerla funcional:
 
 1. Descargar el repositorio
@@ -63,7 +59,6 @@ Por el momento, el sitio únicamente funciona de manera local y requiere seguir 
 
 
 ## Características del sitio web
----
 Nuestro sitio web cuenta con unas características peculiares e interesantes para el usuario, entre ellas se pueden destacar las siguientes.
 
 - **Diseño responsive**
@@ -97,7 +92,6 @@ En caso de dudas, reportes o quejas; contamos con un sistema de contacto por med
 - **¡Entre otros!**
 
 ## Advertencia
----
 Este proyecto sigue en desarrollo y está sujeto a muchísimos cambios. Hecho con propósitos educativos.
 
 <!-- Licencia -->
