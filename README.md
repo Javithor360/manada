@@ -77,9 +77,9 @@ Una característica extra que sirve para informar al usuario el estado de sus so
 ![blog](./src/readme/blog.jpg)
 Un apartado extra en el sitio web que permite al usuario informarse acerca de temas relacionados a las mascotas
 
-- **Sistema de cuentas**
+<!-- - **Sistema de cuentas**
 ![login](./src/readme/login.jpg)
-Para poder manejar y utilizar de manera correcta la página, el usuario podrá crear una cuenta e iniciar sesión en ella para llevar a cabo los procesos que lo requieran
+Para poder manejar y utilizar de manera correcta la página, el usuario podrá crear una cuenta e iniciar sesión en ella para llevar a cabo los procesos que lo requieran -->
 
 - **Páginas válidadas**
 ![404](./src/readme/404.jpg)
