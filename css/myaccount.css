@@ -13,114 +13,63 @@
 html{
 	background-color: #fff;
 }
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-/*====Navbar====*/
-header{
-	background: #11698E;
-	font-size: 14pt;
-	position: sticky;
-	top: 0;
-	z-index: 100;
-}
-header nav{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-}
-header nav .menu{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-}
-header nav .menu .logo a img{
-	width: 55px;
-}
-header .menu .menucontent{
-	display: flex;
-}
-header .menu .menucontent a{
-	font-size: 12pt;
-	float: right;
-	padding: 16px 8px;
-	color: #fff;
-	text-decoration: none;
-	background: transparent;
-	border-bottom: 2px solid transparent;
-	transition: background .3s ease-in-out;
-	font-family: Poppins;
-}
-header .menu .menucontent p{
-	float: right;
-	font-size: 14pt;
-	padding: 14px 8px;
-	color: #fff;
-	text-decoration: none;
-	background: transparent;
-	transition: background .3s ease-in-out;
-	font-family: Poppins;
-}
-header .menu .menucontent a:hover{
-	background: rgba(0, 0, 0, .3);
-	transition: background .3s ease-in-out;
-}
-header nav .user a .login{
-	background-color: #fff;
-	color: #1A5276;
-	border: none;
-	margin-right: 5px;
-	padding: 5px;
-	font-size: 14pt;
-	transition: color .3s ease;
-	border-radius: 8px;
-	font-family: 'Dosis';
-	/*  */
-	background-image: url(../src/icons/userIcon.svg);
-	background-repeat: no-repeat;
-	background-position: right;
-	background-size: 30px;
-	padding-right: 35px;	
 
-}
-header nav .user a .login:hover{
-	color: #5499C7;
-	cursor: pointer;
-	transition: color .3s ease;
-}
-header button:hover{
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
-    transition: all 400ms ease;
-    color: white;
-    border: 2px #30336b solid;
-}
+
 /*====Main====*/
 main{
     min-height: 100vh;
-
+}
+.user_container h2{
+	margin-left: 13rem;
+	color: #272727;
+	font-family: 'Poppins', sans-serif;
+}
+.user_container{
+	padding: 20px;
+	width: 80%;
+	margin: auto;
+}
+.user_container .user p{
+	font-family: 'Poppins', sans-serif;
+	padding: 1rem;
+	font-size: 2rem;
+	text-align: center;
+}
+.user_img img{
+    display: block;
+    margin: auto;
+}
+.user_container .user hr{
+	margin: auto;
 }
 .container{
-    display: grid;
-    width: 60rem;
-    padding: 33px;
-    margin: 5rem auto 1rem auto;
-    background-color: #f7f7f7;
-    border-radius: 20px;
-	box-shadow: 0px -1px 28px -8px rgba(0,0,0,0.59);
+	width: 42rem;
+	margin: auto;
 }
-.user_img{
-    padding: 1rem;
+.container h2{
+	padding: .5rem;
+	font-family: 'Poppins', sans-serif;
+	color: #272727;
+	font-size: 14pt;
+	font-weight: bold;
+
 }
 .user_data_container{
-	width: 60rem;
+	width: 42rem;
+	margin: auto;
 	display: flex;
-	margin-left: 7rem;
     padding: 0;
+}
+#text_info{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+#mail{
+	margin-left: 2rem;
+	word-break:break-all;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
 }
 #name{
 	font-family: 'Poppins', sans-serif;
@@ -130,8 +79,18 @@ main{
 #user_data{
     display: flex;
 }
+#text{
+	margin-left: 2rem;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+}
 .user_info{
+	box-shadow: 0px 0px 10px -5px #000000;
+	padding: 1rem;
     margin: 1rem;
+    width: 20rem;
+    border: 1px solid #f9f9f9;
+    border-radius: 10px;
 }
 .user_info small{
 	margin-right: .5rem;
@@ -140,51 +99,21 @@ main{
 	font-family: 'Poppins', sans-serif;
 	font-size: 14pt;
 }
-#exit{
-    border: 1px solid #922B21;
-    background-color: #922B21;
-    border-radius: 5px;
-    color: #fff;
-    margin: 1rem;
-    padding: 0.5rem;
-    text-decoration: none;
-}
-#text_info{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-}
-#user{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	width: 30rem;
-}
-#text{
-	padding-left:2.2rem;
-	font-family: 'Poppins', sans-serif;
-	font-weight: bold;
-}
-#button-container{
-	margin-left: 47rem;
-	padding-top: 40px;
-	padding-left: 10px;
-	padding-right: 10px;
-}
 #button{
-	margin-top: 3rem;
-	width: 10rem;
-	padding: 10px;
-	border-radius: 5px;
-	border-radius: 8px;
-	border: 1px solid #E74C3C;
 	color: #E74C3C;
+	font-size: 1.2em;
+	font-weight: bold;
+	letter-spacing: .5px;
+	float: right;
 	text-decoration: none;
-	font-family: 'Poppins', sans-serif;
-	transition: all .3s;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 #button:hover{
-	background-color: #E74C3C;
-	color: #fff;
-	transition: all .3s;
+	background-size: 100% 2px;
 }

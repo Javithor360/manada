@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mi cuenta</title>
+    <title>Mi cuenta ∙ La Manada</title>
     <script type="text/javascript">window.navfoot = { lang: "<?php echo $_SESSION['lang']?>", session: "<?php echo $login ?>", username: "<?php echo $username ?>", navbar: { home: "<?php echo $navbar['home'] ?>", pets: "<?php echo $navbar['pets'] ?>", howAdopt: "<?php echo $navbar['howAdopt'] ?>", contact: "<?php echo $navbar['contact'] ?>", login: "<?php echo $navbar['login'] ?>", logout: "<?php echo $navbar['logout'] ?>", profile: "<?php echo $navbar['profile'] ?>" }, footer: { language: "<?php echo $footer['language'] ?>", languageOpc1: "<?php echo $footer['languageOpc1'] ?>", languageOpc2: "<?php echo $footer['languageOpc2'] ?>", title: "<?php echo $footer['title'] ?>", phrase: "<?php echo $footer['phrase'] ?>", copyright: "<?php echo $footer['copyright'] ?>" } }</script>
     <script src="./js/navfootMaker.js"></script>
     <link rel="shortcut icon" href="src/logos/favicon.ico" type="image/x-icon">
@@ -17,17 +17,17 @@
 <body>
     <div id="navy"></div>
     <main>
-        <div class="container">
-            <div id="user">
-                <span>
+        <div class="user_container">
+            <div class="user">
+                    <!-- <p>Hola!</p> -->
                     <?php 
-                        if ($gender=="M") {
+                        if ($gender=="Masculino") {
                     ?>        
                         <div class="user_img">
                             <img src="src/icons/male_user_icon.svg" width="100px">
                         </div>
                     <?php   
-                        }else if ($gender=="F") {
+                        }else if ($gender=="Femenino") {
                     ?>
                             <div class="user_img">
                                 <img src="src/icons/female_user_icon.svg" width="100px">
@@ -35,29 +35,31 @@
                     <?php        
                         }
                     ?>
-                </span>
-                <span id="name">
-                    <?php 
-                        echo ($username);
-                    ?>
-                    <hr size=2px color=' #11698e' width="750px">
-                </span>
-
+                    <p>
+                        <?php 
+                            // echo "Hola ",($username);
+                            echo ($username);
+                        ?>
+                    </p>    
+                    <hr size=2px color=' #11698e'>
             </div>
-            
-            <div class="user_data_container">
-                <div id="user_data">
+        </div>    
+        <div class="container">
+            <h2>Tus datos</h2>
+             <div class="user_data_container">
+                    
+                    
                     <div class="user_info">
                         <div id="text_info">
                             <small><img src="src/icons/email-user-icon.svg" alt=""></small>
                             <p>Correo Electronico</p>
                         </div>
                         
-                        <span id="text">
+                        <div id="mail">
                             <?php 
                                 echo ($mail);
-                            ?>
-                        </span>
+                            ?> 
+                        </div>
                     </div>
                     <div class="user_info">
                         <div id="text_info">
@@ -71,6 +73,8 @@
                             ?>
                         </span>
                     </div>
+            </div>
+            <div class="user_data_container">        
                     <div class="user_info">
                         <div id="text_info">
                             <small><img src="src/icons/calendar.svg" alt=""></small>
@@ -83,15 +87,41 @@
                             ?>
                         </span>
                     </div>
-                    
+                    <div class="user_info">
+                        <div id="text_info">
+                            <?php 
+                                if ($gender=="Masculino") {
+                            ?>        
+                                <small><img src="src/icons/gender_m.svg" alt=""></small>
+                            <?php   
+                                }else if ($gender=="Femenino") {
+                            ?>
+                                <small><img src="src/icons/gender_f.svg" alt=""></small>
+                            <?php        
+                                }
+                            ?>
+                            <p>Género</p>
+                        </div>
+                        <span id="text">
+                            <?php 
+                                echo ($gender);
+                            ?>
+                        </span>
+                    </div>
                 </div>
-                
-            </div>
-            <div id="button-container">
+                <div id="button-container">
                     <a  id="button"href="php/logout.php">Cerrar Sesión</a>
             </div>
         </div>
            
+        </div>
+           
+           
+ 
+            
+              
+
+            
 
     </main>
     <div id="foot"></div>
