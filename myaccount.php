@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mi cuenta ∙ La Manada</title>
+    <title><?php echo $myaccount ['MyaccountPageTitle'] ?></title>
     <script type="text/javascript">window.navfoot = { lang: "<?php echo $_SESSION['lang']?>", session: "<?php echo $login ?>", username: "<?php echo $username ?>", navbar: { home: "<?php echo $navbar['home'] ?>", pets: "<?php echo $navbar['pets'] ?>", howAdopt: "<?php echo $navbar['howAdopt'] ?>", contact: "<?php echo $navbar['contact'] ?>", login: "<?php echo $navbar['login'] ?>", logout: "<?php echo $navbar['logout'] ?>", profile: "<?php echo $navbar['profile'] ?>" }, footer: { language: "<?php echo $footer['language'] ?>", languageOpc1: "<?php echo $footer['languageOpc1'] ?>", languageOpc2: "<?php echo $footer['languageOpc2'] ?>", title: "<?php echo $footer['title'] ?>", phrase: "<?php echo $footer['phrase'] ?>", copyright: "<?php echo $footer['copyright'] ?>" } }</script>
     <script src="./js/navfootMaker.js"></script>
     <link rel="shortcut icon" href="src/logos/favicon.ico" type="image/x-icon">
@@ -45,14 +45,14 @@
             </div>
         </div>    
         <div class="container">
-            <h2>Tus datos</h2>
+            <h2><?php echo $myaccount ['MyaccountData'] ?></h2>
              <div class="user_data_container">
                     
                     
                     <div class="user_info">
                         <div id="text_info">
                             <small><img src="src/icons/email-user-icon.svg" alt=""></small>
-                            <p>Correo Electronico</p>
+                            <p><?php echo $myaccount ['MyaccountMail'] ?></p>
                         </div>
                         
                         <div id="mail">
@@ -64,7 +64,7 @@
                     <div class="user_info">
                         <div id="text_info">
                             <small><img src="src/icons/phone.svg" alt=""></small>
-                            <p>Numero telefonico</p>
+                            <p><?php echo $myaccount ['MyaccountTel'] ?></p>
                         </div>
                         
                         <span id="text">
@@ -78,7 +78,7 @@
                     <div class="user_info">
                         <div id="text_info">
                             <small><img src="src/icons/calendar.svg" alt=""></small>
-                            <p>Fecha de nacimiento</p>
+                            <p><?php echo $myaccount ['MyaccountBorn'] ?></p>
                         </div>
                         
                         <span id="text">
@@ -100,17 +100,25 @@
                             <?php        
                                 }
                             ?>
-                            <p>Género</p>
+                            <p><?php echo $myaccount ['MyaccountGender'] ?></p>
                         </div>
                         <span id="text">
                             <?php 
-                                echo ($gender);
+                                if ($gender=="Masculino") {
+                            ?>        
+                                <?php echo $myaccount ['MyaccountMale'] ?>
+                            <?php   
+                                }else if ($gender=="Femenino") {
+                            ?>
+                                <?php echo $myaccount ['MyaccountFemale'] ?>
+                            <?php        
+                                }
                             ?>
                         </span>
                     </div>
                 </div>
                 <div id="button-container">
-                    <a  id="button"href="php/logout.php">Cerrar Sesión</a>
+                    <a  id="button"href="php/logout.php"><?php echo $myaccount ['MyaccountLogout'] ?></a>
             </div>
         </div>
            

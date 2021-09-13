@@ -275,4 +275,15 @@
         'ThanksHeaderDesc' => "Tu solicitud de adopcion está siendo procesada, recibirás una respuesta lo más pronto posible",
         'ThanksBack' => "Regresar",
     );
+    $myaccount = array(
+        'MyaccountPageTitle' => "Mi Cuenta ∙ La Manada",
+        'MyaccountMail' => "Correo electrónico",
+        'MyaccountTel' => "Número telefónico",
+        'MyaccountBorn' => "Fecha de nacimiento",
+        'MyaccountGender' => "Género",
+        'MyaccountMale' => "Masculino",
+        'MyaccountFemale' => "Femenino",
+        'MyaccountData' => "Tus datos",
+        'MyaccountLogout' => "Cerrar sesión",
+    );
 ?>

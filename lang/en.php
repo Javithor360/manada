@@ -274,4 +274,15 @@
         'ThanksHeaderDesc' => "Your adoption request is being processed, you will receive a response as soon as possible",
         'ThanksBack' => "Go back",
     );
+    $myaccount = array(
+        'MyaccountPageTitle' => "My Account ∙ La Manada",
+        'MyaccountMail' => "Email address",
+        'MyaccountTel' => "Phone number",
+        'MyaccountBorn' => "Date of birth",
+        'MyaccountGender' => "Gender",
+        'MyaccountData' => "Your data",
+        'MyaccountMale' => "Male",
+        'MyaccountFemale' => "Female",
+        'MyaccountLogout' => "Log out",
+    );
 ?>
