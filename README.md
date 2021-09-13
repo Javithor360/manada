@@ -13,7 +13,7 @@
 
 <!-- About -->
 ## Nuestro proyecto
-![Index](./src/readme/index.jpg)
+![Index](./src/readme/header.jpg)
 
 Nuestro equipo de desarrolladores está trabajando en la creación de una página web que permita facilitar la adopción de animales domésticos. Nos apoyamos por medio de una fundación; como programadores diseñamos un sitio que sirva de ayuda a aquellas personas interesadas en apoyar la causa, facilitándole la interacción con el sitio y la fundación. Nuestro propósito es establecer una comunicación entre el usuario y los miembros de la fundación para realizar los trámites requeridos.
 
@@ -74,7 +74,7 @@ El usuario tendrá la opción de cambiar el idioma del sitio web entre `Español
 Una característica extra que sirve para informar al usuario el estado de sus solicitudes
 
 - **Blog con guías informativas**
-![mail](./src/readme/blog.jpg)
+![blog](./src/readme/blog.jpg)
 Un apartado extra en el sitio web que permite al usuario informarse acerca de temas relacionados a las mascotas
 
 - **Sistema de cuentas**
