@@ -21,11 +21,7 @@
         
         $error = '';
         
-        if (empty($name) or empty($lastNames) or empty($gender) or empty($email) or empty($pw) or empty($pwc) or empty($tel) or empty($bD)){
-
-            $error .= '<i style="color:red;">Debes rellenar todos los campos</i>';
-
-        }else{
+        
             try{
                 $conexion = new PDO('mysql:host=localhost;dbname=login', 'root', '');
             }catch(PDOException $prueba_error){
@@ -44,9 +40,7 @@
             if ($pw != $pwc){
                 $error .= '<i style="color:red;"> Las contraseñas no coinciden</i>';
             }
-            
-            
-        }
+
         
         if ($error == ''){
             $statement = $conexion->prepare('INSERT INTO usuarioslogin (id, name, lastNames,  gender, email, pw, tel, bD) VALUES (null, :name, :lastNames, :gender,  :email, :pw, :tel , :bD)');
