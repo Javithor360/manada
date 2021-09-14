@@ -266,7 +266,7 @@
     $denied = array( 
         'DeniedHeaderTitle' => "¡Acceso denegado!",
         'DeniedDesc' => "Credenciales inválidas para acceder",
-        'DeniedLogIn' => "Inicias sesión",
+        'DeniedLogIn' => "Iniciar sesión",
     );
 
     $thanks = array(

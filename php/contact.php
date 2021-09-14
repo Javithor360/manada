@@ -78,7 +78,7 @@ $contenido = "<!DOCTYPE html>
         <h1><img src=https://cdn.discordapp.com/attachments/840288194691989585/883606705773092934/ezgif.com-gif-maker.png  height='100px'></h1>
       <h1 class='h1'> Gracias por comuicarte con nosotros </h1>
       <br>
-          <h3>Gracias por comunicarte con nuestra Fundación una persona de nuestro personal se pondra en contcato contigo, esto puede tardar unos dias, gracias por ayudar a la causa y formar parte de nuestra familia que llamamos la manada
+          <h3>Gracias por comunicarte con nuestra Fundación una persona de nuestro personal se pondra en contacto contigo, esto puede tardar unos dias, gracias por ayudar a la causa y formar parte de nuestra familia que llamamos la manada
           </h3>
           <h2></h2>
       <div class='footer'>

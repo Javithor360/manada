@@ -2,7 +2,7 @@
         require 'php/username-conexion.php';
  ?>
 <!DOCTYPE html>
-    <html lang="en">
+    <html lang="es">
     <head>
         <meta charset="UTF-8">
         <title>La Manada | Mascotas</title>
