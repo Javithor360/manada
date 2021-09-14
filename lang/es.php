@@ -286,4 +286,12 @@
         'MyaccountData' => "Tus datos",
         'MyaccountLogout' => "Cerrar sesión",
     );
+    $adoptform = array(
+        'AdoptFormTittle' => "Adopción",
+        'AdoptionFormDesc' => "Gracias por adoptar y cambiarle la vida a una mascota, ahora rellena el siguiente formulario con los datos que se te solicitan",
+        'AdotionFormName' => "Ingresa tu nombre", 
+        'AdoptionFormEmail' => "Ingresa tu correo electronico",
+        'AdoptFormReason' => "¿Cúal es el motivo por el que quieres adoptar?",
+        'AdoptFormJustify' => "Justifica tu respuesta",
+    );
 ?>

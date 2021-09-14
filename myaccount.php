@@ -61,6 +61,7 @@
                             ?> 
                         </div>
                     </div>
+                    
                     <div class="user_info">
                         <div id="text_info">
                             <small><img src="src/icons/phone.svg" alt=""></small>

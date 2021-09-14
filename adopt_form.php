@@ -21,12 +21,12 @@
 <div class="container">
         <div class="form">
             <form  id="#form"action="php/decline_adopt.php" method="POST" onSubmit="document.getElementById('enviar').disabled=true;">
-                <label id="title1"> Adopción </label>
-                <label id="title2"> Gracias por adoptar y cambiarle la vida a una mascota, ahora rellena el siguiente formulario con los datos que se te solicitan </label>
-                <input type="text" name="name" placeholder="Ingresa tu nombre" required="">
-                <input placeholder="Ingresa tu correo electronico" type="email" name="email" autocomplete="off" required="">
-                    <label class="labelform"for="">¿Cúal es el motivo por el que quieres adoptar?</label>
-                    <textarea id="textbox" required="" name="info" placeholder="Justifica tu respuesta"></textarea>
+                <label id="title1"> <?php echo $adoptform ['AdoptFormTittle'] ?> </label>
+                <label id="title2"> <?php echo $adoptform ['AdoptionFormDesc'] ?> </label>
+                <input type="text" name="name" placeholder=" <?php echo $adoptform ['AdotionFormName'] ?> " required="">
+                <input placeholder=" <?php echo $adoptform ['AdoptionFormEmail'] ?> " type="email" name="email" autocomplete="off" required="">
+                    <label class="labelform"for=""> <?php echo $adoptform ['AdoptFormReason'] ?> </label>
+                    <textarea id="textbox" required="" name="info" placeholder=" <?php echo $adoptform ['AdoptFormJustify'] ?> "></textarea>
                 <button id='enviar'type="submit">
                     <?php echo $contact ['ContactSendButton'] ?>
                 </button>
