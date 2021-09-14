@@ -162,8 +162,15 @@ textarea{
     cursor: pointer;
     filter: brightness(90%);
   }
-@media screen and (max-width: 720px) {
-    .formu{width: 90%;}
+
+  @media screen and (max-width: 720px) {
+
 	.fBody{display: flexbox;}
+	#title1, #title2{width: 100%;}
+	.form{width: 90%;}
+	.form input, .form label, .form textarea{width: 90% !important;}
 	form{width: 100%;}
+
+	#title1{font-size: 160%;}
+	#title2{font-size: 100%;}
 }

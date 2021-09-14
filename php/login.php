@@ -33,7 +33,7 @@
             $_SESSION['email'] = $email;
             header('location: ../index.php');
         }else{
-            $error .= '<i>Este usuario no existe</i>';
+            $error .= '<i style="color:red;">Este usuario no existe</i>';
         }
     }
     

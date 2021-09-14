@@ -195,6 +195,9 @@ header button:hover {
   padding: 0;
   margin: 0;
 }
+.mensaje{
+  margin-left: 1.7rem;
+}
 /*========*/
 body::-webkit-scrollbar {
   width: 5px;
