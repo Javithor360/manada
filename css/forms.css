@@ -105,7 +105,7 @@ form label{
     height: 0;
     width: 0;
   }
-  
+
   .checkmark {
     position: absolute;
     top: 0;
@@ -113,6 +113,7 @@ form label{
     height: 25px;
     width: 25px;
     background-color: #eee;
+    margin-top: 10px;
   }
   .container:hover input ~ .checkmark {
     background-color: #ccc;

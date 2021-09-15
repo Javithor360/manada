@@ -19,7 +19,7 @@
 
         <br><br><br>
         <div class="formu">
-            <form action="php/formu_dar.php" method="POST" onSubmit="document.getElementById('enviar').disabled=true;">
+            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" onSubmit="document.getElementById('enviar').disabled=true;">
                 <label for="firstName" class="first-name"><?php echo $cat_form ['CatFormHeaderTitle'] ?>:</label>
                 <input class="input" id="firstName" type="text" name="nombre" placeholder="<?php echo $cat_form ['CatFormHolder1Desc'] ?>" required>
 
@@ -29,8 +29,8 @@
                 <label for="sex"><?php echo $cat_form ['CatFormHolder3'] ?>:</label>
                 <select class="input" name="sexo">
                     <option>&nbsp;</option>
-                    <option><?php echo $cat_form ['CatFormHolder3Desc1'] ?></option>
-                    <option><?php echo $cat_form ['CatFormHolder3Desc2'] ?></option>
+                    <option value="M"><?php echo $cat_form ['CatFormHolder3Desc1'] ?></option>
+                    <option value="F"><?php echo $cat_form ['CatFormHolder3Desc2'] ?></option>
                 </select>
                 <label for="vacunas"><?php echo $cat_form ['CatFormHolder4'] ?></label>
                 <br><br>

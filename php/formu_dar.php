@@ -1,14 +1,18 @@
-<?php
+<?php session_start();
+    require 'username-conexion.php';
 
-$destinatario = 'fundacion.la.manada.sv@gmail.com';
+    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
-$nombre = $_POST["nombre"];
-$edad = $_POST ['edad'];
-$sexo = $_POST['sexo'];
-$vacunas =$_POST['op1'].''.$_POST['op2'].''.$_POST['op3'].''.$_POST['op4'].''.$_POST['op5'].''.$_POST['op6'].''.$_POST['op7'];
+        $namePet = $_POST['nombre'];
+        $edad = $_POST['edad'];
+        $genero = $_POST['sexo'];
+        $owner = $username;
+        $vacunas = '';
 
-$contenido = "La mascota con el nombre de: ". $nombre ."\nDe edad: ". $edad ."\nDe el sexo: ". $sexo ."\nCon las vacunas : \n".$vacunas ."\nEsta esperando que se le brinde un hogar";
+        $type = 'Gato ['.$genero.']';
 
-mail($destinatario, "Nueva solicitud", $contenido );
-header("Location: ../gracias.php");
+        $error='';  
+
+        
+    }
 ?>
