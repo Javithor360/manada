@@ -8,6 +8,7 @@
         $age = $_POST['edad'];
         $genero = $_POST['sexo'];
         $nameOwner = $username;
+        $emailOwner = $mail;
         $vacunas = '';
 
         if (isset($_POST['op1'])){
@@ -66,7 +67,7 @@
 
         echo ($type); echo ($username);
 
-        $query="INSERT INTO input(IdEntrada, nameOwner, namePet, type, age, vacunas) VALUES (null,'$nameOwner','$namePet','$type','$age','$vacunas')";
+        $query="INSERT INTO input(IdEntrada, nameOwner, emailOwner, namePet, type, age, vacunas) VALUES (null,'$nameOwner','$emailOwner','$namePet','$type','$age','$vacunas')";
         $resultado = mysqli_query($conexion,$query);
         
         header("Location: gracias.php");

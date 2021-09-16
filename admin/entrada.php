@@ -54,6 +54,7 @@
                                 <th> ID </th>
                                 <th> Nombre Dueño </th>
                                 <th> Nombre Mascota </th>
+                                <th> Edad </th>
                                 <th> Tipo </th>
                                 <th> Vacunas </th>
                                 <th> Acción </th>
@@ -61,56 +62,34 @@
                         </thead>
                         
                         <tbody>
+                        <?php 
+                                $conexion=mysqli_connect('localhost','root','','admin',);
+                             ?>
+                             <?php 
+                                $sql="SELECT * FROM input";
+                                $result=mysqli_query($conexion, $sql);
+                                while ($data=mysqli_fetch_array($result)) {
+                                    // code...
+                              ?>
                             <tr>
-                                <td> #001 </td>
-                                <td> <img src="../src/example/frida.jpg" alt="Frida"> </td>
-                                <td> Diego Vladimir García Fuentes </td>
-                                <td> Frida </td>
-                                <td> Perro (F) </td>
-                                <td> Sin registro </td>
-                                <td> Ninguna </td>
+                                <td> #<?php echo $data['IdEntrada'] ?> </td>
+                                <td> <?php echo $data['nameOwner'] ?> (<?php echo $data['emailOwner'] ?>) </td>
+                                <td> <?php echo $data['namePet'] ?> </td>
+                                <td> <?php echo $data['age'] ?> años </td>
+                                <td> <?php echo $data['type'] ?> </td>
+                                <td> <?php echo $data['vacunas'] ?> </td>
                                 <td>
                                     <span class="action">
                                         <a href="#">Aceptar</a>
                                         <a href="#">Denegar</a>
                                     </span>
                                 </td>
-<!--                                 <td>  </td>
-                                <td>  </td>
-                                <td>  </td>
-                                <td>  </td> -->
-                            </tr>
-                            <tr>
-                                <td> #002 </td>
-                                <td> <img src="../src/example/harold.jpg" alt="Harold"> </td>
-                                <td> Javier Enrique Mejía Flores </td>
-                                <td> Harold </td>
-                                <td> Gato (M) </td>
-                                <td> Control veterinario </td>
-                                <td> Leucemia, Rinotraqueitis, Calcivirosis, Rabia </td>
-                                <td>
-                                    <span class="action">
-                                        <a href="#">Aceptar</a>
-                                        <a href="#">Denegar</a>
-                                    </span>
-                                </td>
+                            <?php } ?>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
-<!--         <script>
-            let list = document.querySelectorAll('.list');
-            for (let i=0; i<list.length; i++) {
-                list[i].onclick = function (){
-                    let j = 0;
-                    while(j < list.length){
-                        list[j++].className = "list";
-                    }
-                    list[i].className = "list active";
-                }
-            }
-        </script> -->
     </body>
 </html>

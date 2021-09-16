@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 16-09-2021 a las 05:55:00
+-- Tiempo de generación: 16-09-2021 a las 07:25:16
 -- Versión del servidor: 10.4.20-MariaDB
 -- Versión de PHP: 8.0.9
 
@@ -30,6 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `input` (
   `IdEntrada` int(10) NOT NULL,
   `nameOwner` varchar(150) NOT NULL,
+  `emailOwner` varchar(100) NOT NULL,
   `namePet` varchar(200) NOT NULL,
   `type` varchar(50) NOT NULL,
   `age` varchar(5) NOT NULL,
@@ -40,9 +41,9 @@ CREATE TABLE `input` (
 -- Volcado de datos para la tabla `input`
 --
 
-INSERT INTO `input` (`IdEntrada`, `nameOwner`, `namePet`, `type`, `age`, `vacunas`) VALUES
-(13, '123 123', 'McDonald', 'Gato [Hembra]', '12', 'Ninguna'),
-(14, '123 123', 'Bartolo', 'Perro [Macho]', '22', ' Contra Distemper');
+INSERT INTO `input` (`IdEntrada`, `nameOwner`, `emailOwner`, `namePet`, `type`, `age`, `vacunas`) VALUES
+(16, 'Eleazar Amaya', 'bruh@user.com', 'McDonald', 'Gato [Hembra]', '12', 'Ninguna'),
+(18, 'Eleazar Amaya', 'bruh@user.com', 'Bartolo', 'Perro [Macho]', '22', 'Contra Parpovirus, Contra Boedetollis, Contra Parainfluenza');
 
 -- --------------------------------------------------------
 
@@ -81,7 +82,7 @@ ALTER TABLE `output`
 -- AUTO_INCREMENT de la tabla `input`
 --
 ALTER TABLE `input`
-  MODIFY `IdEntrada` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `IdEntrada` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT de la tabla `output`

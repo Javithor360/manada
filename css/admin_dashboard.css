@@ -278,7 +278,7 @@ body {
 .content .card .table table td {
     border: 1px solid #00000017;
     padding: 10px 15px;
-    max-width: 100px;
+    max-width: 200px;
     overflow-wrap: break-word;
 }
 
