@@ -36,7 +36,10 @@ $contenido = "<!DOCTYPE html>
       margin: 0 auto;
     }
     .bg-dark {
-      background-image: url(https://cdn.discordapp.com/attachments/853110312277508117/884809036829192282/best-teacher-english-cocker-spaniel-young-dog-is-posing-cute-playful-brown-doggy-or-pet-sitting-in-e.jpg);
+      background-image:linear-gradient(
+          rgba(0, 0, 0, 0.5), 
+          rgba(0, 0, 0, 0.5)
+        ), url(https://cdn.discordapp.com/attachments/840288194691989585/887367386326532106/cat-1706757_1920.jpg);
       background-size: cover;
     }
     .h1{
@@ -52,7 +55,7 @@ $contenido = "<!DOCTYPE html>
         float: right;
         margin-right: 50%;
         margin-left: 5%;
-        color: white;
+        color: rgb(255, 255, 255);
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 25px;
     }
@@ -76,9 +79,11 @@ $contenido = "<!DOCTYPE html>
   <div class='container'>
     <div class='bg-dark'>
         <h1><img src=https://cdn.discordapp.com/attachments/840288194691989585/883606705773092934/ezgif.com-gif-maker.png  height='100px'></h1>
-      <h1 class='h1'> Gracias por comuicarte con nosotros </h1>
+      <h1 class='h1'> Gracias $name </h1>
       <br>
-          <h3>Gracias por comunicarte con nuestra Fundación una persona de nuestro personal se pondra en contacto contigo, esto puede tardar unos dias, gracias por ayudar a la causa y formar parte de nuestra familia que llamamos la manada
+          <h3>Muchas gracias para por interesarte en salvar a nuestros peludos amigos, personas como tu las consideramos heroes de nuestro dia a dia, puede que no sientas que
+              hicieras mucho, pero ayudaste en lo grande, dandole un lugar donde pueda descansar fuera de el maltrati, en estos momentos tu solicitud esta siendo procesada
+              esperamos tu mascota pueda estar a nuestro cuidado, recuerda que juntos formamos La manada
           </h3>
           <h2></h2>
       <div class='footer'>

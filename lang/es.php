@@ -1,5 +1,5 @@
 <?php
-    
+
     $navbar = array(
         'home' => 'Inicio',
         'pets' => 'Mascotas',
@@ -254,6 +254,7 @@
         'CatFormHolder4Desc6' => "Contra Felis",
         'CatFormHolder4Desc7' => "Contra Contra Rabia",
         'CatSendButton' => "Enviar",
+        'error' => "Por favor seleccione un género",
     );  
 
     $error404 = array(
@@ -266,7 +267,7 @@
     $denied = array( 
         'DeniedHeaderTitle' => "¡Acceso denegado!",
         'DeniedDesc' => "Credenciales inválidas para acceder",
-        'DeniedLogIn' => "Inicias sesión",
+        'DeniedLogIn' => "Iniciar sesión",
     );
 
     $thanks = array(
@@ -274,5 +275,24 @@
         'ThanksHeaderTitle' => "¡Gracias!",
         'ThanksHeaderDesc' => "Tu solicitud de adopcion está siendo procesada, recibirás una respuesta lo más pronto posible",
         'ThanksBack' => "Regresar",
+    );
+    $myaccount = array(
+        'MyaccountPageTitle' => "Mi Cuenta ∙ La Manada",
+        'MyaccountMail' => "Correo electrónico",
+        'MyaccountTel' => "Número telefónico",
+        'MyaccountBorn' => "Fecha de nacimiento",
+        'MyaccountGender' => "Género",
+        'MyaccountMale' => "Masculino",
+        'MyaccountFemale' => "Femenino",
+        'MyaccountData' => "Tus datos",
+        'MyaccountLogout' => "Cerrar sesión",
+    );
+    $adoptform = array(
+        'AdoptFormTittle' => "Adopción",
+        'AdoptionFormDesc' => "Gracias por adoptar y cambiarle la vida a una mascota, ahora rellena el siguiente formulario con los datos que se te solicitan",
+        'AdotionFormName' => "Ingresa tu nombre", 
+        'AdoptionFormEmail' => "Ingresa tu correo electronico",
+        'AdoptFormReason' => "¿Cúal es el motivo por el que quieres adoptar?",
+        'AdoptFormJustify' => "Justifica tu respuesta",
     );
 ?>

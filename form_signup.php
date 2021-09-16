@@ -46,10 +46,10 @@
             </div>
 
             <div class="inputs">
-                <select name="gender" id="gender" class='gender'>
+                <select name="gender" id="gender" onfocus="blur()" class='gender'>
                     <option value="no"></option>
-                    <option value="M"><?php echo $register['registerGenderOpc1'] ?></option>
-                    <option value="F"><?php echo $register['registerGenderOpc2'] ?></option>
+                    <option value="Masculino"><?php echo $register['registerGenderOpc1'] ?></option>
+                    <option value="Femenino"><?php echo $register['registerGenderOpc2'] ?></option>
                 </select>
                 <label for="gender"><?php echo $register['registerGender'] ?> *</label>
             </div>

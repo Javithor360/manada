@@ -83,7 +83,9 @@ input:focus{
     border-color: #4834d4;
     outline: none;
 }
-
+select:focus{
+    border-color: #4834d4;
+}
 button#submit{
     width: 50%;
     height: auto;

@@ -1,16 +1,16 @@
 <?php session_start();
 
-    if(isset($_SESSION['email'])) {
-        header('location: index.php');
+    if(isset($_SESSION['user'])) {
+        header('location: entrada.php');
     }
 
     $error = '';
     
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
         
-        $email = $_POST['email'];
-        $pw = $_POST['pw'];
-        $pw = hash('sha512', $pw);
+        $user = $_POST['user'];
+        $pass = $_POST['pass'];
+        
         
         try{
             $conexion = new PDO('mysql:host=localhost;dbname=login', 'root', '');
@@ -19,25 +19,25 @@
             }
         
         $statement = $conexion->prepare('
-        SELECT * FROM usuarioslogin WHERE email = :email AND pw = :pw'
+        SELECT * FROM admin WHERE user = :user AND pass = :pass'
         );
         
         $statement->execute(array(
-            ':email' => $email,
-            ':pw' => $pw
+            ':user' => $user,
+            ':pass' => $pass
         ));
             
         $resultado = $statement->fetch();
         
         if ($resultado !== false){
-            $_SESSION['email'] = $email;
-            header('location: ../index.php');
+            $_SESSION['user'] = $user;
+            header('location: ../admin/entrada.php');
         }else{
-            $error .= '<i style="color:red;">Este usuario no existe</i>';
+            $error .= '<i style="color:#EC7063;">Credenciales inválidas, intente de nuevo</i>';
         }
     }
     
-require '../form_login.php';
+require '../php/login_frontend.php';
 
 
 ?>

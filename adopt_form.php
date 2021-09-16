@@ -17,19 +17,24 @@
     <body>
         <div id="navy"></div>
 
-        <div class="formu" onSubmit="document.getElementById('enviar').disabled=true;">
-            <form action="php/decline_adopt.php" method="POST">
-                <label for="">¿Cual es tu nombre?:</label>
-                <input type="text" name="name" placeholder="Ingresa tu nombre" required>
-
-                <label for="">Correo Electronico:</label>
-                <input type="text" name="email" placeholder="Ingresa tu correo" required>
-                
-                <label for="">¿Cual es el motivo por el que deseas adoptar?:</label>
-                <textarea name="info" placeholder="Justifica tu respuesta" id="" cols="30" rows="10" required></textarea>
-                <button id="enviar" type="submit" class="boton">Enviar</button>
+            <main>
+<div class="container">
+        <div class="form">
+            <form  id="#form"action="php/decline_adopt.php" method="POST" onSubmit="document.getElementById('enviar').disabled=true;">
+                <label id="title1"> <?php echo $adoptform ['AdoptFormTittle'] ?> </label>
+                <label id="title2"> <?php echo $adoptform ['AdoptionFormDesc'] ?> </label>
+                <input type="text" name="name" placeholder=" <?php echo $adoptform ['AdotionFormName'] ?> " required="">
+                <input placeholder=" <?php echo $adoptform ['AdoptionFormEmail'] ?> " type="email" name="email" autocomplete="off" required="">
+                    <label class="labelform"for=""> <?php echo $adoptform ['AdoptFormReason'] ?> </label>
+                    <textarea id="textbox" required="" name="info" placeholder=" <?php echo $adoptform ['AdoptFormJustify'] ?> "></textarea>
+                <button id='enviar'type="submit">
+                    <?php echo $contact ['ContactSendButton'] ?>
+                </button>
             </form>
         </div>
+    </div>
+
+            </main>
         <div id="foot"></div>
     </body>
 </html>

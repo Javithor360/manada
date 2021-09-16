@@ -1,6 +1,28 @@
+@font-face{
+    font-family: Dosis;
+    src: url(../src/fonts/Dosis.ttf);
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face{
+    font-family: Poppins;
+    src: url(../src/fonts/Poppins-Regular.ttf); 
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face{
+    font-family: Roboto-light;
+    src: url(../src/fonts/Roboto-Light.ttf);
+    font-weight: normal;
+    font-size: normal;
+}
 *{
     margin: 0;
     padding: 0;
+}
+main{
+    min-height: 100vh;
 }
 body{
     background-image:linear-gradient(
@@ -9,76 +31,146 @@ body{
       ), url(fondosCSS/fondo1.jpg);
     background-size: cover;
 }
-.boton{
-    display: inline-block;
-	position: relative;
-	padding: 1.5em 3em;
-	appearance: none;
-	border: 0;
-	background: transparent;
-	color: aliceblue;
-	text-transform: uppercase;
-	letter-spacing: .25em;
-	outline: none;
-	cursor: pointer;
-	font-weight: bold;
-	border-radius: 0;
-	box-shadow: inset 0 0 0 var(--border-size) currentcolor;
-	transition: .8s ease;
-    background: rgb(37, 37, 37);
-    border-radius: 10px;
-}
-.boton:hover{
-    background: rgba(82, 140, 248, 0.699);
-}
-form{
+/*======================================*/
+.form{
     background: rgba(0, 0, 0,.3);
-	margin-top: 2em;
-	margin-left: 2em;
-	border-radius: .5rem;
-	border: 2px solid #fff;
-	transition: box-shadow .3s;
-	box-shadow: 2px 2px  8px #fff
+    margin-top: 2em;
+    margin-left: 2em;
+    border-radius: .5rem;
+    border: 2px solid #fff;
+    transition: box-shadow .3s;
+    box-shadow: 2px 2px  8px #fff;
 }
-form:hover{
+/*.form:hover{
     box-shadow: 2px 2px  8px #11698E;
-	transition: box-shadow .3s;
-}
-.formu{
-    margin: 3%;
-    padding: 1%;
-    margin-bottom: 40%;
-}
-.formu form{
-    box-sizing: border-box;
-    padding: 1em;
-    margin: 20px;
-    padding: 40px;
-}
-label{
-    color: white;
-}
-input{
-    border-radius: 10px;
+    transition: box-shadow .3s;
+}*/
+#title1{
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: bold;
     width: 100%;
-    padding: 00.7em;
-    margin-bottom: 00.5em;
+    max-width: 40rem;
+    text-align: left;
+    margin-top: .75rem;
+    margin-left: .75rem;
+    margin-bottom: .75rem;
+    font-family: 'Dosis', sans-serif;
+}
+#title2{
+    color: #fff;
+    font-size: 1em;
+    width: 40rem;
+    max-width: 40rem;
+    text-align: left;
+    margin-top: .75rem;
+    margin-left: .75rem;
+    margin-bottom: .75rem;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container .form{
+    display: flex;
+}
+.container .img{
+    float: right;
+    overflow: hidden;
+    height: 100%;
+}
+.container .form form label{
+    margin-left: .75rem;
+    text-align: left;
+    display: block;
+
+}
+.container .form form input{
+    margin: .75rem;
+    margin-top: 1rem;
+    text-align: left;
+    display: block;
+    width: 30rem;
+    padding: .7em;
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 2px 2px  3px #fff;
+    font-family: 'Dosis', sans-serif;
+    font-size: 13pt;
 }
 input:focus{
     outline: none;
 }
-textarea{
-    border-radius: 10px;
-    width: 100%;
-    padding: 00.7em;
-    margin-bottom: 00.5em;
-}
+::placeholder { color: #272727; }
 textarea:focus{
     outline: none;
 }
+textarea{
+    margin: .75rem;
+    margin-top: 1rem;
+    text-align: left;
+    display: block;
+    width: 30rem;
+    height: 10rem;
+    padding: 1em;
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 2px 2px  3px #fff;
+    font-family: 'Dosis', sans-serif;
+    font-size: 13pt;
+}
+.container .form form div{
+    margin: 0.75rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+}
+.container .form form div textarea{
+    border-radius: .5rem;
+    padding: 1em;
+    min-width: 30rem;
+    max-width: 100%;
+    height: 15rem;
+    max-height: 25rem;
+    min-height: 15rem;
+    box-shadow: 2px 2px  3px #fff;
+}
 
-@media screen and (max-width: 720px) {
-    .formu{width: 90%;}
+#enviar{
+    height: 3em;
+    width: 6em;
+    margin-left: .75rem;
+    margin-top: .40rem;
+    margin-bottom: .30rem;
+    border: none;
+    font-family: 'Dosis', sans-serif;
+    /*font-weight: bold;*/
+    font-size: .9rem;
+    color: #000000;
+    border-radius: 5px;
+    transition: background-color .7s;
+}
+.labelform{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 5px;
+    font-size: 13pt;
+}
+  #enviar:hover{
+    cursor: pointer;
+    filter: brightness(90%);
+  }
+
+  @media screen and (max-width: 720px) {
+
 	.fBody{display: flexbox;}
+	#title1, #title2{width: 100%;}
+	.form{width: 90%;}
+	.form input, .form label, .form textarea{width: 90% !important;}
 	form{width: 100%;}
+
+	#title1{font-size: 160%;}
+	#title2{font-size: 100%;}
 }

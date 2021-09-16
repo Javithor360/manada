@@ -30,7 +30,104 @@ header {
 body {
     background-color: #CFD7F6;
 }
+/*=============================================================================*/
+.derecha{
+  right: 3rem;
+  top: 1rem;
+  position: absolute;
+  background: #fff;
+  padding: 8px 8px 8px 8px;
+  border-radius: 8px;
+}
+.derecha label{
+  color: #1a5276;
+  transition: color 0.2s ease;
+  font-size: 14pt;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  font-family: 'Dosis', sans-serif;
+}
+.derecha ul label{
+  color: #fff;
+}
+.list li a label img{
+  margin-right: .5rem;
+  padding-top: .1rem;
+  width: 1em;
+  float: left;
+}
+.derecha .button img{
+  margin-left: .3em;
+  margin-right: .3em;
+  width: .8em;
+  padding-top: .3em;
+  float: right;
+}
+.derecha ul{
+  position: absolute;
+  background: #dc143c;
+  list-style: none;
+  top: 35px;
+  right: .2rem;
+  padding: .2rem;
+  min-width: 9rem;
+  border-radius: 8px;
+  border:1px solid rgb(180, 180, 180);
+  display: none;
+  box-shadow: 0px 2px 28px -10px rgba(0,0,0,0.59);
 
+}
+[id^=btn]:checked + ul{
+  display: block;
+}
+.derecha .list:before{
+  position: absolute;
+  content: '';
+  height: 10px;
+  width: 10px;
+  background: #dc143c;
+  right: .7em;
+  top: -6px;
+  transform: rotate(45deg);
+  z-index: 1;
+  border-top: 1px solid rgb(180, 180, 180);
+  border-left: 1px solid rgb(180, 180, 180);
+}
+.derecha ul li{
+  padding: 5px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.derecha ul #bottom{
+  border-bottom: none;
+}
+.derecha ul li label{
+  font-size: 14pt;
+  filter: brightness(95%);
+  transition: all .1s;
+}
+.derecha ul li label:hover{
+  filter: brightness(100%);
+  transition: all .1s;
+}
+.derecha ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+.derecha input{
+  display: none;
+}
+.menu li a label img{
+  width: 20px;
+  height: 20px;
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+/*=============================================================================*/
 .izquierda h3{
     color: #ffffff;
     font-family: Signika;

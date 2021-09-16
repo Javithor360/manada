@@ -10,6 +10,10 @@
     padding: 0;
 }
 
+#error{
+    display: none;
+}
+
 body {
     background-attachment: fixed;
     background-position: center center;

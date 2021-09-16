@@ -1,6 +1,7 @@
 <?php  session_start();
         require 'php/username-conexion.php';
         include('php/define_lang.php');
+        
  ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -19,7 +20,7 @@
 
         <br><br><br>
         <div class="formu">
-            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" onSubmit="document.getElementById('enviar').disabled=true;">
+            <form  method="POST" onSubmit =validar()>
                 <label for="firstName" class="first-name"><?php echo $cat_form ['CatFormHeaderTitle'] ?>:</label>
                 <input class="input" id="firstName" type="text" name="nombre" placeholder="<?php echo $cat_form ['CatFormHolder1Desc'] ?>" required>
 
@@ -27,11 +28,14 @@
                 <input class="input" for="age" type="number" name="edad" placeholder="<?php echo $cat_form ['CatFormHolder2Desc'] ?>" min="0" max="35" required>
 
                 <label for="sex"><?php echo $cat_form ['CatFormHolder3'] ?>:</label>
-                <select class="input" name="sexo">
-                    <option>&nbsp;</option>
-                    <option value="M"><?php echo $cat_form ['CatFormHolder3Desc1'] ?></option>
-                    <option value="F"><?php echo $cat_form ['CatFormHolder3Desc2'] ?></option>
+
+          
+                <select class="input" name="sexo" required> 
+                    <option value=''></option>
+                    <option value='Macho'><?php echo $cat_form ['CatFormHolder3Desc1'] ?></option>
+                    <option value='Hembra'><?php echo $cat_form ['CatFormHolder3Desc2'] ?></option>
                 </select>
+                
                 <label for="vacunas"><?php echo $cat_form ['CatFormHolder4'] ?></label>
                 <br><br>
 
@@ -51,7 +55,7 @@
                   </label>
 
                   <label class="container"><?php echo $cat_form ['CatFormHolder4Desc4'] ?>
-                    <input type="checkbox" value=">Contra Leucemia" name="op4">
+                    <input type="checkbox" value="Contra Leucemia" name="op4">
                     <span class="checkmark"></span>
                   </label>
                   <label class="container"><?php echo $cat_form ['CatFormHolder4Desc5'] ?>
@@ -68,7 +72,10 @@
                   </label>  
                   </label>
                   <br><br>
-                <button id="enviar" type="submit"><?php echo $cat_form ['CatSendButton'] ?></button>
+                <button id="enviar" type="submit" name="send"><?php echo $cat_form ['CatSendButton'] ?></button>
+                <?php include('php/input_cat.php'); ?>
+
+                
             </form>
         </div>
         <div id="foot"></div>

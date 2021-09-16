@@ -43,6 +43,7 @@
             <div class="mensaje">
                 <?php echo $error; ?>
             </div>
+            <br>
             <?php endif; ?>
             
             <div class="button"> <button id="submit" type="submit"><?php echo $formLogin['loginButton'] ?></button> </div>

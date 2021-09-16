@@ -1,3 +1,6 @@
+<?php 
+    require '../php/printuser-validation.php';
+ ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -16,7 +19,19 @@
                 <!-- <center><img src="../src/logos/logo_full.svg" alt="Logo"></center> -->
             </div>
             <div class="derecha">
-                <a href="admin-index.html" class="leave">Cerrar sesión</a>
+                <label for="btn" class="button"><?php echo($username); ?>
+                    <img src="../src/icons/down-arrow-icon.svg" alt="">
+                </label>
+                    <input type="checkbox" id="btn">
+                    <ul class="list">
+                        <li id="bottom">
+                            <a href="../php/admin-logout.php">
+                                <label>Cerrar sesión
+                                    <img  src="../src/icons/logout-icon.svg" alt="">
+                                </label>
+                            </a>
+                        </li>
+                    </ul>
             </div>
         </header>
 
@@ -25,13 +40,13 @@
                 <img src="../src/logos/icon.png" class="pfp" alt="Administrador">
                 <h4>Panel de administrador</h4>
             </div>
-            <a href="./entrada.html" class="list active"><span>Solicitudes de entrada</span></a>
-            <a href="./salida.html" class="list"><span>Solicitudes de adopción</span></a>
+            <a href="./entrada.php" class="list"><span>Solicitudes de entrada</span></a>
+            <a href="./salida.php" class="list active"><span>Solicitudes de adopción</span></a>
         </div>
 
         <div class="content">
             <div class="card">
-                <h1> Solicitudes para poner en Adopción </h1>
+                <h1> Solicitudes para Adoptar </h1>
                 <div class="table">
                     <table>
                         <thead>

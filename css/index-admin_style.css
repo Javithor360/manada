@@ -1,19 +1,19 @@
 @font-face
 {
     font-family: Poppins;
-    src: url(../src/Poppins-Light.ttf); 
+    src: url(../src/fonts/Poppins-Light.ttf); 
     font-weight: normal;
     font-size: normal;
 }
 @font-face{
     font-family: Dosis;
-    src: url(../src/Dosis.ttf);
+    src: url(../src/fonts/Dosis.ttf);
     font-weight: normal;
     font-size: normal;
 }
 @font-face{
     font-family: Dosis-ExtraLight;
-    src: url(../src/Dosis-ExtraLight.ttf);
+    src: url(../src/fonts/Dosis-ExtraLight.ttf);
     font-weight: normal;
     font-size: normal;
 }
@@ -29,7 +29,7 @@ body{
           rgba(0, 0, 0, 0.7), 
           rgba(0, 0, 0, 0.7)
         ),
-        url(../src/adminbg.jpg);
+        url(../src/bg/adminbg.jpg);
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
@@ -84,15 +84,11 @@ input:focus{
     outline: none;
 }
 .button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
-.button_child{
+button{
 
-}
-input[type=button]{
-    width: 150%;
+    width: 10rem;
     height: 2rem;
     border-radius: 10px;
     border:none;
@@ -104,13 +100,10 @@ input[type=button]{
     color: #f5f6fa;
     border: 1px #130f40 solid;
 }
-input[type=button]{
-    
-}
 
-input[type=button]:hover{
+
+button:hover{
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
     transition: all 400ms ease;
     color: white;
     border: 2px #30336b solid;

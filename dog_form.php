@@ -18,7 +18,7 @@
         <div id="navy"></div>
 
         <div class="formu">
-            <form action="php/formu_dar2.php" method="POST" onSubmit="document.getElementById('enviar').disabled=true;">
+            <form method="POST">
                 <label for="firstName" class="first-name"><?php echo $dog_form ['DogFormHolder1'] ?>:</label>
                 <input class="input" id="firstName" type="text" name="nombre" placeholder="<?php echo $dog_form ['DogFormHolder1Desc'] ?>" required>
     
@@ -26,48 +26,49 @@
             <input class="input" for="age" type="number" name="edad" placeholder="<?php echo $dog_form ['DogFormHolder2Desc'] ?>" min="0" max="35" required>
     
             <label for="sex"><?php echo $dog_form ['DogFormHolder3'] ?>:</label>
-            <select class="input" name="sexo">
-                <option>&nbsp;</option>
-                <option><?php echo $dog_form ['DogFormHolder3Desc1'] ?></option>
-                <option><?php echo $dog_form ['DogFormHolder3Desc2'] ?></option>
+            <select class="input" name="sexo" required>
+                <option value=''></option>
+                <option value='Macho'> <?php echo $dog_form ['DogFormHolder3Desc1'] ?></option>
+                <option value='Hembra'><?php echo $dog_form ['DogFormHolder3Desc2'] ?></option>
             </select>
             <br><br>
             <label for="vacunas"><?php echo $dog_form ['DogFormHolder4'] ?></label>
 
                 <label class="container"><?php echo $dog_form ['DogFormHolder4Desc1'] ?>
-                    <input type="checkbox"value="Contra Distemper" name="opc1">
+                    <input type="checkbox"value="Contra Distemper" name="op1">
                     <span class="checkmark"></span>
                   </label>
                   
                   <label class="container"><?php echo $dog_form ['DogFormHolder4Desc2'] ?>
-                    <input type="checkbox"value="Contra Herpesvirus" name="opc2">
+                    <input type="checkbox"value="Contra Herpesvirus" name="op2">
                     <span class="checkmark"></span>
                   </label>
                   
                   <label class="container"><?php echo $dog_form ['DogFormHolder4Desc3'] ?>
-                    <input type="checkbox"value="Contra Parpovirus" name="opc3">
+                    <input type="checkbox"value="Contra Parpovirus" name="op3">
                     <span class="checkmark"></span>
                   </label>
 
                   <label class="container"><?php echo $dog_form ['DogFormHolder4Desc4'] ?>
-                    <input type="checkbox"value="Contra Boedetollis" name="opc4">
+                    <input type="checkbox"value="Contra Boedetollis" name="op4">
                     <span class="checkmark"></span>
                   </label>
                   <label class="container"><?php echo $dog_form ['DogFormHolder4Desc5'] ?>
-                    <input type="checkbox"value="Contra Parainfluenza" name="opc5">
+                    <input type="checkbox"value="Contra Parainfluenza" name="op5">
                     <span class="checkmark"></span>
                   </label>
                   <label class="container"><?php echo $dog_form ['DogFormHolder4Desc6'] ?>
-                    <input type="checkbox"value="Contra Leptoporosis" name="opc6">
+                    <input type="checkbox"value="Contra Leptoporosis" name="op6">
                     <span class="checkmark"></span>
                   </label>
                   <label class="container"><?php echo $dog_form ['DogFormHolder4Desc7'] ?>
-                    <input type="checkbox"value="Contra Rabia" name="opc7">
+                    <input type="checkbox"value="Contra Rabia" name="op7">
                     <span class="checkmark"></span>
                   </label>  
                   </label>
                   <br><br>
-            <button id="enviar" type="submit"><?php echo $dog_form ['DogSendButton'] ?></button>
+            <button id="enviar" type="submit" name='send'><?php echo $dog_form ['DogSendButton'] ?></button>
+            <?php include('php/input_dog.php'); ?>
           </form>
         </div>
 

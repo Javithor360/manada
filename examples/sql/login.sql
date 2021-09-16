@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-08-2021 a las 16:04:26
+-- Tiempo de generación: 12-09-2021 a las 04:59:49
 -- Versión del servidor: 10.4.20-MariaDB
 -- Versión de PHP: 8.0.8
 
@@ -20,6 +20,31 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `login`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `admin`
+--
+
+CREATE TABLE `admin` (
+  `id` int(11) NOT NULL,
+  `user` varchar(123) NOT NULL,
+  `pass` varchar(200) NOT NULL,
+  `names` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `admin`
+--
+
+INSERT INTO `admin` (`id`, `user`, `pass`, `names`) VALUES
+(1, 'Daniel_Vasquez', 'DEVV_27', 'Daniel Vásquez'),
+(2, 'Javier_Mejia', 'JEMF_19', 'Javier Mejía'),
+(3, 'Eleazar_Amaya', 'EHAS_2', 'Eleazar Amaya'),
+(4, 'Steve_Sanchez', 'SASG_24', 'Steve Sánchez '),
+(5, 'Luis_Marquez', 'LEMR_17', 'Luis Márquez '),
+(6, 'Vladimir_Garcia', 'DVGF_10', 'Vladimir García');
 
 -- --------------------------------------------------------
 
@@ -43,11 +68,17 @@ CREATE TABLE `usuarioslogin` (
 --
 
 INSERT INTO `usuarioslogin` (`id`, `name`, `lastNames`, `gender`, `email`, `pw`, `tel`, `bD`) VALUES
-(1, 'Daniel', 'Vásquez', 'M', 'd.vasquezv503@gmail.com', 'fcc1d0e9ca0212dce405edf38efecdfc1a8ad44848bfc86f30609ead70bc0e7ff071c0df93a980acdc5900e51a87c577aefe3d4cd80994861d629ae0b7f20318', '7022-2222', '2005-07-28');
+(1, 'Daniel', 'Vásquez', 'M', 'd.vasquezv503@gmail.com', 'fcc1d0e9ca0212dce405edf38efecdfc1a8ad44848bfc86f30609ead70bc0e7ff071c0df93a980acdc5900e51a87c577aefe3d4cd80994861d629ae0b7f20318', '7022-3969', '2005-07-28');
 
 --
 -- Índices para tablas volcadas
 --
+
+--
+-- Indices de la tabla `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indices de la tabla `usuarioslogin`
@@ -60,10 +91,16 @@ ALTER TABLE `usuarioslogin`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
 -- AUTO_INCREMENT de la tabla `usuarioslogin`
 --
 ALTER TABLE `usuarioslogin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

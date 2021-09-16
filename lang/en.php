@@ -236,7 +236,7 @@
 
     $cat_form = array(
         'CatFormTitle' => "Form",
-        'CatFormHeaderTitle' => "Nombre",
+        'CatFormHeaderTitle' => "Name",
         'CatFormHolder1' => "Pet's Name",
         'CatFormHolder1Desc' => "Type the name",
         'CatFormHolder2' => "Age",
@@ -273,5 +273,24 @@
         'ThanksHeaderTitle' => "Thanks!",
         'ThanksHeaderDesc' => "Your adoption request is being processed, you will receive a response as soon as possible",
         'ThanksBack' => "Go back",
+    );
+    $myaccount = array(
+        'MyaccountPageTitle' => "My Account ∙ La Manada",
+        'MyaccountMail' => "Email address",
+        'MyaccountTel' => "Phone number",
+        'MyaccountBorn' => "Date of birth",
+        'MyaccountGender' => "Gender",
+        'MyaccountData' => "Your data",
+        'MyaccountMale' => "Male",
+        'MyaccountFemale' => "Female",
+        'MyaccountLogout' => "Log out",
+    );
+    $adoptform = array(
+        'AdoptFormTittle' => "Adoption",
+        'AdoptionFormDesc' => "Thank you for adopting and changing the life of a pet, now fill out the following form with the requested information",
+        'AdotionFormName' => "Enter your name", 
+        'AdoptionFormEmail' => "Enter your mail",
+        'AdoptFormReason' => "What is the reason you want to adopt?",
+        'AdoptFormJustify' => "Justify your answer",
     );
 ?>

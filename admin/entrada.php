@@ -1,3 +1,6 @@
+<?php 
+    require '../php/printuser-validation.php';
+ ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -12,12 +15,23 @@
         
         <header>
             <div class="izquierda">
-                <!-- <img src="./src/logos/logo_full.svg" alt="Logo"> -->
                 <h3>Fundación <span>La Manada</span></h3>
-                <!-- <img src="../src/logos/logo_full.svg" alt="Logo"> -->
+                <!-- <center><img src="../src/logos/logo_full.svg" alt="Logo"></center> -->
             </div>
             <div class="derecha">
-                <a href="admin-index.html" class="leave">Cerrar sesión</a>
+                <label for="btn" class="button"><?php echo($username); ?>
+                    <img src="../src/icons/down-arrow-icon.svg" alt="">
+                </label>
+                    <input type="checkbox" id="btn">
+                    <ul class="list">
+                        <li id="bottom">
+                            <a href="../php/admin-logout.php">
+                                <label>Cerrar sesión
+                                    <img  src="../src/icons/logout-icon.svg" alt="">
+                                </label>
+                            </a>
+                        </li>
+                    </ul>
             </div>
         </header>
 
@@ -26,28 +40,22 @@
                 <img src="../src/logos/icon.png" class="pfp" alt="Administrador">
                 <h4>Panel de administrador</h4>
             </div>
-            <a href="./entrada.html" class="list"><span>Solicitudes de entrada</span></a>
-            <a href="./salida.html" class="list active"><span>Solicitudes de adopción</span></a>
+            <a href="./entrada.php" class="list active"><span>Solicitudes de entrada</span></a>
+            <a href="./salida.php" class="list"><span>Solicitudes de adopción</span></a>
         </div>
 
         <div class="content">
             <div class="card">
-                <h1> Solicitudes para Adoptar </h1>
+                <h1> Solicitudes para poner en Adopción </h1>
                 <div class="table">
                     <table>
                         <thead>
                             <tr>
                                 <th> ID </th>
-                                <th> Foto </th>
                                 <th> Nombre Dueño </th>
                                 <th> Nombre Mascota </th>
                                 <th> Tipo </th>
-                                <!-- <th> Edad </th> -->
-                                <!-- <th> Raza </th> -->
-                                <!-- <th> Caracteristicas </th> -->
-                                <th> Nivel de atención </th>
                                 <th> Vacunas </th>
-                                <!-- <th> Descripción </th> -->
                                 <th> Acción </th>
                             </tr>
                         </thead>
@@ -87,20 +95,6 @@
                                     </span>
                                 </td>
                             </tr>
-<!--                             <tr>
-                                <td> request.apply.id[0] </td>
-                                <td> request.apply.pic[0] </td>
-                                <td> request.apply.owner[0] </td>
-                                <td> request.apply.petname[0] </td>
-                                <td> request.apply.type[0] </td>
-                                <td> request.apply.age[0] </td>
-                                <td> request.apply.raza[0] </td>
-                                <td> request.apply.characters[0] </td>
-                                <td> request.apply.attentionlvl[0] </td>
-                                <td> request.apply.vaccines[0] </td>
-                                <td> request.apply.desc[0] </td>
-                                <td>  </td>
-                            </tr> -->
                         </tbody>
                     </table>
                 </div>
