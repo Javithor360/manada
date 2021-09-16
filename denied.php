@@ -38,7 +38,7 @@
         </script>
 
         <meta charset="UTF-8">
-        <title>Acceso denegado ∙ La Manada</title>
+        <title><?php echo $denied ['deniedPageTitle'] ?></title>
     </head>
     <body>
             <div id="todo"></div>

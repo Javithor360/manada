@@ -4,15 +4,15 @@
         <meta charset="UTF-8">
         <link rel="shortcut icon" href="./src/logos/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="./css/thanks.css">
-        <title>Gracias ∙ La Manada</title>
+        <title><?php echo $thanks ['ThanksPageTitle'] ?></title>
     </head>
     <body>
         <div class="container">
-            <h1>¡Gracias!</h1>
+            <h1><?php echo $thanks ['ThanksHeaderTitle'] ?></h1>
             <img src="./src/thanks.png" height="500px" width="750px">
             <div id="right">
-                <p>Hemos recibido tu mensaje correctamente, recibirás una respuesta lo más pronto posible.</p>
-                <a href="./index.html"><button>Regresar</button></a>
+                <p><?php echo $thanks ['ThanksHeaderDesc'] ?></p>
+                <a href="./index.html"><button><?php echo $thanks ['ThanksBack'] ?></button></a>
             </div>
         </div>
     </body>

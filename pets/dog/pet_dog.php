@@ -23,7 +23,7 @@
         <div id="navy"></div>
 <div class="fBody">
         <div class="cont">
-            <h1 class="h1"><?php echo "¡",$dog ['DogHeaderTitle'] ?> <?php echo $data['nombre'],"!" ?></h1>
+            <h1 class="h1"><?php echo $dog ['DogHeaderTitle'] ?> <?php echo $data['nombre'],"!" ?></h1>
             <img src="<?php echo $data['imagenedit'] ?>" id="pet_pic">
             <h3><?php echo $dog ['DogStep1'] ?></h3>
             <p><?php echo $data['edad'] ?> <?php echo $dog ['DogStep1Desc'] ?></p><br>

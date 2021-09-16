@@ -263,6 +263,7 @@
     );
 
     $denied = array( 
+		'deniedPageTitle' => "Unauthorized ∙ La Manada",
         'DeniedHeaderTitle' => "Access denied!",
         'DeniedDesc' => "Invalid credentials to access",
         'DeniedLogIn' => "Log In",
@@ -278,7 +279,7 @@
         'MyaccountPageTitle' => "My Account ∙ La Manada",
         'MyaccountMail' => "Email address",
         'MyaccountTel' => "Phone number",
-        'MyaccountBorn' => "Date of birth",
+        'MyaccountBorn' => "Birthday",
         'MyaccountGender' => "Gender",
         'MyaccountData' => "Your data",
         'MyaccountMale' => "Male",
@@ -286,6 +287,7 @@
         'MyaccountLogout' => "Log out",
     );
     $adoptform = array(
+		'adoptFormPageTitle' => "Adopt Form ∙ La Manada",
         'AdoptFormTittle' => "Adoption",
         'AdoptionFormDesc' => "Thank you for adopting and changing the life of a pet, now fill out the following form with the requested information",
         'AdotionFormName' => "Enter your name", 

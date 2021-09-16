@@ -8,7 +8,7 @@
         }
 
         if(str_contains($_SERVER['SCRIPT_FILENAME'], '/pets/')){ $pathway = '../../denied.php'; }
-        else if(str_contains($_SERVER['SCRIPT_FILENAME'], '/guides/')) { $pathway = '../denied.php'; }
+        else if(str_contains($_SERVER['SCRIPT_FILENAME'], '/guides/') || str_contains($_SERVER['SCRIPT_FILENAME'], '/admin/')) { $pathway = '../denied.php'; }
         else if(str_contains($_SERVER['SCRIPT_FILENAME'], '/php/')) { $pathway = '../denied.php'; }
         else { $pathway = './denied.php'; }
 
@@ -28,7 +28,7 @@
                 $username = 'Not found...';
         }
         //$login = isset($_SESSION['email']);
-        if(str_contains($_SERVER['SCRIPT_FILENAME'], 'cat_form') || str_contains($_SERVER['SCRIPT_FILENAME'], 'dog_form') || str_contains($_SERVER['SCRIPT_FILENAME'], 'adopt_form')){ 
+        if(str_contains($_SERVER['SCRIPT_FILENAME'], 'cat_form') || str_contains($_SERVER['SCRIPT_FILENAME'], 'dog_form') || str_contains($_SERVER['SCRIPT_FILENAME'], 'adopt_form') || str_contains($_SERVER['SCRIPT_FILENAME'], 'entrada') || str_contains($_SERVER['SCRIPT_FILENAME'], 'salida')){ 
                 if(isset($_SESSION['email']) == 1){
                         $login = isset($_SESSION['email']); 
                 }else{

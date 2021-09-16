@@ -184,7 +184,7 @@
     );
 
     $dog = array(
-        'DogHeaderTitle' =>  "Conoce a ",
+        'DogHeaderTitle' =>  "¡Conoce a ",
         'DogStep1' => "Edad:",
         'DogStep1Desc' => "años",
         'DogStep1Desc1' => "año",
@@ -199,7 +199,7 @@
     );
 
     $cat = array(
-        'CatHeaderTitle' =>  "Conoce a ",
+        'CatHeaderTitle' =>  "¡Conoce a ",
         'CatStep1' => "Edad:",
         'CatStep1Desc' => "años",
         'CatStep1Desc1' => "año",
@@ -263,8 +263,9 @@
     );
 
     $denied = array( 
+		'deniedPageTitle' => "Acceso Denegado ∙ La Manada",
         'DeniedHeaderTitle' => "¡Acceso denegado!",
-        'DeniedDesc' => "Credenciales inválidas para acceder",
+        'DeniedDesc' => "No estás autorizado para acceder a esta página.",
         'DeniedLogIn' => "Iniciar sesión",
     );
 
@@ -286,6 +287,7 @@
         'MyaccountLogout' => "Cerrar sesión",
     );
     $adoptform = array(
+		'adoptFormPageTitle' => "Adopción ∙ La Manada",
         'AdoptFormTittle' => "Adopción",
         'AdoptionFormDesc' => "Gracias por adoptar y cambiarle la vida a una mascota, ahora rellena el siguiente formulario con los datos que se te solicitan",
         'AdotionFormName' => "Ingresa tu nombre", 
