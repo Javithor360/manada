@@ -46,8 +46,8 @@
             </div>
 
             <div class="inputs">
-                <select name="gender" id="gender" onfocus="blur()" class='gender'>
-                    <option value="no"></option>
+                <select name="gender" id="gender" onfocus="blur()" required class='gender'>
+                    <option value=""></option>
                     <option value="Masculino"><?php echo $register['registerGenderOpc1'] ?></option>
                     <option value="Femenino"><?php echo $register['registerGenderOpc2'] ?></option>
                 </select>

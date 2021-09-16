@@ -99,7 +99,7 @@
         'CatCarePlayDescLine1' => "Igual de importante que una alimentación o su aseo es el jugar con ellos, al estar entretenidos desarrollan su inteligencia, fomentan sus destrezas y a la vez practican deporte. Los gatos al ser animales muy curiosos e independientes se pueden llegar a entretener con muchas cosas.",
         'CatCarePlayDescLine2' => "Un gato aburrido es un gato destructor, es necesario que tengas diferentes opciones para entretener a un gato en casa",
         'CatCarePlayDescLine3' => "Dependiendo del tipo de juego, juguete o actividad y la interacción que necesite la actividad será el tiempo que tu gato este dispuestos a invertir en ella. Si se aburre fácil es que no le pareció atractivo.",
-        'GoBackButton' => "Come Back"
+        'GoBackButton' => "Volver"
 
     );
 
@@ -112,7 +112,6 @@
         'AdoptStep3' => "Paso 3: Busca a tu nuevo mejor amigo",
         'AdoptStep4' => "Paso 4: Llena el formulario con los datos solicitados",
         'AdoptStep5' => "Paso 5: Espera la confirmacion para adoptar en tu correo electronico",
-        'AdoptStep6' => "Paso 6: ¡Listo! puedes pasar por tu nueva mascota cuando quieras",
         'GoBackButton' => "Volver"
     );
 
@@ -122,10 +121,9 @@
         'PutAdoptHeaderDesc' => "Como Fundación La Manada agradecemos la confianza que depositas en nosotros al darnos a tu mascota en adopción, es por ello que te brindamos esta serie de pasos a seguir para que puedas hacer el proceso sin complicaciones.",
         'PutAdoptStep1' => "Paso 1: Inicia sesión",
         'PutAdoptStep2' => "Paso 2: Selecciona la especie que quieres dar en adopción",
-        'PutAdoptStep3' => "Paso 3: Paso 3: Llena el formulario con los datos solicitados",
-        'PutAdoptStep4' => "Paso 4: Sube almenos 3 fotografias de la mascota",
-        'PutAdoptStep5' => "Paso 5: Evaluaremos los datos que nos brindaste (Puede tomar tiempo)",
-        'PutAdoptStep6' => "Paso 6: ¡Listo! si se cumplen los requisitos te contactaremos para que nos entregues a la mascota y buscarle un nuevo hogar",
+        'PutAdoptStep3' => "Paso 3:Llena el formulario con los datos solicitados",
+        'PutAdoptStep5' => "Paso 4: Evaluaremos los datos que nos brindaste (Puede tomar tiempo)",
+        'PutAdoptStep6' => "Paso 5: ¡Listo! si se cumplen los requisitos te contactaremos para que nos entregues a la mascota y buscarle un nuevo hogar",
         'GoBackButton' => "Volver"
     );
 

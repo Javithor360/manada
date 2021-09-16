@@ -40,10 +40,6 @@
                     </figure>
                 </div>
                 <div class="steps2">
-                   <figure>
-                        <img src="../src/icons/photo_step.svg" alt="" width="100px" height="100px">
-                        <figcaption> <?php echo $putadoption ['PutAdoptStep4'] ?> </figcaption>
-                    </figure>
                     <figure>
                         <img src="../src/icons/check-data.svg" alt="" width="100px" height="100px">
                     <figcaption> <?php echo $putadoption ['PutAdoptStep5'] ?> </figcaption>

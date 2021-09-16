@@ -48,10 +48,6 @@
                         <img src="../src/icons/mail_icon1.svg" alt="" width="100px" height="100px">
                     <figcaption> <?php echo $howtoadopt ['AdoptStep5'] ?></figcaption>
                     </figure>
-                    <figure>
-                        <img src="../src/icons/done.svg" alt="" width="100px" height="100px">
-                    <figcaption> <?php echo $howtoadopt ['AdoptStep6'] ?></figcaption>
-                    </figure>
                 </div>
                 <a id="back" href="../guides.php"> <?php echo $howtoadopt ['GoBackButton'] ?></a>
             </div>
