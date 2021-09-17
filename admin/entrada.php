@@ -80,8 +80,8 @@
                                 <td> <?php echo $data['vacunas'] ?> </td>
                                 <td>
                                     <span class="action">
-                                        <a href="#">Aceptar</a>
-                                        <a href="#">Denegar</a>
+                                        <a href="../acept_sendmail.php">Aceptar</a>
+                                        <a href="../decline_sendmail.php">Denegar</a>
                                     </span>
                                 </td>
                             <?php } ?>

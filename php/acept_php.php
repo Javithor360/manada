@@ -1,20 +1,6 @@
 <?php
 
-$destinatario = 'fundacion.la.manada.sv@gmail.com';
-
-$name = $_POST["name"];
-$info = $_POST ['info'];
-$email =$_POST['email'];
-
-$contenido = "Hola Soy: ". $name . "\n\nY la razon por la que deseo adoptar es: \n" . $info;
-
-mail($destinatario, "Adopcion/Razones", $contenido );
-header("Location: ../gracias.php");
-?>
-
-<?php
-
-$destinatario = $_POST['email'];
+$destinatario = $_POST["email"];
 $name = $_POST["name"];
 $contenido = "<!DOCTYPE html>
 <html lang='es'>
