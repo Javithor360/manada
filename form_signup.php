@@ -60,7 +60,7 @@
             </div>
 
              <div class="inputs">
-                <input type="password" name="pw" id="pw" required autocomplete="nope">
+                <input type="password" name="pw" id="pw" required autocomplete="nope" pattern=".{8,}">
                 <label for="pw"><?php echo $register['registerPassword'] ?> *</label>
             </div>
 

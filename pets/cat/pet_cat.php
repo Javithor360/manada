@@ -1,11 +1,18 @@
-<?php  session_start();
-        require '../../php/username-conexion.php';
-        include('../../php/define_lang.php');
+<?php  
         $conexion=mysqli_connect('localhost','root','','mascotas',);
         $id=$_GET['id'];
         $sql="SELECT * FROM gatos WHERE id='$id'";
         $result=mysqli_query($conexion, $sql);
-        $data=mysqli_fetch_array($result)
+        $data=mysqli_fetch_array($result);
+		
+		if(mysqli_num_rows($result) == 0){
+		   include('../../404.php');
+		   die();
+		}
+		
+		session_start();
+        require '../../php/username-conexion.php';
+        include('../../php/define_lang.php');
 ?>
 <!DOCTYPE html>
 <html>
