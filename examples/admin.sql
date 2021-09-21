@@ -2,10 +2,10 @@
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Sep 21, 2021 at 08:47 AM
--- Server version: 10.4.21-MariaDB
--- PHP Version: 8.0.10
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 21-09-2021 a las 09:50:11
+-- Versión del servidor: 10.4.20-MariaDB
+-- Versión de PHP: 8.0.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `admin`
+-- Base de datos: `admin`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `input`
+-- Estructura de tabla para la tabla `input`
 --
 
 CREATE TABLE `input` (
@@ -38,7 +38,7 @@ CREATE TABLE `input` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `input`
+-- Volcado de datos para la tabla `input`
 --
 
 INSERT INTO `input` (`IdEntrada`, `nameOwner`, `emailOwner`, `namePet`, `type`, `age`, `vacunas`) VALUES
@@ -49,7 +49,7 @@ INSERT INTO `input` (`IdEntrada`, `nameOwner`, `emailOwner`, `namePet`, `type`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `output`
+-- Estructura de tabla para la tabla `output`
 --
 
 CREATE TABLE `output` (
@@ -57,48 +57,49 @@ CREATE TABLE `output` (
   `originalOwner` varchar(100) NOT NULL,
   `petName` varchar(50) NOT NULL,
   `newOwner` varchar(100) NOT NULL,
-  `reason` varchar(100) NOT NULL,
-  `emailNewOwner` varchar(100) NOT NULL
+  `emailNewOwner` varchar(100) NOT NULL,
+  `reason` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `output`
+-- Volcado de datos para la tabla `output`
 --
 
-INSERT INTO `output` (`idSalida`, `originalOwner`, `petName`, `newOwner`, `reason`, `emailNewOwner`) VALUES
-(2, 'Diego Vladimir García Fuentes', 'Princesa', 'Javier Enrique Mejía Flores', 'Hola, yo quiero cuidar a Princesa.', 'floresmejia004@gmail.com');
+INSERT INTO `output` (`idSalida`, `originalOwner`, `petName`, `newOwner`, `emailNewOwner`, `reason`) VALUES
+(1, 'Diego Vladimir García Fuentes', 'Princesa', 'Javier Enrique Mejía Flores', 'floresmejia004@gmail.com', 'Hola, yo quiero cuidar de Princesa.'),
+(9, 'Diego Vladimir García Fuentes', 'Liliana', 'Eleazar Amaya', 'Blomiau48@gmail.com', 'Me gustaría tener un nuevo amigo.');
 
 --
--- Indexes for dumped tables
+-- Índices para tablas volcadas
 --
 
 --
--- Indexes for table `input`
+-- Indices de la tabla `input`
 --
 ALTER TABLE `input`
   ADD PRIMARY KEY (`IdEntrada`);
 
 --
--- Indexes for table `output`
+-- Indices de la tabla `output`
 --
 ALTER TABLE `output`
   ADD PRIMARY KEY (`idSalida`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT for table `input`
+-- AUTO_INCREMENT de la tabla `input`
 --
 ALTER TABLE `input`
   MODIFY `IdEntrada` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
--- AUTO_INCREMENT for table `output`
+-- AUTO_INCREMENT de la tabla `output`
 --
 ALTER TABLE `output`
-  MODIFY `idSalida` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idSalida` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

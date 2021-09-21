@@ -32,18 +32,19 @@
             <main>
 <div class="container">
         <div class="form">
-			<?php echo $data['nombre'] ?>
-			<?php echo $data['dueño'] ?>
-            <form  id="#form"action="php/adopt_thanks.php" method="POST" onSubmit="document.getElementById('enviar').disabled=true;">
+			
+            <!--- -->
+            <form  id="#form"  method="POST">
                 <label id="title1"> <?php echo $adoptform ['AdoptFormTittle'] ?> </label>
                 <label id="title2"> <?php echo $adoptform ['AdoptionFormDesc'] ?> </label>
                 <input type="text" name="name" placeholder=" <?php echo $adoptform ['AdotionFormName'] ?> " required="">
                 <input placeholder=" <?php echo $adoptform ['AdoptionFormEmail'] ?> " type="email" name="email" autocomplete="off" required="">
                     <label class="labelform"for=""> <?php echo $adoptform ['AdoptFormReason'] ?> </label>
                     <textarea id="textbox" required="" name="info" placeholder=" <?php echo $adoptform ['AdoptFormJustify'] ?> "></textarea>
-                <button id='enviar'type="submit">
+                <button id='enviar'type="submit" name='send'>
                     <?php echo $contact ['ContactSendButton'] ?>
                 </button>
+                <?php include('php/output_post.php'); ?>
             </form>
         </div>
     </div>
