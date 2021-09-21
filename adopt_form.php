@@ -1,5 +1,7 @@
 <?php  session_start();
-
+        require 'php/username-conexion.php';
+        include('php/define_lang.php');
+		
 		$dbname=$_GET['type'];
 		$conexion=mysqli_connect('localhost','root','','mascotas',);
         $id=$_GET['id'];
@@ -10,9 +12,6 @@
 		}
         $result=mysqli_query($conexion, $sql);
         $data=mysqli_fetch_array($result);
-		
-        require 'php/username-conexion.php';
-        include('php/define_lang.php');
  ?>
 <!DOCTYPE html>
 <html>
