@@ -16,6 +16,7 @@
                 if(location.pathname.includes('/pets/')){ pathway = '../../'; }
                 else if(location.pathname.includes('/guides/')){ pathway = '../';}
                 else if(location.pathname.includes('/php/')){ pathway = '../';}
+				else if(location.pathname.includes('/admin/')){ pathway = '../';}
                 else{ pathway = './'};
 
                 img = [`${pathway}/src/error404.png`, `${pathway}/src/error404_2.png`];
