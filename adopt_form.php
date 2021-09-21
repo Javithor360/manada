@@ -1,4 +1,16 @@
 <?php  session_start();
+
+		$dbname=$_GET['type'];
+		$conexion=mysqli_connect('localhost','root','','mascotas',);
+        $id=$_GET['id'];
+        if($dbname == 'perros'){
+			$sql="SELECT * FROM perros WHERE id='$id'";
+		}else{
+			$sql="SELECT * FROM gatos WHERE id='$id'";
+		}
+        $result=mysqli_query($conexion, $sql);
+        $data=mysqli_fetch_array($result);
+		
         require 'php/username-conexion.php';
         include('php/define_lang.php');
  ?>
@@ -20,6 +32,8 @@
             <main>
 <div class="container">
         <div class="form">
+			<?php echo $data['nombre'] ?>
+			<?php echo $data['dueño'] ?>
             <form  id="#form"action="php/adopt_thanks.php" method="POST" onSubmit="document.getElementById('enviar').disabled=true;">
                 <label id="title1"> <?php echo $adoptform ['AdoptFormTittle'] ?> </label>
                 <label id="title2"> <?php echo $adoptform ['AdoptionFormDesc'] ?> </label>

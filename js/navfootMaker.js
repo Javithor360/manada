@@ -117,9 +117,15 @@ function navfootMaker() {
                         `</footer>`;
 
     if(location.pathname.includes('/pets/')){
+		var type;
+        if(location.pathname.includes(`/cat/`)){
+            type="gatos";
+        }else{
+            type="perros";
+        }
         if(window.navfoot.session == true){
             login =   
-                            '<a href="'+ longpath +'adopt_form.php">'+
+                            `<a href="${longpath}adopt_form.php?id=${window.navfoot.button.id}&type=${type}">`+
                                 '<button class="boton">'+
                                     window.navfoot.button.success+
                                 '</button>'+

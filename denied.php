@@ -1,5 +1,5 @@
-<?php  session_start();
-        include('php/define_lang.php');
+<?php
+    include('php/define_lang.php');
  ?>
 
 <!DOCTYPE html>

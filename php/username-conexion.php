@@ -32,7 +32,7 @@
                 if(isset($_SESSION['email']) == 1){
                         $login = isset($_SESSION['email']); 
                 }else{
-                        header("Location: $pathway");
+                        include($pathway);
                         die();
                 }
         } else { 

@@ -52,85 +52,41 @@
                         <thead>
                             <tr>
                                 <th> ID </th>
-                                <th> Foto </th>
-                                <th> Nombre Dueño </th>
+								<th> Nombre Dueño </th>
                                 <th> Nombre Mascota </th>
-                                <th> Tipo </th>
-                                <!-- <th> Edad </th> -->
-                                <!-- <th> Raza </th> -->
-                                <!-- <th> Caracteristicas </th> -->
-                                <th> Nivel de atención </th>
-                                <th> Vacunas </th>
-                                <!-- <th> Descripción </th> -->
+								<th> Usuario interesado </th>
+                                <th> Razón </th>
                                 <th> Acción </th>
                             </tr>
                         </thead>
                         
                         <tbody>
+                        <?php 
+                                $conexion=mysqli_connect('localhost','root','','admin',);
+                             ?>
+                             <?php 
+                                $sql="SELECT * FROM output";
+                                $result=mysqli_query($conexion, $sql);
+                                while ($data=mysqli_fetch_array($result)) {
+                                    // code...
+                              ?>
                             <tr>
-                                <td> #001 </td>
-                                <td> <img src="../src/example/frida.jpg" alt="Frida"> </td>
-                                <td> Diego Vladimir García Fuentes </td>
-                                <td> Frida </td>
-                                <td> Perro (F) </td>
-                                <td> Sin registro </td>
-                                <td> Ninguna </td>
+                                <td> #<?php echo $data['idSalida'] ?> </td>
+                                <td> <?php echo $data['originalOwner'] ?> </td>
+                                <td> <?php echo $data['petName'] ?> </td>
+                                <td> <?php echo $data['newOwner'] ?> (<?php echo $data['emailNewOwner'] ?>) </td>
+                                <td> <?php echo $data['reason'] ?> </td>
                                 <td>
                                     <span class="action">
-                                        <a href="#">Aceptar</a>
-                                        <a href="#">Denegar</a>
+                                        <a href="../acept_sendmail.php">Aceptar</a>
+                                        <a href="../decline_sendmail.php">Denegar</a>
                                     </span>
                                 </td>
-<!--                                 <td>  </td>
-                                <td>  </td>
-                                <td>  </td>
-                                <td>  </td> -->
-                            </tr>
-                            <tr>
-                                <td> #002 </td>
-                                <td> <img src="../src/example/harold.jpg" alt="Harold"> </td>
-                                <td> Javier Enrique Mejía Flores </td>
-                                <td> Harold </td>
-                                <td> Gato (M) </td>
-                                <td> Control veterinario </td>
-                                <td> Leucemia, Rinotraqueitis, Calcivirosis, Rabia </td>
-                                <td>
-                                    <span class="action">
-                                        <a href="#">Aceptar</a>
-                                        <a href="#">Denegar</a>
-                                    </span>
-                                </td>
-                            </tr>
-<!--                             <tr>
-                                <td> request.apply.id[0] </td>
-                                <td> request.apply.pic[0] </td>
-                                <td> request.apply.owner[0] </td>
-                                <td> request.apply.petname[0] </td>
-                                <td> request.apply.type[0] </td>
-                                <td> request.apply.age[0] </td>
-                                <td> request.apply.raza[0] </td>
-                                <td> request.apply.characters[0] </td>
-                                <td> request.apply.attentionlvl[0] </td>
-                                <td> request.apply.vaccines[0] </td>
-                                <td> request.apply.desc[0] </td>
-                                <td>  </td>
-                            </tr> -->
+                            <?php } ?>
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
-<!--         <script>
-            let list = document.querySelectorAll('.list');
-            for (let i=0; i<list.length; i++) {
-                list[i].onclick = function (){
-                    let j = 0;
-                    while(j < list.length){
-                        list[j++].className = "list";
-                    }
-                    list[i].className = "list active";
-                }
-            }
-        </script> -->
     </body>
 </html>
