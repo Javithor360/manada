@@ -20,7 +20,7 @@
             <main>
 <div class="container">
         <div class="form">
-            <form  id="#form"action="php/decline_adopt.php" method="POST" onSubmit="document.getElementById('enviar').disabled=true;">
+            <form  id="#form"action="php/adopt_thanks.php" method="POST" onSubmit="document.getElementById('enviar').disabled=true;">
                 <label id="title1"> <?php echo $adoptform ['AdoptFormTittle'] ?> </label>
                 <label id="title2"> <?php echo $adoptform ['AdoptionFormDesc'] ?> </label>
                 <input type="text" name="name" placeholder=" <?php echo $adoptform ['AdotionFormName'] ?> " required="">

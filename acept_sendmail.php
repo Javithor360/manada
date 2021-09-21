@@ -6,7 +6,7 @@
     </head>
     <body>
         <div class="formu">
-          <form action="acept_php.php" method="POST">
+          <form action="php/acept_php.php" method="POST">
             <h1>Bienevenido a Notificaciones</h1> <br>
             <h2>A quien notificaremos su solicitud</h2>
             <input type="text" name="name" placeholder="Ingrese el nombre de el usuario" required><br>
