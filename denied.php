@@ -18,7 +18,7 @@
                 else if(location.pathname.includes('/php/')){ pathway = '../';}  
                 else{ pathway = './'};
 
-                img = [`${pathway}/src/error404.png`, `${pathway}/src/error404_2.png`];
+                img = [`${pathway}/src/denied1.png`, `${pathway}/src/denied2.png`, `${pathway}/src/denied3.png`];
 
                 finalPath = document.getElementsByTagName('head')[0];
                 finalPath.innerHTML +=  `<link rel="shortcut icon" href="${pathway}src/logos/favicon.ico" type="image/x-icon">\n`+
