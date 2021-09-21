@@ -34,11 +34,19 @@
             
                         
             if ($resultado != false){
-                $error .= '<i style="color:red;">Este usuario ya existe</i>';
+                if($_SESSION['lang'] == 'es'){
+                    $error .= '<i style="color:red;">Este usuario ya existe</i><br>';
+                }else if($_SESSION['lang'] == 'en'){
+                    $error = '<i style="color: red;">This user already exists</i><br>';
+                }
             }
             
             if ($pw != $pwc){
-                $error .= '<i style="color:red;"> Las contraseñas no coinciden</i>';
+                if($_SESSION['lang'] == 'es'){
+                   $error .= '<i style="color:red;"> Las contraseñas no coinciden</i><br>';
+                }else if($_SESSION['lang'] == 'en'){
+                    $error = '<i style="color: red;">Passwords do not match</i><br>';
+                }
             }
 
         
@@ -56,12 +64,16 @@
 
                 
             ));
+            if($_SESSION['lang'] == 'es'){
+                $error = '<i style="color: green;">Usuario registrado exitosamente</i><br>';
+            }else if($_SESSION['lang'] == 'en'){
+                $error = '<i style="color: green;">Successfully registered user</i><br>';
+            }
             
-            $error .= '<i style="color: green;">Usuario registrado exitosamente</i>';
         }
     }
 
-
+    include('define_lang.php');
     require '../form_signup.php';
 
 ?>

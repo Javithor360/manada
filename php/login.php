@@ -33,10 +33,16 @@
             $_SESSION['email'] = $email;
             header('location: ../index.php');
         }else{
-            $error .= '<i style="color:red;">Correo electrónico y/o contraseña incorrecto</i>';
+            
+            if($_SESSION['lang'] == 'es'){
+                $error .= '<i style="color:red;">Correo electrónico y/o contraseña incorrectos</i>';
+            }else if($_SESSION['lang'] == 'en'){
+                $error = '<i style="color: red;">Incorrect email or password</i><br>';
+            }
         }
     }
     
+include('define_lang.php');    
 require '../form_login.php';
 
 
