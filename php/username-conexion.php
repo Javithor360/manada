@@ -28,7 +28,7 @@
                 $username = 'Not found...';
         }
         //$login = isset($_SESSION['email']);
-		if(str_contains($_SERVER['SCRIPT_FILENAME'], 'adopt_form') && isset($_SESSION['email']) == 1){
+		if(str_contains($_SERVER['SCRIPT_FILENAME'], 'adopt_form')){
 			if(!str_contains($_SERVER['REQUEST_URI'], '?id=')){
 				include($pathway);
                 die();
