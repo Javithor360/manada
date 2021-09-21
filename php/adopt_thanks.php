@@ -78,7 +78,7 @@ $contenido = "<!DOCTYPE html>
         <h1><img src=https://cdn.discordapp.com/attachments/840288194691989585/883606705773092934/ezgif.com-gif-maker.png  height='100px'></h1>
       <h1 class='h1'> Gracias $name </h1>
       <br>
-          <h3>Muchas gracias para por interesarte en nuestra mascota, personas como tu las consideramos heroes de nuestro dia a dia, puede que no sientas que
+          <h3>Muchas gracias para por interesarte en nuestra mascota, personas como tu las consideramos héroes de nuestro dia a dia, puede que no sientas que
               hicieras mucho, pero ayudaste en lo grande, dandole un hogar a esta mascota que sera parte de tu familia, en estos momentos tu solicitud esta siendo procesada
               esperamos seas tu quien cuide de esta mascota, recuerda que juntos formamos La manada
           </h3>
